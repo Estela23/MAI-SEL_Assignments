@@ -14,36 +14,31 @@ col_names.extend(["Class"])
 df = df.set_axis(col_names, axis=1)
 print(df)
 
-
 values = []
 for attrib in range(num_attributes):
     this_values = np.unique(np.array(df.iloc[:, attrib]))
     values.append(list(this_values))
 print(values)
 
+
+# HACER REGLAS DE LONGITUD 1
+for column in df.columns:
+    for value in df[column].unique():
+        rslt_df = df[df[column] == value]
+        rslt_df["Class"].all()
+
+
 train_instances = df.copy()
 
 all_indexes = []
 all_combinations = []
 
+
 for i in range(2, num_attributes):
     print("Candidate rules of length {0}:".format(i))
     indexes = list(itertools.combinations(range(num_attributes), i))
     all_indexes.extend(indexes)
-    if i == 2:
-        for idx in indexes:
-            combin = list(itertools.product(values[idx[0]], values[idx[1]]))  # Reglas de longitud 2
-            # combin = [list(itertools.product(x)) for x in [values[i] for i in idx]]
-            # combin = list(itertools.product(tuple([values[idx[i]] for i in idx])))
-            # combin = list(itertools.product(values[idx[:len(idx)]]))
-            all_combinations.append(combin)
-    if i == 3:
-        for idx in indexes:
-            combin = list(itertools.product(values[idx[0]], values[idx[1]], values[idx[2]]))  # Reglas de longitud 3
-            all_combinations.append(combin)
-    if i == 4:
-        for idx in indexes:
-            combin = list(itertools.product(values[idx[0]], values[idx[1]], values[idx[2]], values[idx[3]]))  # L = 4
-            all_combinations.append(combin)
 
-print("Hello")
+    for idx in indexes:
+        combin = list(itertools.product(*[values[idx[i]] for i in range(len(idx))]))
+        all_combinations.append(combin)
