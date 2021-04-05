@@ -1,0 +1,10 @@
+File of rules corresponding to the yellow-small+adult-stretch dataset 
+ 
+IF Attribute_1 = YELLOW and Attribute_2 = SMALL THEN Class = T 
+IF Attribute_1 = PURPLE and Attribute_3 = DIP THEN Class = F 
+IF Attribute_1 = PURPLE and Attribute_4 = CHILD THEN Class = F 
+IF Attribute_2 = LARGE and Attribute_3 = DIP THEN Class = F 
+IF Attribute_2 = LARGE and Attribute_4 = CHILD THEN Class = F 
+IF Attribute_3 = STRETCH and Attribute_4 = ADULT THEN Class = T 
+
+All instances are correctly classified with 6 rules of 100% 'precision', STOP.
