@@ -6,12 +6,12 @@ from utils.update_dataframe import create_rslt_df, update_unclassified_df
 
 # Create the .txt file where the rules will be
 with open("rules.txt", "w") as output:
-    output.write("File of rules corresponding to the ballons adult+stretch dataset \n \n")
+    output.write("File of rules corresponding to the ballons yellow-small+adult-stretch dataset \n \n")
 
     # Create an empty list of rules, each rule will have the form: [("Attribute_2", DIP), ("Class", T)]
     rules = []
     # Read the csv file
-    df = pd.read_csv("data/ballons/adult+stretch.data", header=None)
+    df = pd.read_csv("data/ballons/yellow-small+adult-stretch.data", header=None)
 
     # Check how many attributes it has
     num_attributes = df.shape[1] - 1
@@ -76,4 +76,5 @@ with open("rules.txt", "w") as output:
             output.write("\nAll the instances are correctly classified, with {0} rules of 100% 'precision', STOP.".format(len(rules)))
             break
 
+    # TODO: Look for redundant (o como se llamen) rules!
     # TODO: las instances sin classificar se convierten en reglas!
