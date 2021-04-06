@@ -11,11 +11,13 @@ data_name = "splice"""
 data_name = "breast-cancer-wisconsin"""
 """data_file = "data/breast-cancer-wisconsin/wpbc.data"  # arff=False, id_column=0, class_column=1
 data_name = "wpbc"""
+"""data_file = "data/new-thyroid/new-thyroid.data"  # arff=False, id_column=None, class_column=0, discretize_integers=True
+data_name = "new-thyroid"""
 
-data_file = "data/new-thyroid/new-thyroid.data"
-data_name = "new-thyroid"
+data_file = "data/cmc.data"
+data_name = "cmc"
 
-train_df, test_df = read_file(data_file, arff=False, id_column=None, class_column=0, discretize_integers=True)
+train_df, test_df = read_file(data_file, arff=False, id_column=None, class_column=None, discretize_integers=[0, 3])
 
 rules = train_RULES(df=train_df, data_name=data_name)
 
