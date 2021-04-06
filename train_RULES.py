@@ -13,15 +13,6 @@ def train_RULES(df, data_name):
         # Create an empty list of rules, each rule will have the form: [("Attribute_2", DIP), ("Class", T)]
         rules = []
 
-        # Check how many attributes it has
-        num_attributes = df.shape[1] - 1
-
-        # Create the dataframe with names of the columns
-        col_names = ["Attribute_{0}".format(i+1) for i in range(num_attributes)]
-        col_names.extend(["Class"])
-        df = df.set_axis(col_names, axis=1)
-        # TODO: check whether the first column is an ID number and replace it
-
         # Create rules with 1 selector
         for column in df.columns[:-1]:
             for value in df[column].unique():
@@ -35,6 +26,10 @@ def train_RULES(df, data_name):
 
         # Update the dataframe with only the non-classified instances
         unclassified = update_unclassified_df(df, rules)
+
+        # Check how many attributes it has
+        num_attributes = df.shape[1] - 1
+        col_names = list(df.columns)
 
         # Create rules with more than 1 selector and less than the number of attributes
         all_combinations = []

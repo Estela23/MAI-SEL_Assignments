@@ -1,0 +1,433 @@
+File of rules corresponding to the splice dataset 
+ 
+IF Attribute_1 = D THEN Class = IE 
+IF Attribute_2 = D THEN Class = N 
+IF Attribute_14 = N THEN Class = N 
+IF Attribute_19 = N THEN Class = N 
+IF Attribute_22 = N THEN Class = EI 
+IF Attribute_23 = N THEN Class = EI 
+IF Attribute_24 = N THEN Class = EI 
+IF Attribute_25 = N THEN Class = EI 
+IF Attribute_26 = N THEN Class = EI 
+IF Attribute_27 = N THEN Class = EI 
+IF Attribute_28 = N THEN Class = EI 
+IF Attribute_29 = N THEN Class = EI 
+IF Attribute_30 = N THEN Class = EI 
+IF Attribute_31 = N THEN Class = EI 
+IF Attribute_32 = N THEN Class = EI 
+IF Attribute_34 = N THEN Class = EI 
+IF Attribute_35 = N THEN Class = EI 
+IF Attribute_35 = R THEN Class = IE 
+IF Attribute_36 = N THEN Class = EI 
+IF Attribute_36 = S THEN Class = IE 
+IF Attribute_37 = N THEN Class = EI 
+IF Attribute_39 = N THEN Class = EI 
+IF Attribute_40 = N THEN Class = EI 
+IF Attribute_41 = N THEN Class = EI 
+IF Attribute_42 = N THEN Class = EI 
+IF Attribute_44 = N THEN Class = EI 
+IF Attribute_45 = N THEN Class = EI 
+IF Attribute_46 = N THEN Class = EI 
+IF Attribute_47 = N THEN Class = EI 
+IF Attribute_48 = N THEN Class = EI 
+IF Attribute_49 = N THEN Class = EI 
+IF Attribute_50 = N THEN Class = EI 
+IF Attribute_51 = N THEN Class = EI 
+IF Attribute_52 = N THEN Class = EI 
+IF Attribute_53 = N THEN Class = EI 
+IF Attribute_54 = N THEN Class = EI 
+IF Attribute_55 = N THEN Class = EI 
+IF Attribute_57 = N THEN Class = EI 
+IF Attribute_58 = N THEN Class = EI 
+IF Attribute_59 = N THEN Class = EI 
+IF Attribute_60 = N THEN Class = EI 
+IF Attribute_1 = A and Attribute_33 = N THEN Class = EI 
+IF Attribute_1 = C and Attribute_33 = N THEN Class = EI 
+IF Attribute_1 = G and Attribute_33 = N THEN Class = N 
+IF Attribute_1 = C and Attribute_38 = N THEN Class = EI 
+IF Attribute_1 = C and Attribute_43 = N THEN Class = EI 
+IF Attribute_1 = G and Attribute_43 = N THEN Class = N 
+IF Attribute_1 = C and Attribute_56 = N THEN Class = EI 
+IF Attribute_1 = T and Attribute_56 = N THEN Class = N 
+IF Attribute_2 = A and Attribute_33 = N THEN Class = EI 
+IF Attribute_2 = G and Attribute_33 = N THEN Class = N 
+IF Attribute_2 = C and Attribute_38 = N THEN Class = EI 
+IF Attribute_2 = G and Attribute_38 = N THEN Class = N 
+IF Attribute_2 = A and Attribute_43 = N THEN Class = EI 
+IF Attribute_2 = G and Attribute_43 = N THEN Class = N 
+IF Attribute_3 = A and Attribute_33 = N THEN Class = N 
+IF Attribute_3 = C and Attribute_33 = N THEN Class = EI 
+IF Attribute_3 = A and Attribute_38 = N THEN Class = N 
+IF Attribute_3 = C and Attribute_38 = N THEN Class = EI 
+IF Attribute_3 = A and Attribute_43 = N THEN Class = N 
+IF Attribute_3 = C and Attribute_43 = N THEN Class = EI 
+IF Attribute_3 = A and Attribute_56 = N THEN Class = N 
+IF Attribute_3 = C and Attribute_56 = N THEN Class = EI 
+IF Attribute_4 = A and Attribute_33 = N THEN Class = EI 
+IF Attribute_4 = A and Attribute_43 = N THEN Class = EI 
+IF Attribute_4 = T and Attribute_43 = N THEN Class = N 
+IF Attribute_5 = T and Attribute_33 = N THEN Class = EI 
+IF Attribute_5 = A and Attribute_38 = N THEN Class = N 
+IF Attribute_5 = C and Attribute_38 = N THEN Class = EI 
+IF Attribute_5 = G and Attribute_38 = N THEN Class = EI 
+IF Attribute_5 = T and Attribute_38 = N THEN Class = N 
+IF Attribute_5 = C and Attribute_56 = N THEN Class = EI 
+IF Attribute_5 = T and Attribute_56 = N THEN Class = N 
+IF Attribute_6 = A and Attribute_33 = N THEN Class = EI 
+IF Attribute_6 = C and Attribute_38 = N THEN Class = N 
+IF Attribute_6 = G and Attribute_38 = N THEN Class = EI 
+IF Attribute_6 = A and Attribute_43 = N THEN Class = EI 
+IF Attribute_6 = C and Attribute_43 = N THEN Class = N 
+IF Attribute_6 = A and Attribute_56 = N THEN Class = EI 
+IF Attribute_6 = C and Attribute_56 = N THEN Class = N 
+IF Attribute_7 = C and Attribute_33 = N THEN Class = N 
+IF Attribute_7 = G and Attribute_33 = N THEN Class = EI 
+IF Attribute_7 = T and Attribute_33 = N THEN Class = EI 
+IF Attribute_7 = G and Attribute_38 = N THEN Class = EI 
+IF Attribute_7 = C and Attribute_43 = N THEN Class = N 
+IF Attribute_7 = G and Attribute_43 = N THEN Class = EI 
+IF Attribute_7 = C and Attribute_56 = N THEN Class = N 
+IF Attribute_7 = G and Attribute_56 = N THEN Class = EI 
+IF Attribute_8 = C and Attribute_33 = N THEN Class = EI 
+IF Attribute_8 = G and Attribute_33 = N THEN Class = EI 
+IF Attribute_8 = T and Attribute_33 = N THEN Class = N 
+IF Attribute_8 = A and Attribute_38 = N THEN Class = N 
+IF Attribute_8 = G and Attribute_38 = N THEN Class = EI 
+IF Attribute_8 = G and Attribute_43 = N THEN Class = EI 
+IF Attribute_8 = T and Attribute_43 = N THEN Class = N 
+IF Attribute_8 = G and Attribute_56 = N THEN Class = EI 
+IF Attribute_8 = T and Attribute_56 = N THEN Class = N 
+IF Attribute_9 = A and Attribute_33 = N THEN Class = N 
+IF Attribute_9 = C and Attribute_33 = N THEN Class = EI 
+IF Attribute_9 = G and Attribute_33 = N THEN Class = EI 
+IF Attribute_9 = G and Attribute_38 = N THEN Class = EI 
+IF Attribute_9 = T and Attribute_38 = N THEN Class = N 
+IF Attribute_9 = A and Attribute_43 = N THEN Class = N 
+IF Attribute_9 = G and Attribute_43 = N THEN Class = EI 
+IF Attribute_9 = C and Attribute_56 = N THEN Class = N 
+IF Attribute_9 = G and Attribute_56 = N THEN Class = EI 
+IF Attribute_10 = A and Attribute_33 = N THEN Class = EI 
+IF Attribute_10 = C and Attribute_33 = N THEN Class = EI 
+IF Attribute_10 = G and Attribute_33 = N THEN Class = N 
+IF Attribute_10 = C and Attribute_38 = N THEN Class = EI 
+IF Attribute_10 = G and Attribute_38 = N THEN Class = N 
+IF Attribute_10 = T and Attribute_38 = N THEN Class = N 
+IF Attribute_10 = C and Attribute_43 = N THEN Class = EI 
+IF Attribute_10 = G and Attribute_43 = N THEN Class = N 
+IF Attribute_10 = C and Attribute_56 = N THEN Class = EI 
+IF Attribute_10 = T and Attribute_56 = N THEN Class = N 
+IF Attribute_11 = A and Attribute_33 = N THEN Class = EI 
+IF Attribute_11 = T and Attribute_33 = N THEN Class = N 
+IF Attribute_11 = A and Attribute_38 = N THEN Class = EI 
+IF Attribute_11 = A and Attribute_43 = N THEN Class = EI 
+IF Attribute_11 = T and Attribute_43 = N THEN Class = N 
+IF Attribute_11 = A and Attribute_56 = N THEN Class = EI 
+IF Attribute_11 = C and Attribute_56 = N THEN Class = N 
+IF Attribute_12 = A and Attribute_33 = N THEN Class = N 
+IF Attribute_12 = C and Attribute_33 = N THEN Class = EI 
+IF Attribute_12 = A and Attribute_38 = N THEN Class = EI 
+IF Attribute_12 = C and Attribute_38 = N THEN Class = EI 
+IF Attribute_12 = G and Attribute_38 = N THEN Class = N 
+IF Attribute_12 = A and Attribute_43 = N THEN Class = N 
+IF Attribute_12 = C and Attribute_43 = N THEN Class = EI 
+IF Attribute_12 = C and Attribute_56 = N THEN Class = EI 
+IF Attribute_12 = G and Attribute_56 = N THEN Class = N 
+IF Attribute_13 = C and Attribute_33 = N THEN Class = EI 
+IF Attribute_13 = G and Attribute_33 = N THEN Class = EI 
+IF Attribute_13 = T and Attribute_33 = N THEN Class = N 
+IF Attribute_13 = G and Attribute_38 = N THEN Class = EI 
+IF Attribute_13 = C and Attribute_43 = N THEN Class = EI 
+IF Attribute_13 = T and Attribute_43 = N THEN Class = N 
+IF Attribute_14 = C and Attribute_33 = N THEN Class = EI 
+IF Attribute_14 = A and Attribute_38 = N THEN Class = EI 
+IF Attribute_14 = C and Attribute_38 = N THEN Class = EI 
+IF Attribute_14 = T and Attribute_38 = N THEN Class = N 
+IF Attribute_14 = A and Attribute_43 = N THEN Class = N 
+IF Attribute_14 = C and Attribute_43 = N THEN Class = EI 
+IF Attribute_14 = C and Attribute_56 = N THEN Class = EI 
+IF Attribute_14 = T and Attribute_56 = N THEN Class = N 
+IF Attribute_15 = A and Attribute_33 = N THEN Class = N 
+IF Attribute_15 = C and Attribute_33 = N THEN Class = EI 
+IF Attribute_15 = A and Attribute_38 = N THEN Class = EI 
+IF Attribute_15 = C and Attribute_38 = N THEN Class = EI 
+IF Attribute_15 = G and Attribute_38 = N THEN Class = N 
+IF Attribute_15 = A and Attribute_43 = N THEN Class = N 
+IF Attribute_15 = C and Attribute_43 = N THEN Class = EI 
+IF Attribute_15 = C and Attribute_56 = N THEN Class = EI 
+IF Attribute_15 = G and Attribute_56 = N THEN Class = N 
+IF Attribute_16 = A and Attribute_33 = N THEN Class = EI 
+IF Attribute_16 = T and Attribute_38 = N THEN Class = N 
+IF Attribute_17 = A and Attribute_33 = N THEN Class = N 
+IF Attribute_17 = T and Attribute_33 = N THEN Class = EI 
+IF Attribute_17 = C and Attribute_38 = N THEN Class = EI 
+IF Attribute_17 = G and Attribute_38 = N THEN Class = N 
+IF Attribute_17 = T and Attribute_38 = N THEN Class = EI 
+IF Attribute_17 = A and Attribute_43 = N THEN Class = N 
+IF Attribute_17 = T and Attribute_43 = N THEN Class = EI 
+IF Attribute_17 = G and Attribute_56 = N THEN Class = N 
+IF Attribute_17 = T and Attribute_56 = N THEN Class = EI 
+IF Attribute_18 = C and Attribute_38 = N THEN Class = EI 
+IF Attribute_18 = T and Attribute_38 = N THEN Class = N 
+IF Attribute_18 = C and Attribute_56 = N THEN Class = EI 
+IF Attribute_18 = T and Attribute_56 = N THEN Class = N 
+IF Attribute_19 = A and Attribute_31 = T THEN Class = N 
+IF Attribute_19 = A and Attribute_38 = N THEN Class = EI 
+IF Attribute_19 = G and Attribute_38 = N THEN Class = N 
+IF Attribute_19 = A and Attribute_56 = N THEN Class = EI 
+IF Attribute_19 = G and Attribute_56 = N THEN Class = N 
+IF Attribute_20 = G and Attribute_38 = N THEN Class = N 
+IF Attribute_20 = T and Attribute_43 = N THEN Class = N 
+IF Attribute_20 = G and Attribute_56 = N THEN Class = N 
+IF Attribute_21 = G and Attribute_33 = N THEN Class = EI 
+IF Attribute_21 = T and Attribute_33 = N THEN Class = N 
+IF Attribute_21 = A and Attribute_38 = N THEN Class = EI 
+IF Attribute_21 = T and Attribute_38 = N THEN Class = N 
+IF Attribute_21 = T and Attribute_43 = N THEN Class = N 
+IF Attribute_21 = T and Attribute_56 = N THEN Class = N 
+IF Attribute_22 = A and Attribute_38 = N THEN Class = EI 
+IF Attribute_22 = G and Attribute_38 = N THEN Class = N 
+IF Attribute_22 = C and Attribute_43 = N THEN Class = N 
+IF Attribute_22 = G and Attribute_56 = N THEN Class = N 
+IF Attribute_23 = A and Attribute_31 = C THEN Class = N 
+IF Attribute_23 = A and Attribute_33 = N THEN Class = N 
+IF Attribute_23 = T and Attribute_33 = N THEN Class = EI 
+IF Attribute_23 = A and Attribute_38 = N THEN Class = N 
+IF Attribute_23 = A and Attribute_43 = N THEN Class = N 
+IF Attribute_23 = A and Attribute_56 = N THEN Class = N 
+IF Attribute_24 = A and Attribute_33 = N THEN Class = EI 
+IF Attribute_24 = G and Attribute_33 = N THEN Class = N 
+IF Attribute_24 = A and Attribute_38 = N THEN Class = EI 
+IF Attribute_24 = G and Attribute_38 = N THEN Class = N 
+IF Attribute_24 = T and Attribute_38 = N THEN Class = N 
+IF Attribute_24 = G and Attribute_43 = N THEN Class = N 
+IF Attribute_24 = G and Attribute_56 = N THEN Class = N 
+IF Attribute_25 = C and Attribute_33 = N THEN Class = EI 
+IF Attribute_25 = T and Attribute_33 = N THEN Class = N 
+IF Attribute_25 = A and Attribute_38 = N THEN Class = N 
+IF Attribute_25 = T and Attribute_43 = N THEN Class = N 
+IF Attribute_25 = A and Attribute_56 = N THEN Class = N 
+IF Attribute_26 = G and Attribute_33 = N THEN Class = N 
+IF Attribute_26 = T and Attribute_33 = N THEN Class = EI 
+IF Attribute_26 = A and Attribute_38 = N THEN Class = N 
+IF Attribute_26 = G and Attribute_43 = N THEN Class = N 
+IF Attribute_26 = A and Attribute_56 = N THEN Class = N 
+IF Attribute_27 = G and Attribute_33 = N THEN Class = EI 
+IF Attribute_27 = T and Attribute_33 = N THEN Class = N 
+IF Attribute_27 = C and Attribute_38 = N THEN Class = N 
+IF Attribute_27 = T and Attribute_43 = N THEN Class = N 
+IF Attribute_27 = A and Attribute_56 = N THEN Class = N 
+IF Attribute_28 = G and Attribute_31 = A THEN Class = N 
+IF Attribute_28 = C and Attribute_33 = N THEN Class = EI 
+IF Attribute_28 = T and Attribute_33 = N THEN Class = N 
+IF Attribute_28 = T and Attribute_38 = N THEN Class = N 
+IF Attribute_28 = T and Attribute_43 = N THEN Class = N 
+IF Attribute_28 = A and Attribute_56 = N THEN Class = N 
+IF Attribute_29 = C and Attribute_31 = A THEN Class = N 
+IF Attribute_29 = C and Attribute_31 = C THEN Class = N 
+IF Attribute_29 = G and Attribute_31 = A THEN Class = N 
+IF Attribute_29 = G and Attribute_31 = C THEN Class = N 
+IF Attribute_29 = G and Attribute_31 = T THEN Class = N 
+IF Attribute_29 = T and Attribute_31 = T THEN Class = N 
+IF Attribute_29 = C and Attribute_32 = A THEN Class = N 
+IF Attribute_29 = C and Attribute_32 = C THEN Class = N 
+IF Attribute_29 = G and Attribute_32 = C THEN Class = N 
+IF Attribute_29 = T and Attribute_32 = C THEN Class = N 
+IF Attribute_29 = A and Attribute_33 = N THEN Class = EI 
+IF Attribute_29 = C and Attribute_33 = N THEN Class = N 
+IF Attribute_29 = G and Attribute_33 = T THEN Class = N 
+IF Attribute_29 = T and Attribute_33 = C THEN Class = N 
+IF Attribute_29 = C and Attribute_35 = A THEN Class = N 
+IF Attribute_29 = C and Attribute_35 = C THEN Class = N 
+IF Attribute_29 = A and Attribute_38 = N THEN Class = EI 
+IF Attribute_29 = C and Attribute_38 = N THEN Class = N 
+IF Attribute_29 = T and Attribute_38 = N THEN Class = N 
+IF Attribute_29 = C and Attribute_43 = N THEN Class = N 
+IF Attribute_29 = C and Attribute_56 = N THEN Class = N 
+IF Attribute_30 = A and Attribute_31 = A THEN Class = N 
+IF Attribute_30 = C and Attribute_31 = C THEN Class = N 
+IF Attribute_30 = C and Attribute_31 = T THEN Class = N 
+IF Attribute_30 = T and Attribute_31 = A THEN Class = N 
+IF Attribute_30 = T and Attribute_31 = C THEN Class = N 
+IF Attribute_30 = T and Attribute_31 = T THEN Class = N 
+IF Attribute_30 = A and Attribute_32 = C THEN Class = N 
+IF Attribute_30 = C and Attribute_32 = A THEN Class = N 
+IF Attribute_30 = C and Attribute_32 = C THEN Class = N 
+IF Attribute_30 = T and Attribute_32 = A THEN Class = N 
+IF Attribute_30 = T and Attribute_32 = C THEN Class = N 
+IF Attribute_30 = T and Attribute_32 = G THEN Class = N 
+IF Attribute_30 = A and Attribute_33 = C THEN Class = N 
+IF Attribute_30 = C and Attribute_33 = C THEN Class = N 
+IF Attribute_30 = C and Attribute_33 = N THEN Class = N 
+IF Attribute_30 = C and Attribute_33 = T THEN Class = N 
+IF Attribute_30 = G and Attribute_33 = N THEN Class = EI 
+IF Attribute_30 = T and Attribute_33 = C THEN Class = N 
+IF Attribute_30 = T and Attribute_33 = T THEN Class = N 
+IF Attribute_30 = A and Attribute_34 = G THEN Class = N 
+IF Attribute_30 = T and Attribute_34 = G THEN Class = N 
+IF Attribute_30 = T and Attribute_34 = T THEN Class = N 
+IF Attribute_30 = A and Attribute_35 = C THEN Class = N 
+IF Attribute_30 = C and Attribute_35 = A THEN Class = N 
+IF Attribute_30 = C and Attribute_35 = T THEN Class = N 
+IF Attribute_30 = T and Attribute_35 = A THEN Class = N 
+IF Attribute_30 = T and Attribute_35 = T THEN Class = N 
+IF Attribute_30 = A and Attribute_36 = C THEN Class = N 
+IF Attribute_30 = C and Attribute_36 = C THEN Class = N 
+IF Attribute_30 = G and Attribute_38 = N THEN Class = EI 
+IF Attribute_30 = T and Attribute_38 = N THEN Class = N 
+IF Attribute_30 = C and Attribute_43 = N THEN Class = N 
+IF Attribute_30 = T and Attribute_56 = N THEN Class = N 
+IF Attribute_31 = C and Attribute_33 = N THEN Class = N 
+IF Attribute_31 = G and Attribute_33 = N THEN Class = EI 
+IF Attribute_31 = C and Attribute_43 = N THEN Class = N 
+IF Attribute_31 = G and Attribute_56 = N THEN Class = N 
+IF Attribute_32 = C and Attribute_33 = N THEN Class = N 
+IF Attribute_32 = T and Attribute_33 = N THEN Class = EI 
+IF Attribute_32 = A and Attribute_38 = N THEN Class = N 
+IF Attribute_32 = G and Attribute_38 = N THEN Class = N 
+IF Attribute_32 = T and Attribute_38 = N THEN Class = EI 
+IF Attribute_32 = C and Attribute_43 = N THEN Class = N 
+IF Attribute_32 = A and Attribute_56 = N THEN Class = N 
+IF Attribute_33 = N and Attribute_34 = A THEN Class = EI 
+IF Attribute_33 = N and Attribute_34 = T THEN Class = N 
+IF Attribute_33 = N and Attribute_35 = G THEN Class = EI 
+IF Attribute_33 = N and Attribute_35 = T THEN Class = N 
+IF Attribute_33 = N and Attribute_36 = G THEN Class = EI 
+IF Attribute_33 = N and Attribute_36 = T THEN Class = N 
+IF Attribute_33 = A and Attribute_38 = N THEN Class = N 
+IF Attribute_33 = G and Attribute_38 = N THEN Class = EI 
+IF Attribute_33 = N and Attribute_38 = N THEN Class = EI 
+IF Attribute_33 = T and Attribute_38 = N THEN Class = N 
+IF Attribute_33 = N and Attribute_39 = C THEN Class = EI 
+IF Attribute_33 = N and Attribute_39 = G THEN Class = N 
+IF Attribute_33 = N and Attribute_40 = A THEN Class = EI 
+IF Attribute_33 = N and Attribute_40 = C THEN Class = N 
+IF Attribute_33 = N and Attribute_42 = C THEN Class = N 
+IF Attribute_33 = N and Attribute_42 = T THEN Class = EI 
+IF Attribute_33 = N and Attribute_43 = C THEN Class = EI 
+IF Attribute_33 = N and Attribute_44 = C THEN Class = EI 
+IF Attribute_33 = N and Attribute_44 = T THEN Class = N 
+IF Attribute_33 = N and Attribute_46 = G THEN Class = EI 
+IF Attribute_33 = N and Attribute_46 = T THEN Class = N 
+IF Attribute_33 = N and Attribute_48 = A THEN Class = N 
+IF Attribute_33 = N and Attribute_48 = C THEN Class = EI 
+IF Attribute_33 = N and Attribute_49 = A THEN Class = EI 
+IF Attribute_33 = N and Attribute_49 = G THEN Class = N 
+IF Attribute_33 = N and Attribute_50 = C THEN Class = EI 
+IF Attribute_33 = N and Attribute_50 = T THEN Class = N 
+IF Attribute_33 = N and Attribute_51 = C THEN Class = N 
+IF Attribute_33 = N and Attribute_51 = T THEN Class = EI 
+IF Attribute_33 = N and Attribute_52 = C THEN Class = EI 
+IF Attribute_33 = N and Attribute_52 = T THEN Class = N 
+IF Attribute_33 = N and Attribute_54 = A THEN Class = N 
+IF Attribute_33 = N and Attribute_54 = T THEN Class = EI 
+IF Attribute_33 = N and Attribute_55 = C THEN Class = N 
+IF Attribute_33 = N and Attribute_55 = G THEN Class = EI 
+IF Attribute_33 = N and Attribute_56 = C THEN Class = EI 
+IF Attribute_33 = N and Attribute_56 = N THEN Class = EI 
+IF Attribute_33 = N and Attribute_56 = T THEN Class = N 
+IF Attribute_33 = T and Attribute_56 = N THEN Class = N 
+IF Attribute_33 = N and Attribute_57 = A THEN Class = N 
+IF Attribute_33 = N and Attribute_57 = T THEN Class = EI 
+IF Attribute_34 = G and Attribute_38 = N THEN Class = N 
+IF Attribute_34 = T and Attribute_43 = N THEN Class = N 
+IF Attribute_34 = G and Attribute_56 = N THEN Class = N 
+IF Attribute_35 = A and Attribute_38 = N THEN Class = N 
+IF Attribute_35 = C and Attribute_38 = N THEN Class = N 
+IF Attribute_35 = G and Attribute_38 = N THEN Class = EI 
+IF Attribute_35 = T and Attribute_43 = N THEN Class = N 
+IF Attribute_35 = C and Attribute_56 = N THEN Class = N 
+IF Attribute_36 = C and Attribute_38 = N THEN Class = N 
+IF Attribute_36 = G and Attribute_38 = N THEN Class = EI 
+IF Attribute_36 = T and Attribute_43 = N THEN Class = N 
+IF Attribute_36 = C and Attribute_56 = N THEN Class = N 
+IF Attribute_37 = G and Attribute_38 = N THEN Class = EI 
+IF Attribute_37 = T and Attribute_38 = N THEN Class = N 
+IF Attribute_37 = C and Attribute_43 = N THEN Class = N 
+IF Attribute_37 = T and Attribute_56 = N THEN Class = N 
+IF Attribute_38 = N and Attribute_39 = C THEN Class = EI 
+IF Attribute_38 = N and Attribute_39 = G THEN Class = N 
+IF Attribute_38 = N and Attribute_40 = A THEN Class = N 
+IF Attribute_38 = N and Attribute_40 = C THEN Class = N 
+IF Attribute_38 = N and Attribute_40 = T THEN Class = EI 
+IF Attribute_38 = N and Attribute_41 = C THEN Class = N 
+IF Attribute_38 = N and Attribute_41 = G THEN Class = N 
+IF Attribute_38 = N and Attribute_41 = T THEN Class = EI 
+IF Attribute_38 = N and Attribute_42 = C THEN Class = EI 
+IF Attribute_38 = N and Attribute_42 = T THEN Class = N 
+IF Attribute_38 = A and Attribute_43 = N THEN Class = N 
+IF Attribute_38 = N and Attribute_43 = G THEN Class = N 
+IF Attribute_38 = N and Attribute_43 = N THEN Class = EI 
+IF Attribute_38 = N and Attribute_44 = G THEN Class = N 
+IF Attribute_38 = N and Attribute_46 = C THEN Class = EI 
+IF Attribute_38 = N and Attribute_46 = T THEN Class = N 
+IF Attribute_38 = N and Attribute_47 = G THEN Class = N 
+IF Attribute_38 = N and Attribute_48 = C THEN Class = N 
+IF Attribute_38 = N and Attribute_49 = A THEN Class = N 
+IF Attribute_38 = N and Attribute_50 = A THEN Class = EI 
+IF Attribute_38 = N and Attribute_50 = C THEN Class = N 
+IF Attribute_38 = N and Attribute_50 = G THEN Class = N 
+IF Attribute_38 = N and Attribute_51 = C THEN Class = EI 
+IF Attribute_38 = N and Attribute_51 = G THEN Class = N 
+IF Attribute_38 = N and Attribute_51 = T THEN Class = N 
+IF Attribute_38 = N and Attribute_52 = C THEN Class = N 
+IF Attribute_38 = N and Attribute_52 = G THEN Class = N 
+IF Attribute_38 = N and Attribute_52 = T THEN Class = EI 
+IF Attribute_38 = N and Attribute_53 = C THEN Class = N 
+IF Attribute_38 = N and Attribute_53 = T THEN Class = EI 
+IF Attribute_38 = N and Attribute_54 = C THEN Class = N 
+IF Attribute_38 = N and Attribute_54 = G THEN Class = EI 
+IF Attribute_38 = N and Attribute_54 = T THEN Class = N 
+IF Attribute_38 = N and Attribute_55 = A THEN Class = N 
+IF Attribute_38 = N and Attribute_55 = G THEN Class = EI 
+IF Attribute_38 = N and Attribute_55 = T THEN Class = N 
+IF Attribute_38 = N and Attribute_58 = G THEN Class = N 
+IF Attribute_38 = N and Attribute_58 = T THEN Class = EI 
+IF Attribute_38 = N and Attribute_59 = A THEN Class = N 
+IF Attribute_38 = N and Attribute_59 = G THEN Class = EI 
+IF Attribute_38 = N and Attribute_59 = T THEN Class = N 
+IF Attribute_38 = N and Attribute_60 = C THEN Class = N 
+IF Attribute_39 = G and Attribute_43 = N THEN Class = N 
+IF Attribute_39 = G and Attribute_56 = N THEN Class = N 
+IF Attribute_40 = C and Attribute_43 = N THEN Class = N 
+IF Attribute_40 = A and Attribute_56 = N THEN Class = N 
+IF Attribute_41 = C and Attribute_43 = N THEN Class = N 
+IF Attribute_41 = G and Attribute_56 = N THEN Class = N 
+IF Attribute_42 = C and Attribute_43 = N THEN Class = N 
+IF Attribute_42 = T and Attribute_56 = N THEN Class = N 
+IF Attribute_43 = N and Attribute_44 = T THEN Class = N 
+IF Attribute_43 = N and Attribute_45 = T THEN Class = N 
+IF Attribute_43 = N and Attribute_46 = T THEN Class = N 
+IF Attribute_43 = N and Attribute_47 = C THEN Class = N 
+IF Attribute_43 = N and Attribute_48 = A THEN Class = N 
+IF Attribute_43 = N and Attribute_49 = G THEN Class = N 
+IF Attribute_43 = N and Attribute_50 = T THEN Class = N 
+IF Attribute_43 = N and Attribute_51 = C THEN Class = N 
+IF Attribute_43 = N and Attribute_52 = T THEN Class = N 
+IF Attribute_43 = N and Attribute_53 = T THEN Class = N 
+IF Attribute_43 = N and Attribute_54 = A THEN Class = N 
+IF Attribute_43 = N and Attribute_55 = C THEN Class = N 
+IF Attribute_43 = C and Attribute_56 = N THEN Class = N 
+IF Attribute_43 = N and Attribute_56 = N THEN Class = EI 
+IF Attribute_43 = N and Attribute_56 = T THEN Class = N 
+IF Attribute_43 = N and Attribute_57 = A THEN Class = N 
+IF Attribute_43 = N and Attribute_58 = C THEN Class = N 
+IF Attribute_43 = N and Attribute_59 = T THEN Class = N 
+IF Attribute_43 = N and Attribute_60 = T THEN Class = N 
+IF Attribute_44 = T and Attribute_56 = N THEN Class = N 
+IF Attribute_45 = G and Attribute_56 = N THEN Class = N 
+IF Attribute_46 = T and Attribute_56 = N THEN Class = N 
+IF Attribute_47 = G and Attribute_56 = N THEN Class = N 
+IF Attribute_48 = A and Attribute_56 = N THEN Class = N 
+IF Attribute_49 = C and Attribute_56 = N THEN Class = N 
+IF Attribute_50 = C and Attribute_56 = N THEN Class = N 
+IF Attribute_51 = T and Attribute_56 = N THEN Class = N 
+IF Attribute_52 = G and Attribute_56 = N THEN Class = N 
+IF Attribute_53 = C and Attribute_56 = N THEN Class = N 
+IF Attribute_54 = C and Attribute_56 = N THEN Class = N 
+IF Attribute_55 = T and Attribute_56 = N THEN Class = N 
+IF Attribute_56 = N and Attribute_57 = G THEN Class = N 
+IF Attribute_56 = N and Attribute_58 = G THEN Class = N 
+IF Attribute_56 = N and Attribute_59 = A THEN Class = N 
+IF Attribute_56 = N and Attribute_60 = C THEN Class = N 
+
+All instances are correctly classified with 429 rules of 100% 'precision', STOP.
