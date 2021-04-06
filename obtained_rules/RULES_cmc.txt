@@ -1,0 +1,40 @@
+File of rules corresponding to the cmc dataset 
+ 
+IF Attribute_1 = Quartile_4 and Attribute_7 = 4 THEN Class = 1 
+IF Attribute_3 = 1 and Attribute_5 = 0 THEN Class = 1 
+IF Attribute_3 = 1 and Attribute_7 = 1 THEN Class = 1 
+IF Attribute_3 = 1 and Attribute_7 = 4 THEN Class = 3 
+IF Attribute_4 = Quartile_3 and Attribute_5 = 0 THEN Class = 1 
+IF Attribute_4 = Quartile_2 and Attribute_7 = 4 THEN Class = 1 
+IF Attribute_7 = 4 and Attribute_8 = 1 THEN Class = 1 
+IF Attribute_7 = 1 and Attribute_8 = 1 and Attribute_9 = 1 THEN Class = 1 
+IF Attribute_7 = 1 and Attribute_8 = 3 and Attribute_9 = 1 THEN Class = 2 
+IF Attribute_7 = 4 and Attribute_8 = 1 and Attribute_9 = 0 THEN Class = 1 
+IF Attribute_7 = 4 and Attribute_8 = 2 and Attribute_9 = 0 THEN Class = 1 
+IF Attribute_7 = 4 and Attribute_8 = 3 and Attribute_9 = 1 THEN Class = 2 
+IF Attribute_1 = Quartile_2 and Attribute_6 = 0 and Attribute_8 = 1 THEN Class = 1 
+IF Attribute_1 = Quartile_1 and Attribute_7 = 1 and Attribute_8 = 1 THEN Class = 1 
+IF Attribute_1 = Quartile_1 and Attribute_7 = 1 and Attribute_8 = 2 THEN Class = 2 
+IF Attribute_1 = Quartile_2 and Attribute_7 = 1 and Attribute_8 = 1 THEN Class = 1 
+IF Attribute_2 = 4 and Attribute_3 = 2 and Attribute_6 = 0 THEN Class = 1 
+IF Attribute_2 = 4 and Attribute_3 = 2 and Attribute_6 = 0 THEN Class = 1 
+IF Attribute_2 = 1 and Attribute_3 = 2 and Attribute_7 = 1 THEN Class = 1 
+IF Attribute_2 = 1 and Attribute_3 = 3 and Attribute_7 = 4 THEN Class = 1 
+IF Attribute_2 = 2 and Attribute_3 = 2 and Attribute_7 = 1 THEN Class = 1 
+IF Attribute_2 = 2 and Attribute_3 = 3 and Attribute_7 = 4 THEN Class = 2 
+IF Attribute_2 = 3 and Attribute_3 = 2 and Attribute_7 = 4 THEN Class = 1 
+IF Attribute_2 = 3 and Attribute_3 = 3 and Attribute_7 = 4 THEN Class = 1 
+IF Attribute_2 = 4 and Attribute_3 = 2 and Attribute_7 = 1 THEN Class = 2 
+IF Attribute_2 = 4 and Attribute_3 = 2 and Attribute_7 = 2 THEN Class = 1 
+IF Attribute_2 = 4 and Attribute_3 = 2 and Attribute_7 = 3 THEN Class = 1 
+IF Attribute_2 = 1 and Attribute_3 = 2 and Attribute_7 = 1 THEN Class = 1 
+IF Attribute_2 = 2 and Attribute_3 = 2 and Attribute_7 = 1 THEN Class = 1 
+IF Attribute_2 = 4 and Attribute_3 = 2 and Attribute_7 = 1 THEN Class = 2 
+IF Attribute_2 = 1 and Attribute_4 = Quartile_1 and Attribute_5 = 0 THEN Class = 1 
+IF Attribute_2 = 1 and Attribute_4 = Quartile_1 and Attribute_5 = 0 THEN Class = 1 
+IF Attribute_2 = 1 and Attribute_5 = 0 and Attribute_6 = 0 THEN Class = 1 
+IF Attribute_2 = 2 and Attribute_7 = 1 and Attribute_8 = 1 THEN Class = 1 
+IF Attribute_2 = 4 and Attribute_7 = 1 and Attribute_8 = 1 THEN Class = 1 
+IF Attribute_3 = 1 and Attribute_7 = 1 and Attribute_8 = 1 THEN Class = 1 
+
+All instances are correctly classified with 36 rules of 100% 'precision', STOP.

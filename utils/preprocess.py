@@ -9,8 +9,9 @@ def read_file(data_file, arff=None, id_column=None, class_column=None, discretiz
     :param data_file: path of the data file we want to read and preprocess
     :param arff: True if data file is an .arff file, None in other case
     :param id_column: number of the column if the data contains a column of type "id_number", None in other case
-    :param class_column: number of the column corresponding to the class, None if it is the last one
-    :param discretize_integers: True if we want to discretize integer values present in the data, False in other case
+    :param class_column: number of the column corresponding to the class, None if it is the last one (default)
+    :param discretize_integers: list of the indexes of integer values that we want to discretize present in the data
+           (like age, number of children, percentage of some medical measure, etc.), False in other case
     :return: train, validation and test preprocessed dataframes, with no column corresponding to id
              neither missing values and all columns of type categorical # TODO: write percentages
     """
@@ -31,7 +32,7 @@ def read_file(data_file, arff=None, id_column=None, class_column=None, discretiz
         column_type = df[column].dtypes
         if column_type == "float64":
             df[column] = discretize_values(df, column)
-        elif column_type == "int64" and discretize_integers:
+        elif column_type == "int64" and column in discretize_integers:
             df[column] = discretize_values(df, column)
 
     # Generate the dataframe with names of the columns
