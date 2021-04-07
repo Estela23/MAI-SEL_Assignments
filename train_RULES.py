@@ -1,8 +1,7 @@
 import pandas as pd
 import numpy as np
 import itertools
-from utils.create_rules import is_unique    # create_rule
-from utils.update_dataframe import create_rslt_df, update_unclassified_df
+from utils.utils_train import is_unique, create_rslt_df, update_unclassified_df, check_redundant, create_rule
 
 
 def train_RULES(df, data_name):
@@ -48,35 +47,43 @@ def train_RULES(df, data_name):
                 combination = list(itertools.product(*[values[idx[i]] for i in range(len(idx))]))
                 all_combinations.append(combination)
 
-            # For each combination of values we check if it is a candidate rule, in that case add it to the list 'rules'
+            # For each combination of values we check if it is a candidate rule and it is not irrelevant against all
+            # previous rules, in that case add it to the list 'rules'
             for idx, columns in enumerate(indexes):
                 for combination in all_combinations[idx]:
                     rslt_df = create_rslt_df(df, col_names, columns, combination)
                     if not rslt_df.empty:
                         valid_rule, valid_class = is_unique(rslt_df["Class"])
-                        # Create the rule of length 1
+                        # Create the rule of length i
                         if valid_rule:
-                            attributes = [col_names[columns[i]] for i in range(len(columns))]
-                            aux_rule = list(zip(attributes, combination))
-                            rule = [str(aux_rule[i][0]) + " = " + str(aux_rule[i][1]) for i in range(len(aux_rule))]
-                            output.write("IF {0} THEN Class = {1} \n".format(" and ".join(rule), valid_class))
-                            aux_rule.append(tuple(["Class", valid_class]))
-                            rules.append(aux_rule)
+                            aux_rule, write_rule = create_rule(col_names, columns, combination, valid_class)
+                            is_redundant = check_redundant(rules, aux_rule)
+                            if not is_redundant:
+                                output.write(write_rule)
+                                rules.append(aux_rule)
             unclassified = update_unclassified_df(unclassified, rules)
 
             # We stop if we have already classified all the instances in the dataset
             if unclassified.empty:
-                print("All instances are correctly classified with {0} rules of 100% 'precision', STOP.".format(len(rules)))
-                output.write("\nAll instances are correctly classified with {0} rules of 100% 'precision', STOP."
+                print("All instances in the train set are correctly classified with {0} rules of 100% 'precision', "
+                      "STOP.".format(len(rules)))
+                output.write("\nAll instances in the train set are correctly classified with {0} rules of 100% "
+                             "'precision', STOP."
                              .format(len(rules)))
                 break
 
         # Create rules from the unclassified examples with the maximum selectors possible = number of attributes
         if not unclassified.empty:
             for index, instance in unclassified.iterrows():
-                rule = list(zip(unclassified.columns, instance))
-                rules.append(rule)
+                aux_rule = list(zip(unclassified.columns, instance))
+                rule = [str(aux_rule[i][0]) + " = " + str(aux_rule[i][1]) for i in range(len(aux_rule))]
+                output.write("IF {0} THEN {1} \n".format(" and ".join(rule[:-1]), rule[-1]))
+                rules.append(aux_rule)
 
-        # TODO: Look for redundant (o como se llamen) rules!
+            print("All instances in the train set are correctly classified with {0} rules of 100% 'precision', "
+                  "STOP.".format(len(rules)))
+            output.write("\nAll instances in the train set are correctly classified with {0} rules of 100% "
+                         "'precision', STOP."
+                         .format(len(rules)))
 
     return rules

@@ -4,16 +4,16 @@ from sklearn.model_selection import train_test_split
 import numpy as np
 
 
-def read_file(data_file, arff=None, id_column=None, class_column=None, discretize_integers=None):
+def read_file_generate_dfs(data_file, arff=None, id_column=None, class_column=None, discretize_integers=None):
     """
     :param data_file: path of the data file we want to read and preprocess
     :param arff: True if data file is an .arff file, None in other case
     :param id_column: number of the column if the data contains a column of type "id_number", None in other case
     :param class_column: number of the column corresponding to the class, None if it is the last one (default)
-    :param discretize_integers: list of the indexes of integer values that we want to discretize present in the data
+    :param discretize_integers: list of the indexes of integer attributes of the data that we want to discretize
            (like age, number of children, percentage of some medical measure, etc.), False in other case
-    :return: train, validation and test preprocessed dataframes, with no column corresponding to id
-             neither missing values and all columns of type categorical # TODO: write percentages
+    :return: train (70%) and test (30%) preprocessed dataframes, with no column corresponding to id
+             neither missing values and all columns of type categorical
     """
 
     # Load data from external file
@@ -22,7 +22,7 @@ def read_file(data_file, arff=None, id_column=None, class_column=None, discretiz
         df = pd.DataFrame(data[0])
         df = df.stack().str.decode('utf-8').unstack()
     else:
-        df = pd.read_csv(data_file, header=None)    # , na_values=missing_values)
+        df = pd.read_csv(data_file, header=None)
 
     # With 'preprocess_df' we remove missing values, the column of id number and set the Class column at last position
     df = preprocess_df(df, id_column=id_column, class_column=class_column)
@@ -41,9 +41,11 @@ def read_file(data_file, arff=None, id_column=None, class_column=None, discretiz
     col_names.extend(["Class"])
     df = df.set_axis(col_names, axis=1)
 
-    # TODO: maybe we could do the train_test_split VALIDATION!
-    train, test = train_test_split(df, test_size=0.15, random_state=0, shuffle=True, stratify=df["Class"])
-    # train, val = train_test_split(train, test_size=0., random_state=0, shuffle=True, stratify=df["Class"])
+    # Drop duplicate instances from the dataset
+    df = df.drop_duplicates()
+
+    # Generate train and test dataframes preserving proportions of each class
+    train, test = train_test_split(df, test_size=0.3, random_state=0, shuffle=True, stratify=df["Class"])
 
     return train, test
 
@@ -61,11 +63,11 @@ def preprocess_df(df, id_column, class_column):
         df.drop(labels=class_column, axis=1, inplace=True)
         df.insert(len(df.columns), "Class", aux)
 
-    # Delete the column corresponding to id number in some databases
+    # Delete the column corresponding to id number existing in some databases
     if id_column is not None:
         df = df.drop(df.columns[[id_column]], axis=1)
 
-    # Delete instances with missing values, if any
+    # Delete instances with missing values
     df.replace({"?": np.nan}, inplace=True)
     df.dropna(inplace=True)
 
@@ -76,12 +78,10 @@ def discretize_values(df, column):
     """
     :param df: dataframe of which we want to discretize its columns
     :param column: column of type "float64" that will be discretized
-    :return: a discretized version of that column, with 4 possible values corresponding to the four quantiles
+    :return: a discretized version of that column, with 4 possible values corresponding to the four equally-sized bins
     """
     bins = np.linspace(min(df[column]), max(df[column]), num=5)
-    labels = ["Quartile_1", "Quartile_2", "Quartile_3", "Quartile_4"]
+    labels = ["Bin_1", "Bin_2", "Bin_3", "Bin_4"]
     discretized_column = pd.cut(df[column], bins=bins, labels=labels, include_lowest=True)
 
     return discretized_column
-
-

@@ -1,24 +1,42 @@
-from utils.preprocess import read_file
+from utils.preprocess import read_file_generate_dfs
 from train_RULES import train_RULES
-import numpy as np
+from test_RULES import test_RULES
 
 
-# data_file = "data/ballons/yellow-small+adult-stretch.data"
-# data_name = "yellow-small+adult-stretch"
-"""data_file = "data/splice.arff"
-data_name = "splice"""
-"""data_file = "data/breast-cancer-wisconsin/breast-cancer-wisconsin.data"
-data_name = "breast-cancer-wisconsin"""
-"""data_file = "data/breast-cancer-wisconsin/wpbc.data"  # arff=False, id_column=0, class_column=1
-data_name = "wpbc"""
-"""data_file = "data/new-thyroid/new-thyroid.data"  # arff=False, id_column=None, class_column=0, discretize_integers=True
-data_name = "new-thyroid"""
+def RULES_algorithm():
+    sizes = ["small", "medium", "large"]
+    for size in sizes:
+        if size == "small":
+            data_file = "data/new-thyroid/new-thyroid.data"
+            data_name = "new-thyroid"
+            arff = False
+            id_column = None
+            class_column = 0
+            discretize_integers = [1]
+        elif size == "medium":
+            data_file = "data/cmc.data"
+            data_name = "cmc"
+            arff = False
+            id_column = None
+            class_column = None
+            discretize_integers = [0, 3]
+        elif size == "large":
+            data_file = "data/splice.arff"
+            data_name = "splice"
+            arff = True
+            id_column = None
+            class_column = None
+            discretize_integers = None
+        else:
+            print("Data size must be fixed to some value, either 'small', 'medium' of 'large'.")
+            break
 
-data_file = "data/cmc.data"
-data_name = "cmc"
+        train_df, test_df = read_file_generate_dfs(data_file, arff=arff, id_column=id_column, class_column=class_column,
+                                                   discretize_integers=discretize_integers)
 
-train_df, test_df = read_file(data_file, arff=False, id_column=None, class_column=None, discretize_integers=[0, 3])
+        rules = train_RULES(df=train_df, data_name=data_name)
 
-rules = train_RULES(df=train_df, data_name=data_name)
+        result_df = test_RULES(df=test_df, inferred_rules=rules)
 
-test_RULES(df=test_df, inferred_rules=rules, data_name=data_name)
+
+RULES_algorithm()
