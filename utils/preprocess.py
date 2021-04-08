@@ -26,6 +26,10 @@ def read_file_generate_dfs(data_file, arff=None, id_column=None, class_column=No
     # With 'preprocess_df' we remove missing values, the column of id number and set the Class column at last position
     df = preprocess_df(df, id_column=id_column, class_column=class_column)
 
+    # For large datasets we select a subset, stratified with respect to the class to preserve the proportion of classes
+    if df.shape[0] > 10000:
+        df, discarded = train_test_split(df, test_size=0.8, random_state=0, shuffle=True, stratify=df.iloc[:, -1:])
+
     # Search for numerical columns and discretize them
     for column in df.columns[:-1]:
         column_type = df[column].dtypes
@@ -80,9 +84,12 @@ def discretize_values(df, column):
     :return: a discretized version of that column, with 4 possible values corresponding to the four quartiles
     """
     quartiles = df[column].quantile([0.25, 0.5, 0.75])
-    aux_bins = [min(df[column]), *quartiles, max(df[column])]
-    bins = [int(i) for i in aux_bins]
+    bins = [min(df[column]), *quartiles, max(df[column])]
     labels = ["Quartile_1", "Quartile_2", "Quartile_3", "Quartile_4"]
+    # If we have 'logarithmic' data and quartiles do not work we discretize the data in 4 equally sized bins
+    if len(bins) != len(set(bins)):
+        bins = np.linspace(min(df[column]), max(df[column]), 5)
+        labels = ["Bin_1", "Bin_2", "Bin_3", "Bin_4"]
     discretized_column = pd.cut(df[column], bins=bins, labels=labels, include_lowest=True)
 
     return discretized_column

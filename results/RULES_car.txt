@@ -1,0 +1,403 @@
+File of rules corresponding to the car dataset 
+ 
+IF Attribute_4 = 2 THEN Class = unacc ---> Coverage 33.1679% 
+IF Attribute_6 = low THEN Class = unacc ---> Coverage 34.6567% 
+IF Attribute_1 = high and Attribute_2 = vhigh THEN Class = unacc ---> Coverage 6.2035% 
+IF Attribute_1 = vhigh and Attribute_2 = high THEN Class = unacc ---> Coverage 5.8726% 
+IF Attribute_1 = vhigh and Attribute_2 = vhigh THEN Class = unacc ---> Coverage 6.3689% 
+IF Attribute_1 = vhigh and Attribute_3 = 2 and Attribute_5 = small THEN Class = unacc ---> Coverage 1.9851% 
+IF Attribute_1 = high and Attribute_5 = small and Attribute_6 = med THEN Class = unacc ---> Coverage 2.8122% 
+IF Attribute_1 = vhigh and Attribute_5 = small and Attribute_6 = med THEN Class = unacc ---> Coverage 2.2333% 
+IF Attribute_2 = vhigh and Attribute_5 = small and Attribute_6 = med THEN Class = unacc ---> Coverage 2.7295% 
+IF Attribute_3 = 2 and Attribute_4 = more and Attribute_5 = small THEN Class = unacc ---> Coverage 2.3160% 
+IF Attribute_1 = high and Attribute_2 = high and Attribute_3 = 2 and Attribute_5 = small THEN Class = unacc ---> Coverage 0.5790% 
+IF Attribute_1 = high and Attribute_2 = med and Attribute_3 = 3 and Attribute_5 = small THEN Class = unacc ---> Coverage 0.4136% 
+IF Attribute_1 = low and Attribute_2 = high and Attribute_3 = 2 and Attribute_5 = small THEN Class = unacc ---> Coverage 0.3309% 
+IF Attribute_1 = med and Attribute_2 = vhigh and Attribute_3 = 2 and Attribute_5 = small THEN Class = unacc ---> Coverage 0.4136% 
+IF Attribute_1 = vhigh and Attribute_2 = low and Attribute_3 = 2 and Attribute_5 = big THEN Class = unacc ---> Coverage 0.3309% 
+IF Attribute_1 = vhigh and Attribute_2 = low and Attribute_3 = 3 and Attribute_5 = small THEN Class = unacc ---> Coverage 0.4136% 
+IF Attribute_1 = med and Attribute_2 = med and Attribute_3 = 3 and Attribute_6 = med THEN Class = acc ---> Coverage 0.2481% 
+IF Attribute_1 = vhigh and Attribute_2 = low and Attribute_3 = 2 and Attribute_6 = med THEN Class = unacc ---> Coverage 0.4963% 
+IF Attribute_1 = high and Attribute_2 = high and Attribute_4 = 4 and Attribute_6 = high THEN Class = acc ---> Coverage 0.6617% 
+IF Attribute_1 = high and Attribute_2 = high and Attribute_4 = more and Attribute_6 = high THEN Class = acc ---> Coverage 0.6617% 
+IF Attribute_1 = high and Attribute_2 = low and Attribute_4 = 4 and Attribute_6 = high THEN Class = acc ---> Coverage 0.6617% 
+IF Attribute_1 = high and Attribute_2 = low and Attribute_4 = more and Attribute_6 = high THEN Class = acc ---> Coverage 0.5790% 
+IF Attribute_1 = high and Attribute_2 = med and Attribute_4 = 4 and Attribute_6 = high THEN Class = acc ---> Coverage 0.8271% 
+IF Attribute_1 = low and Attribute_2 = high and Attribute_4 = 4 and Attribute_6 = med THEN Class = acc ---> Coverage 0.3309% 
+IF Attribute_1 = low and Attribute_2 = high and Attribute_4 = more and Attribute_6 = med THEN Class = acc ---> Coverage 0.5790% 
+IF Attribute_1 = low and Attribute_2 = vhigh and Attribute_4 = 4 and Attribute_6 = high THEN Class = acc ---> Coverage 0.6617% 
+IF Attribute_1 = low and Attribute_2 = vhigh and Attribute_4 = more and Attribute_6 = high THEN Class = acc ---> Coverage 0.8271% 
+IF Attribute_1 = med and Attribute_2 = high and Attribute_4 = 4 and Attribute_6 = high THEN Class = acc ---> Coverage 0.8271% 
+IF Attribute_1 = med and Attribute_2 = high and Attribute_4 = more and Attribute_6 = high THEN Class = acc ---> Coverage 0.6617% 
+IF Attribute_1 = med and Attribute_2 = med and Attribute_4 = 4 and Attribute_6 = med THEN Class = acc ---> Coverage 0.6617% 
+IF Attribute_1 = med and Attribute_2 = vhigh and Attribute_4 = 4 and Attribute_6 = high THEN Class = acc ---> Coverage 0.7444% 
+IF Attribute_1 = med and Attribute_2 = vhigh and Attribute_4 = more and Attribute_6 = high THEN Class = acc ---> Coverage 0.4963% 
+IF Attribute_1 = med and Attribute_2 = vhigh and Attribute_4 = more and Attribute_6 = med THEN Class = acc ---> Coverage 0.3309% 
+IF Attribute_1 = vhigh and Attribute_2 = low and Attribute_4 = 4 and Attribute_6 = high THEN Class = acc ---> Coverage 0.6617% 
+IF Attribute_1 = vhigh and Attribute_2 = low and Attribute_4 = more and Attribute_6 = high THEN Class = acc ---> Coverage 0.5790% 
+IF Attribute_1 = vhigh and Attribute_2 = med and Attribute_4 = 4 and Attribute_6 = high THEN Class = acc ---> Coverage 0.8271% 
+IF Attribute_1 = med and Attribute_2 = high and Attribute_5 = small and Attribute_6 = med THEN Class = unacc ---> Coverage 0.5790% 
+IF Attribute_1 = high and Attribute_3 = 2 and Attribute_5 = med and Attribute_6 = med THEN Class = unacc ---> Coverage 0.6617% 
+IF Attribute_1 = vhigh and Attribute_3 = 2 and Attribute_5 = med and Attribute_6 = med THEN Class = unacc ---> Coverage 0.7444% 
+IF Attribute_2 = vhigh and Attribute_3 = 3 and Attribute_4 = 4 and Attribute_5 = small THEN Class = unacc ---> Coverage 0.5790% 
+IF Attribute_2 = vhigh and Attribute_3 = 4 and Attribute_4 = more and Attribute_5 = small THEN Class = unacc ---> Coverage 0.5790% 
+IF Attribute_2 = med and Attribute_3 = 2 and Attribute_4 = 4 and Attribute_6 = high THEN Class = acc ---> Coverage 0.5790% 
+IF Attribute_2 = high and Attribute_3 = 2 and Attribute_5 = small and Attribute_6 = med THEN Class = unacc ---> Coverage 0.4963% 
+IF Attribute_2 = vhigh and Attribute_3 = 2 and Attribute_5 = med and Attribute_6 = med THEN Class = unacc ---> Coverage 0.6617% 
+IF Attribute_1 = high and Attribute_2 = high and Attribute_3 = 3 and Attribute_4 = 4 and Attribute_5 = small THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = high and Attribute_2 = high and Attribute_3 = 4 and Attribute_4 = 4 and Attribute_5 = big THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = high and Attribute_2 = high and Attribute_3 = 4 and Attribute_4 = 4 and Attribute_5 = small THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = high and Attribute_2 = high and Attribute_3 = 5more and Attribute_4 = 4 and Attribute_5 = small THEN Class = unacc ---> Coverage 0.1654% 
+IF Attribute_1 = high and Attribute_2 = low and Attribute_3 = 2 and Attribute_4 = 4 and Attribute_5 = big THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = high and Attribute_2 = low and Attribute_3 = 2 and Attribute_4 = more and Attribute_5 = med THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = high and Attribute_2 = low and Attribute_3 = 3 and Attribute_4 = 4 and Attribute_5 = small THEN Class = unacc ---> Coverage 0.1654% 
+IF Attribute_1 = high and Attribute_2 = low and Attribute_3 = 4 and Attribute_4 = 4 and Attribute_5 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = high and Attribute_2 = low and Attribute_3 = 4 and Attribute_4 = more and Attribute_5 = small THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = high and Attribute_2 = low and Attribute_3 = 5more and Attribute_4 = more and Attribute_5 = big THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = high and Attribute_2 = med and Attribute_3 = 2 and Attribute_4 = more and Attribute_5 = big THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = high and Attribute_2 = med and Attribute_3 = 3 and Attribute_4 = 4 and Attribute_5 = big THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = high and Attribute_2 = med and Attribute_3 = 4 and Attribute_4 = 4 and Attribute_5 = big THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = high and Attribute_2 = med and Attribute_3 = 4 and Attribute_4 = more and Attribute_5 = big THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = high and Attribute_2 = med and Attribute_3 = 4 and Attribute_4 = more and Attribute_5 = med THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = high and Attribute_2 = med and Attribute_3 = 4 and Attribute_4 = more and Attribute_5 = small THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = high and Attribute_2 = med and Attribute_3 = 5more and Attribute_4 = 4 and Attribute_5 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = high and Attribute_2 = med and Attribute_3 = 5more and Attribute_4 = 4 and Attribute_5 = small THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = high and Attribute_3 = 2 and Attribute_4 = 4 and Attribute_5 = med THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = high and Attribute_3 = 2 and Attribute_4 = more and Attribute_5 = big THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = high and Attribute_3 = 4 and Attribute_4 = more and Attribute_5 = small THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = high and Attribute_3 = 5more and Attribute_4 = 4 and Attribute_5 = big THEN Class = vgood ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_3 = 2 and Attribute_4 = 4 and Attribute_5 = big THEN Class = good ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_3 = 3 and Attribute_4 = more and Attribute_5 = med THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_3 = 4 and Attribute_4 = more and Attribute_5 = small THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_3 = 5more and Attribute_4 = 4 and Attribute_5 = small THEN Class = good ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_3 = 2 and Attribute_4 = 4 and Attribute_5 = big THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_3 = 3 and Attribute_4 = 4 and Attribute_5 = big THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_3 = 3 and Attribute_4 = more and Attribute_5 = big THEN Class = vgood ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_3 = 4 and Attribute_4 = 4 and Attribute_5 = big THEN Class = vgood ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_3 = 4 and Attribute_4 = more and Attribute_5 = big THEN Class = good ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_3 = 4 and Attribute_4 = more and Attribute_5 = med THEN Class = good ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = vhigh and Attribute_3 = 2 and Attribute_4 = 4 and Attribute_5 = big THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_2 = vhigh and Attribute_3 = 3 and Attribute_4 = 4 and Attribute_5 = med THEN Class = unacc ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_2 = vhigh and Attribute_3 = 4 and Attribute_4 = more and Attribute_5 = big THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_2 = vhigh and Attribute_3 = 4 and Attribute_4 = more and Attribute_5 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_2 = vhigh and Attribute_3 = 5more and Attribute_4 = 4 and Attribute_5 = big THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = vhigh and Attribute_3 = 5more and Attribute_4 = 4 and Attribute_5 = small THEN Class = unacc ---> Coverage 0.1654% 
+IF Attribute_1 = med and Attribute_2 = high and Attribute_3 = 2 and Attribute_4 = 4 and Attribute_5 = big THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = med and Attribute_2 = high and Attribute_3 = 5more and Attribute_4 = 4 and Attribute_5 = small THEN Class = unacc ---> Coverage 0.1654% 
+IF Attribute_1 = med and Attribute_2 = high and Attribute_3 = 5more and Attribute_4 = more and Attribute_5 = big THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = low and Attribute_3 = 2 and Attribute_4 = 4 and Attribute_5 = big THEN Class = good ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = low and Attribute_3 = 3 and Attribute_4 = more and Attribute_5 = med THEN Class = good ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = low and Attribute_3 = 4 and Attribute_4 = 4 and Attribute_5 = small THEN Class = good ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = low and Attribute_3 = 4 and Attribute_4 = more and Attribute_5 = small THEN Class = good ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = low and Attribute_3 = 5more and Attribute_4 = more and Attribute_5 = big THEN Class = vgood ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = med and Attribute_3 = 3 and Attribute_4 = 4 and Attribute_5 = big THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = med and Attribute_3 = 3 and Attribute_4 = 4 and Attribute_5 = med THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = med and Attribute_3 = 3 and Attribute_4 = more and Attribute_5 = big THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = med and Attribute_3 = 3 and Attribute_4 = more and Attribute_5 = med THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = med and Attribute_3 = 3 and Attribute_4 = more and Attribute_5 = small THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = med and Attribute_3 = 4 and Attribute_4 = 4 and Attribute_5 = small THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = med and Attribute_3 = 5more and Attribute_4 = 4 and Attribute_5 = big THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = med and Attribute_3 = 5more and Attribute_4 = 4 and Attribute_5 = med THEN Class = vgood ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = vhigh and Attribute_3 = 3 and Attribute_4 = more and Attribute_5 = big THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = vhigh and Attribute_3 = 3 and Attribute_4 = more and Attribute_5 = med THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = vhigh and Attribute_3 = 3 and Attribute_4 = more and Attribute_5 = small THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = vhigh and Attribute_3 = 4 and Attribute_4 = 4 and Attribute_5 = big THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = med and Attribute_2 = vhigh and Attribute_3 = 4 and Attribute_4 = more and Attribute_5 = big THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = med and Attribute_2 = vhigh and Attribute_3 = 4 and Attribute_4 = more and Attribute_5 = med THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = vhigh and Attribute_3 = 5more and Attribute_4 = more and Attribute_5 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = med and Attribute_2 = vhigh and Attribute_3 = 5more and Attribute_4 = more and Attribute_5 = small THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = vhigh and Attribute_2 = low and Attribute_3 = 3 and Attribute_4 = 4 and Attribute_5 = big THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = vhigh and Attribute_2 = low and Attribute_3 = 3 and Attribute_4 = more and Attribute_5 = big THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = vhigh and Attribute_2 = low and Attribute_3 = 4 and Attribute_4 = 4 and Attribute_5 = med THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = vhigh and Attribute_2 = low and Attribute_3 = 4 and Attribute_4 = more and Attribute_5 = med THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = vhigh and Attribute_2 = low and Attribute_3 = 4 and Attribute_4 = more and Attribute_5 = small THEN Class = unacc ---> Coverage 0.1654% 
+IF Attribute_1 = vhigh and Attribute_2 = low and Attribute_3 = 5more and Attribute_4 = 4 and Attribute_5 = small THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = vhigh and Attribute_2 = med and Attribute_3 = 2 and Attribute_4 = more and Attribute_5 = big THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = vhigh and Attribute_2 = med and Attribute_3 = 4 and Attribute_4 = 4 and Attribute_5 = big THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = vhigh and Attribute_2 = med and Attribute_3 = 5more and Attribute_4 = 4 and Attribute_5 = med THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = vhigh and Attribute_2 = med and Attribute_3 = 5more and Attribute_4 = more and Attribute_5 = small THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = high and Attribute_2 = low and Attribute_3 = 2 and Attribute_4 = 4 and Attribute_6 = med THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = high and Attribute_2 = low and Attribute_3 = 2 and Attribute_4 = more and Attribute_6 = med THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = high and Attribute_2 = low and Attribute_3 = 4 and Attribute_4 = more and Attribute_6 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = high and Attribute_2 = med and Attribute_3 = 3 and Attribute_4 = 4 and Attribute_6 = med THEN Class = unacc ---> Coverage 0.1654% 
+IF Attribute_1 = high and Attribute_2 = med and Attribute_3 = 4 and Attribute_4 = 4 and Attribute_6 = med THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = high and Attribute_2 = med and Attribute_3 = 4 and Attribute_4 = more and Attribute_6 = high THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = high and Attribute_2 = med and Attribute_3 = 4 and Attribute_4 = more and Attribute_6 = med THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = high and Attribute_2 = med and Attribute_3 = 5more and Attribute_4 = 4 and Attribute_6 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = high and Attribute_2 = med and Attribute_3 = 5more and Attribute_4 = more and Attribute_6 = high THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_2 = high and Attribute_3 = 4 and Attribute_4 = more and Attribute_6 = high THEN Class = vgood ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_2 = high and Attribute_3 = 5more and Attribute_4 = more and Attribute_6 = high THEN Class = vgood ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_3 = 2 and Attribute_4 = 4 and Attribute_6 = high THEN Class = good ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_3 = 3 and Attribute_4 = more and Attribute_6 = high THEN Class = vgood ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_3 = 3 and Attribute_4 = more and Attribute_6 = med THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_3 = 4 and Attribute_4 = more and Attribute_6 = high THEN Class = vgood ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_3 = 5more and Attribute_4 = 4 and Attribute_6 = med THEN Class = good ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_3 = 5more and Attribute_4 = more and Attribute_6 = high THEN Class = vgood ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_3 = 2 and Attribute_4 = 4 and Attribute_6 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_3 = 2 and Attribute_4 = more and Attribute_6 = med THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_3 = 3 and Attribute_4 = 4 and Attribute_6 = high THEN Class = good ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_3 = 3 and Attribute_4 = 4 and Attribute_6 = med THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_3 = 4 and Attribute_4 = 4 and Attribute_6 = med THEN Class = good ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = high and Attribute_3 = 3 and Attribute_4 = more and Attribute_6 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = med and Attribute_2 = high and Attribute_3 = 4 and Attribute_4 = 4 and Attribute_6 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = med and Attribute_2 = low and Attribute_3 = 2 and Attribute_4 = 4 and Attribute_6 = high THEN Class = good ---> Coverage 0.1654% 
+IF Attribute_1 = med and Attribute_2 = low and Attribute_3 = 3 and Attribute_4 = 4 and Attribute_6 = med THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = low and Attribute_3 = 3 and Attribute_4 = more and Attribute_6 = med THEN Class = good ---> Coverage 0.1654% 
+IF Attribute_1 = med and Attribute_2 = low and Attribute_3 = 4 and Attribute_4 = 4 and Attribute_6 = med THEN Class = good ---> Coverage 0.1654% 
+IF Attribute_1 = med and Attribute_2 = low and Attribute_3 = 4 and Attribute_4 = more and Attribute_6 = med THEN Class = good ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = low and Attribute_3 = 5more and Attribute_4 = more and Attribute_6 = high THEN Class = vgood ---> Coverage 0.1654% 
+IF Attribute_1 = med and Attribute_2 = med and Attribute_3 = 3 and Attribute_4 = 4 and Attribute_6 = high THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = med and Attribute_2 = med and Attribute_3 = 3 and Attribute_4 = more and Attribute_6 = high THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = med and Attribute_3 = 4 and Attribute_4 = 4 and Attribute_6 = high THEN Class = vgood ---> Coverage 0.1654% 
+IF Attribute_1 = med and Attribute_2 = med and Attribute_3 = 4 and Attribute_4 = more and Attribute_6 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = med and Attribute_2 = med and Attribute_3 = 5more and Attribute_4 = more and Attribute_6 = med THEN Class = acc ---> Coverage 0.2481% 
+IF Attribute_1 = med and Attribute_2 = vhigh and Attribute_3 = 2 and Attribute_4 = 4 and Attribute_6 = med THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = vhigh and Attribute_3 = 5more and Attribute_4 = 4 and Attribute_6 = med THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = vhigh and Attribute_2 = med and Attribute_3 = 3 and Attribute_4 = more and Attribute_6 = high THEN Class = acc ---> Coverage 0.2481% 
+IF Attribute_1 = vhigh and Attribute_2 = med and Attribute_3 = 4 and Attribute_4 = 4 and Attribute_6 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = vhigh and Attribute_2 = med and Attribute_3 = 4 and Attribute_4 = more and Attribute_6 = high THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = vhigh and Attribute_2 = med and Attribute_3 = 5more and Attribute_4 = more and Attribute_6 = high THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = high and Attribute_2 = high and Attribute_3 = 3 and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = high and Attribute_2 = high and Attribute_3 = 3 and Attribute_5 = med and Attribute_6 = med THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = high and Attribute_2 = high and Attribute_3 = 3 and Attribute_5 = small and Attribute_6 = high THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = high and Attribute_2 = high and Attribute_3 = 5more and Attribute_5 = small and Attribute_6 = high THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = high and Attribute_2 = low and Attribute_3 = 2 and Attribute_5 = med and Attribute_6 = high THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = high and Attribute_2 = low and Attribute_3 = 2 and Attribute_5 = small and Attribute_6 = high THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = high and Attribute_2 = low and Attribute_3 = 3 and Attribute_5 = big and Attribute_6 = high THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = high and Attribute_2 = low and Attribute_3 = 3 and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = high and Attribute_2 = low and Attribute_3 = 3 and Attribute_5 = med and Attribute_6 = high THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = high and Attribute_2 = low and Attribute_3 = 4 and Attribute_5 = small and Attribute_6 = high THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = high and Attribute_2 = low and Attribute_3 = 5more and Attribute_5 = big and Attribute_6 = high THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = high and Attribute_2 = low and Attribute_3 = 5more and Attribute_5 = med and Attribute_6 = high THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = high and Attribute_2 = low and Attribute_3 = 5more and Attribute_5 = med and Attribute_6 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = high and Attribute_2 = low and Attribute_3 = 5more and Attribute_5 = small and Attribute_6 = high THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = high and Attribute_2 = med and Attribute_3 = 2 and Attribute_5 = med and Attribute_6 = high THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = high and Attribute_2 = med and Attribute_3 = 4 and Attribute_5 = big and Attribute_6 = high THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = high and Attribute_2 = med and Attribute_3 = 4 and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = high and Attribute_3 = 2 and Attribute_5 = big and Attribute_6 = med THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = high and Attribute_3 = 3 and Attribute_5 = med and Attribute_6 = med THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = high and Attribute_3 = 3 and Attribute_5 = small and Attribute_6 = high THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_2 = high and Attribute_3 = 3 and Attribute_5 = small and Attribute_6 = med THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = high and Attribute_3 = 4 and Attribute_5 = med and Attribute_6 = med THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = high and Attribute_3 = 4 and Attribute_5 = small and Attribute_6 = high THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = high and Attribute_3 = 5more and Attribute_5 = med and Attribute_6 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_3 = 2 and Attribute_5 = big and Attribute_6 = high THEN Class = vgood ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_3 = 2 and Attribute_5 = big and Attribute_6 = med THEN Class = good ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_3 = 2 and Attribute_5 = med and Attribute_6 = high THEN Class = good ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_3 = 3 and Attribute_5 = big and Attribute_6 = high THEN Class = vgood ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_3 = 3 and Attribute_5 = med and Attribute_6 = high THEN Class = good ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_3 = 3 and Attribute_5 = small and Attribute_6 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_3 = 4 and Attribute_5 = big and Attribute_6 = med THEN Class = good ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_3 = 4 and Attribute_5 = med and Attribute_6 = high THEN Class = vgood ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_3 = 4 and Attribute_5 = med and Attribute_6 = med THEN Class = good ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_3 = 4 and Attribute_5 = small and Attribute_6 = high THEN Class = good ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_3 = 5more and Attribute_5 = big and Attribute_6 = high THEN Class = vgood ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_3 = 5more and Attribute_5 = big and Attribute_6 = med THEN Class = good ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_3 = 5more and Attribute_5 = med and Attribute_6 = high THEN Class = vgood ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_3 = 2 and Attribute_5 = big and Attribute_6 = med THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_3 = 2 and Attribute_5 = med and Attribute_6 = med THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_3 = 2 and Attribute_5 = small and Attribute_6 = high THEN Class = unacc ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_3 = 3 and Attribute_5 = big and Attribute_6 = med THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_3 = 4 and Attribute_5 = big and Attribute_6 = high THEN Class = vgood ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_3 = 4 and Attribute_5 = small and Attribute_6 = high THEN Class = good ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_3 = 5more and Attribute_5 = big and Attribute_6 = high THEN Class = vgood ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_3 = 5more and Attribute_5 = med and Attribute_6 = high THEN Class = vgood ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_3 = 5more and Attribute_5 = med and Attribute_6 = med THEN Class = good ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = vhigh and Attribute_3 = 3 and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_2 = vhigh and Attribute_3 = 3 and Attribute_5 = med and Attribute_6 = high THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = vhigh and Attribute_3 = 3 and Attribute_5 = small and Attribute_6 = high THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = vhigh and Attribute_3 = 4 and Attribute_5 = big and Attribute_6 = high THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_2 = vhigh and Attribute_3 = 4 and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = vhigh and Attribute_3 = 5more and Attribute_5 = big and Attribute_6 = med THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = vhigh and Attribute_3 = 5more and Attribute_5 = med and Attribute_6 = high THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = vhigh and Attribute_3 = 5more and Attribute_5 = med and Attribute_6 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = med and Attribute_2 = high and Attribute_3 = 2 and Attribute_5 = big and Attribute_6 = high THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = high and Attribute_3 = 2 and Attribute_5 = med and Attribute_6 = med THEN Class = unacc ---> Coverage 0.2481% 
+IF Attribute_1 = med and Attribute_2 = high and Attribute_3 = 2 and Attribute_5 = small and Attribute_6 = high THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = high and Attribute_3 = 3 and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = med and Attribute_2 = high and Attribute_3 = 4 and Attribute_5 = med and Attribute_6 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = med and Attribute_2 = high and Attribute_3 = 5more and Attribute_5 = big and Attribute_6 = high THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = high and Attribute_3 = 5more and Attribute_5 = med and Attribute_6 = med THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = low and Attribute_3 = 2 and Attribute_5 = med and Attribute_6 = high THEN Class = good ---> Coverage 0.1654% 
+IF Attribute_1 = med and Attribute_2 = low and Attribute_3 = 2 and Attribute_5 = small and Attribute_6 = med THEN Class = unacc ---> Coverage 0.1654% 
+IF Attribute_1 = med and Attribute_2 = low and Attribute_3 = 3 and Attribute_5 = big and Attribute_6 = high THEN Class = vgood ---> Coverage 0.1654% 
+IF Attribute_1 = med and Attribute_2 = low and Attribute_3 = 4 and Attribute_5 = big and Attribute_6 = med THEN Class = good ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = low and Attribute_3 = 4 and Attribute_5 = med and Attribute_6 = med THEN Class = good ---> Coverage 0.1654% 
+IF Attribute_1 = med and Attribute_2 = low and Attribute_3 = 4 and Attribute_5 = small and Attribute_6 = med THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = low and Attribute_3 = 5more and Attribute_5 = med and Attribute_6 = med THEN Class = good ---> Coverage 0.1654% 
+IF Attribute_1 = med and Attribute_2 = low and Attribute_3 = 5more and Attribute_5 = small and Attribute_6 = high THEN Class = good ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = med and Attribute_3 = 2 and Attribute_5 = big and Attribute_6 = high THEN Class = vgood ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = med and Attribute_3 = 2 and Attribute_5 = med and Attribute_6 = high THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = med and Attribute_2 = med and Attribute_3 = 2 and Attribute_5 = med and Attribute_6 = med THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = med and Attribute_3 = 2 and Attribute_5 = small and Attribute_6 = high THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = med and Attribute_3 = 3 and Attribute_5 = big and Attribute_6 = high THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = med and Attribute_3 = 4 and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = med and Attribute_2 = med and Attribute_3 = 5more and Attribute_5 = med and Attribute_6 = high THEN Class = vgood ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = med and Attribute_3 = 5more and Attribute_5 = small and Attribute_6 = med THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = vhigh and Attribute_3 = 2 and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = vhigh and Attribute_3 = 3 and Attribute_5 = med and Attribute_6 = high THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = vhigh and Attribute_3 = 3 and Attribute_5 = med and Attribute_6 = med THEN Class = unacc ---> Coverage 0.1654% 
+IF Attribute_1 = med and Attribute_2 = vhigh and Attribute_3 = 3 and Attribute_5 = small and Attribute_6 = high THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = vhigh and Attribute_3 = 4 and Attribute_5 = big and Attribute_6 = high THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = med and Attribute_2 = vhigh and Attribute_3 = 4 and Attribute_5 = med and Attribute_6 = high THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = vhigh and Attribute_3 = 4 and Attribute_5 = med and Attribute_6 = med THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = vhigh and Attribute_3 = 5more and Attribute_5 = big and Attribute_6 = high THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = med and Attribute_2 = vhigh and Attribute_3 = 5more and Attribute_5 = small and Attribute_6 = high THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = vhigh and Attribute_2 = low and Attribute_3 = 2 and Attribute_5 = med and Attribute_6 = high THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = vhigh and Attribute_2 = low and Attribute_3 = 3 and Attribute_5 = med and Attribute_6 = med THEN Class = unacc ---> Coverage 0.1654% 
+IF Attribute_1 = vhigh and Attribute_2 = low and Attribute_3 = 4 and Attribute_5 = big and Attribute_6 = high THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = vhigh and Attribute_2 = low and Attribute_3 = 4 and Attribute_5 = med and Attribute_6 = high THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = vhigh and Attribute_2 = low and Attribute_3 = 4 and Attribute_5 = med and Attribute_6 = med THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = vhigh and Attribute_2 = low and Attribute_3 = 5more and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = vhigh and Attribute_2 = low and Attribute_3 = 5more and Attribute_5 = med and Attribute_6 = high THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = vhigh and Attribute_2 = low and Attribute_3 = 5more and Attribute_5 = small and Attribute_6 = high THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = vhigh and Attribute_2 = med and Attribute_3 = 2 and Attribute_5 = med and Attribute_6 = high THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = vhigh and Attribute_2 = med and Attribute_3 = 4 and Attribute_5 = big and Attribute_6 = high THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = vhigh and Attribute_2 = med and Attribute_3 = 4 and Attribute_5 = med and Attribute_6 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = vhigh and Attribute_2 = med and Attribute_3 = 4 and Attribute_5 = small and Attribute_6 = high THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = high and Attribute_2 = high and Attribute_4 = 4 and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.2481% 
+IF Attribute_1 = high and Attribute_2 = high and Attribute_4 = more and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.3309% 
+IF Attribute_1 = high and Attribute_2 = low and Attribute_4 = 4 and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.2481% 
+IF Attribute_1 = high and Attribute_2 = low and Attribute_4 = more and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.2481% 
+IF Attribute_1 = high and Attribute_2 = low and Attribute_4 = more and Attribute_5 = med and Attribute_6 = med THEN Class = acc ---> Coverage 0.2481% 
+IF Attribute_1 = high and Attribute_2 = med and Attribute_4 = 4 and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = high and Attribute_2 = med and Attribute_4 = more and Attribute_5 = big and Attribute_6 = high THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = high and Attribute_2 = med and Attribute_4 = more and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.3309% 
+IF Attribute_1 = high and Attribute_2 = med and Attribute_4 = more and Attribute_5 = med and Attribute_6 = high THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_2 = high and Attribute_4 = 4 and Attribute_5 = big and Attribute_6 = high THEN Class = vgood ---> Coverage 0.3309% 
+IF Attribute_1 = low and Attribute_2 = high and Attribute_4 = 4 and Attribute_5 = small and Attribute_6 = high THEN Class = acc ---> Coverage 0.2481% 
+IF Attribute_1 = low and Attribute_2 = high and Attribute_4 = more and Attribute_5 = big and Attribute_6 = high THEN Class = vgood ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_2 = high and Attribute_4 = more and Attribute_5 = med and Attribute_6 = high THEN Class = vgood ---> Coverage 0.2481% 
+IF Attribute_1 = low and Attribute_2 = high and Attribute_4 = more and Attribute_5 = small and Attribute_6 = high THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_4 = 4 and Attribute_5 = big and Attribute_6 = high THEN Class = vgood ---> Coverage 0.2481% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_4 = 4 and Attribute_5 = big and Attribute_6 = med THEN Class = good ---> Coverage 0.3309% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_4 = 4 and Attribute_5 = small and Attribute_6 = high THEN Class = good ---> Coverage 0.3309% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_4 = 4 and Attribute_5 = small and Attribute_6 = med THEN Class = acc ---> Coverage 0.2481% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_4 = more and Attribute_5 = big and Attribute_6 = high THEN Class = vgood ---> Coverage 0.3309% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_4 = more and Attribute_5 = big and Attribute_6 = med THEN Class = good ---> Coverage 0.2481% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_4 = more and Attribute_5 = med and Attribute_6 = high THEN Class = vgood ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_4 = more and Attribute_5 = small and Attribute_6 = high THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_4 = 4 and Attribute_5 = big and Attribute_6 = high THEN Class = vgood ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_4 = 4 and Attribute_5 = big and Attribute_6 = med THEN Class = good ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_4 = 4 and Attribute_5 = med and Attribute_6 = high THEN Class = vgood ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_4 = 4 and Attribute_5 = small and Attribute_6 = high THEN Class = good ---> Coverage 0.2481% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_4 = 4 and Attribute_5 = small and Attribute_6 = med THEN Class = acc ---> Coverage 0.2481% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_4 = more and Attribute_5 = big and Attribute_6 = high THEN Class = vgood ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_4 = more and Attribute_5 = big and Attribute_6 = med THEN Class = good ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_4 = more and Attribute_5 = med and Attribute_6 = med THEN Class = good ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_2 = vhigh and Attribute_4 = 4 and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_2 = vhigh and Attribute_4 = more and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.2481% 
+IF Attribute_1 = med and Attribute_2 = high and Attribute_4 = 4 and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.3309% 
+IF Attribute_1 = med and Attribute_2 = high and Attribute_4 = more and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.3309% 
+IF Attribute_1 = med and Attribute_2 = low and Attribute_4 = 4 and Attribute_5 = big and Attribute_6 = high THEN Class = vgood ---> Coverage 0.1654% 
+IF Attribute_1 = med and Attribute_2 = low and Attribute_4 = 4 and Attribute_5 = big and Attribute_6 = med THEN Class = good ---> Coverage 0.2481% 
+IF Attribute_1 = med and Attribute_2 = low and Attribute_4 = 4 and Attribute_5 = small and Attribute_6 = high THEN Class = good ---> Coverage 0.3309% 
+IF Attribute_1 = med and Attribute_2 = low and Attribute_4 = 4 and Attribute_5 = small and Attribute_6 = med THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = low and Attribute_4 = more and Attribute_5 = big and Attribute_6 = high THEN Class = vgood ---> Coverage 0.3309% 
+IF Attribute_1 = med and Attribute_2 = low and Attribute_4 = more and Attribute_5 = big and Attribute_6 = med THEN Class = good ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = med and Attribute_4 = 4 and Attribute_5 = big and Attribute_6 = high THEN Class = vgood ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_2 = med and Attribute_4 = 4 and Attribute_5 = small and Attribute_6 = high THEN Class = acc ---> Coverage 0.2481% 
+IF Attribute_1 = med and Attribute_2 = med and Attribute_4 = more and Attribute_5 = big and Attribute_6 = high THEN Class = vgood ---> Coverage 0.2481% 
+IF Attribute_1 = med and Attribute_2 = med and Attribute_4 = more and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.3309% 
+IF Attribute_1 = med and Attribute_2 = med and Attribute_4 = more and Attribute_5 = med and Attribute_6 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = med and Attribute_2 = med and Attribute_4 = more and Attribute_5 = small and Attribute_6 = high THEN Class = acc ---> Coverage 0.2481% 
+IF Attribute_1 = med and Attribute_2 = vhigh and Attribute_4 = 4 and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.2481% 
+IF Attribute_1 = med and Attribute_2 = vhigh and Attribute_4 = 4 and Attribute_5 = med and Attribute_6 = med THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = vhigh and Attribute_2 = low and Attribute_4 = 4 and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.2481% 
+IF Attribute_1 = vhigh and Attribute_2 = low and Attribute_4 = more and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = vhigh and Attribute_2 = low and Attribute_4 = more and Attribute_5 = med and Attribute_6 = med THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = vhigh and Attribute_2 = med and Attribute_4 = 4 and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.2481% 
+IF Attribute_1 = vhigh and Attribute_2 = med and Attribute_4 = 4 and Attribute_5 = med and Attribute_6 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = vhigh and Attribute_2 = med and Attribute_4 = more and Attribute_5 = big and Attribute_6 = high THEN Class = acc ---> Coverage 0.2481% 
+IF Attribute_1 = vhigh and Attribute_2 = med and Attribute_4 = more and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.3309% 
+IF Attribute_1 = vhigh and Attribute_2 = med and Attribute_4 = more and Attribute_5 = med and Attribute_6 = high THEN Class = acc ---> Coverage 0.2481% 
+IF Attribute_1 = high and Attribute_3 = 3 and Attribute_4 = 4 and Attribute_5 = big and Attribute_6 = high THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = high and Attribute_3 = 3 and Attribute_4 = 4 and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = high and Attribute_3 = 3 and Attribute_4 = 4 and Attribute_5 = med and Attribute_6 = med THEN Class = unacc ---> Coverage 0.2481% 
+IF Attribute_1 = high and Attribute_3 = 3 and Attribute_4 = more and Attribute_5 = big and Attribute_6 = high THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = high and Attribute_3 = 3 and Attribute_4 = more and Attribute_5 = med and Attribute_6 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = high and Attribute_3 = 4 and Attribute_4 = 4 and Attribute_5 = big and Attribute_6 = med THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = high and Attribute_3 = 4 and Attribute_4 = 4 and Attribute_5 = med and Attribute_6 = high THEN Class = acc ---> Coverage 0.2481% 
+IF Attribute_1 = high and Attribute_3 = 4 and Attribute_4 = more and Attribute_5 = med and Attribute_6 = high THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = high and Attribute_3 = 5more and Attribute_4 = 4 and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.2481% 
+IF Attribute_1 = high and Attribute_3 = 5more and Attribute_4 = 4 and Attribute_5 = med and Attribute_6 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_3 = 3 and Attribute_4 = more and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_3 = 5more and Attribute_4 = 4 and Attribute_5 = big and Attribute_6 = med THEN Class = good ---> Coverage 0.1654% 
+IF Attribute_1 = low and Attribute_3 = 5more and Attribute_4 = 4 and Attribute_5 = med and Attribute_6 = high THEN Class = vgood ---> Coverage 0.1654% 
+IF Attribute_1 = med and Attribute_3 = 2 and Attribute_4 = 4 and Attribute_5 = big and Attribute_6 = high THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_3 = 2 and Attribute_4 = 4 and Attribute_5 = small and Attribute_6 = med THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_3 = 2 and Attribute_4 = more and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = med and Attribute_3 = 3 and Attribute_4 = 4 and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.2481% 
+IF Attribute_1 = med and Attribute_3 = 3 and Attribute_4 = more and Attribute_5 = med and Attribute_6 = high THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_3 = 4 and Attribute_4 = more and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.2481% 
+IF Attribute_1 = med and Attribute_3 = 4 and Attribute_4 = more and Attribute_5 = small and Attribute_6 = med THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_3 = 5more and Attribute_4 = 4 and Attribute_5 = med and Attribute_6 = med THEN Class = good ---> Coverage 0.0827% 
+IF Attribute_1 = med and Attribute_3 = 5more and Attribute_4 = more and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.2481% 
+IF Attribute_1 = med and Attribute_3 = 5more and Attribute_4 = more and Attribute_5 = small and Attribute_6 = high THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = vhigh and Attribute_3 = 3 and Attribute_4 = 4 and Attribute_5 = med and Attribute_6 = med THEN Class = unacc ---> Coverage 0.2481% 
+IF Attribute_1 = vhigh and Attribute_3 = 3 and Attribute_4 = 4 and Attribute_5 = small and Attribute_6 = high THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_1 = vhigh and Attribute_3 = 3 and Attribute_4 = more and Attribute_5 = med and Attribute_6 = high THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_1 = vhigh and Attribute_3 = 4 and Attribute_4 = 4 and Attribute_5 = big and Attribute_6 = high THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_2 = high and Attribute_3 = 2 and Attribute_4 = 4 and Attribute_5 = med and Attribute_6 = med THEN Class = unacc ---> Coverage 0.2481% 
+IF Attribute_2 = high and Attribute_3 = 3 and Attribute_4 = 4 and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.2481% 
+IF Attribute_2 = high and Attribute_3 = 3 and Attribute_4 = 4 and Attribute_5 = med and Attribute_6 = med THEN Class = unacc ---> Coverage 0.2481% 
+IF Attribute_2 = high and Attribute_3 = 3 and Attribute_4 = 4 and Attribute_5 = small and Attribute_6 = high THEN Class = acc ---> Coverage 0.2481% 
+IF Attribute_2 = high and Attribute_3 = 3 and Attribute_4 = more and Attribute_5 = small and Attribute_6 = high THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_2 = high and Attribute_3 = 4 and Attribute_4 = 4 and Attribute_5 = small and Attribute_6 = high THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_2 = high and Attribute_3 = 4 and Attribute_4 = more and Attribute_5 = small and Attribute_6 = med THEN Class = unacc ---> Coverage 0.1654% 
+IF Attribute_2 = high and Attribute_3 = 5more and Attribute_4 = 4 and Attribute_5 = small and Attribute_6 = med THEN Class = unacc ---> Coverage 0.1654% 
+IF Attribute_2 = low and Attribute_3 = 2 and Attribute_4 = more and Attribute_5 = med and Attribute_6 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_2 = low and Attribute_3 = 3 and Attribute_4 = 4 and Attribute_5 = small and Attribute_6 = high THEN Class = good ---> Coverage 0.1654% 
+IF Attribute_2 = low and Attribute_3 = 3 and Attribute_4 = more and Attribute_5 = med and Attribute_6 = high THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_2 = low and Attribute_3 = 4 and Attribute_4 = more and Attribute_5 = small and Attribute_6 = high THEN Class = good ---> Coverage 0.0827% 
+IF Attribute_2 = low and Attribute_3 = 5more and Attribute_4 = more and Attribute_5 = big and Attribute_6 = med THEN Class = good ---> Coverage 0.0827% 
+IF Attribute_2 = low and Attribute_3 = 5more and Attribute_4 = more and Attribute_5 = med and Attribute_6 = high THEN Class = vgood ---> Coverage 0.1654% 
+IF Attribute_2 = low and Attribute_3 = 5more and Attribute_4 = more and Attribute_5 = small and Attribute_6 = high THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_2 = med and Attribute_3 = 2 and Attribute_4 = 4 and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_2 = med and Attribute_3 = 2 and Attribute_4 = 4 and Attribute_5 = med and Attribute_6 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_2 = med and Attribute_3 = 2 and Attribute_4 = more and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.2481% 
+IF Attribute_2 = med and Attribute_3 = 2 and Attribute_4 = more and Attribute_5 = med and Attribute_6 = med THEN Class = unacc ---> Coverage 0.1654% 
+IF Attribute_2 = med and Attribute_3 = 3 and Attribute_4 = 4 and Attribute_5 = big and Attribute_6 = high THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_2 = med and Attribute_3 = 3 and Attribute_4 = 4 and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_2 = med and Attribute_3 = 3 and Attribute_4 = 4 and Attribute_5 = med and Attribute_6 = high THEN Class = acc ---> Coverage 0.2481% 
+IF Attribute_2 = med and Attribute_3 = 3 and Attribute_4 = 4 and Attribute_5 = med and Attribute_6 = med THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_2 = med and Attribute_3 = 3 and Attribute_4 = more and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.2481% 
+IF Attribute_2 = med and Attribute_3 = 4 and Attribute_4 = 4 and Attribute_5 = big and Attribute_6 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_2 = med and Attribute_3 = 4 and Attribute_4 = 4 and Attribute_5 = small and Attribute_6 = med THEN Class = acc ---> Coverage 0.0827% 
+IF Attribute_2 = med and Attribute_3 = 4 and Attribute_4 = more and Attribute_5 = med and Attribute_6 = high THEN Class = vgood ---> Coverage 0.0827% 
+IF Attribute_2 = med and Attribute_3 = 4 and Attribute_4 = more and Attribute_5 = small and Attribute_6 = high THEN Class = acc ---> Coverage 0.2481% 
+IF Attribute_2 = med and Attribute_3 = 5more and Attribute_4 = more and Attribute_5 = med and Attribute_6 = med THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_2 = vhigh and Attribute_3 = 3 and Attribute_4 = 4 and Attribute_5 = med and Attribute_6 = med THEN Class = unacc ---> Coverage 0.2481% 
+IF Attribute_2 = vhigh and Attribute_3 = 4 and Attribute_4 = 4 and Attribute_5 = med and Attribute_6 = high THEN Class = acc ---> Coverage 0.1654% 
+IF Attribute_2 = vhigh and Attribute_3 = 5more and Attribute_4 = 4 and Attribute_5 = big and Attribute_6 = med THEN Class = unacc ---> Coverage 0.0827% 
+IF Attribute_1 = low and Attribute_2 = vhigh and Attribute_3 = 4 and Attribute_4 = 4 and Attribute_5 = med and Attribute_6 = med THEN Class = acc ---> Coverage = 0.0827% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_3 = 5more and Attribute_4 = more and Attribute_5 = small and Attribute_6 = high THEN Class = good ---> Coverage = 0.0827% 
+IF Attribute_1 = high and Attribute_2 = high and Attribute_3 = 5more and Attribute_4 = more and Attribute_5 = med and Attribute_6 = med THEN Class = acc ---> Coverage = 0.0827% 
+IF Attribute_1 = med and Attribute_2 = low and Attribute_3 = 3 and Attribute_4 = 4 and Attribute_5 = med and Attribute_6 = high THEN Class = good ---> Coverage = 0.0827% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_3 = 5more and Attribute_4 = more and Attribute_5 = med and Attribute_6 = med THEN Class = good ---> Coverage = 0.0827% 
+IF Attribute_1 = med and Attribute_2 = low and Attribute_3 = 5more and Attribute_4 = more and Attribute_5 = small and Attribute_6 = med THEN Class = acc ---> Coverage = 0.0827% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_3 = 3 and Attribute_4 = 4 and Attribute_5 = med and Attribute_6 = med THEN Class = acc ---> Coverage = 0.0827% 
+IF Attribute_1 = vhigh and Attribute_2 = med and Attribute_3 = 3 and Attribute_4 = more and Attribute_5 = med and Attribute_6 = med THEN Class = acc ---> Coverage = 0.0827% 
+IF Attribute_1 = med and Attribute_2 = low and Attribute_3 = 4 and Attribute_4 = more and Attribute_5 = med and Attribute_6 = high THEN Class = vgood ---> Coverage = 0.0827% 
+IF Attribute_1 = med and Attribute_2 = low and Attribute_3 = 5more and Attribute_4 = 4 and Attribute_5 = med and Attribute_6 = high THEN Class = vgood ---> Coverage = 0.0827% 
+IF Attribute_1 = med and Attribute_2 = low and Attribute_3 = 2 and Attribute_4 = 4 and Attribute_5 = med and Attribute_6 = med THEN Class = acc ---> Coverage = 0.0827% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_3 = 5more and Attribute_4 = more and Attribute_5 = small and Attribute_6 = med THEN Class = acc ---> Coverage = 0.0827% 
+IF Attribute_1 = med and Attribute_2 = low and Attribute_3 = 3 and Attribute_4 = more and Attribute_5 = small and Attribute_6 = high THEN Class = good ---> Coverage = 0.0827% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_3 = 3 and Attribute_4 = more and Attribute_5 = med and Attribute_6 = high THEN Class = vgood ---> Coverage = 0.0827% 
+IF Attribute_1 = high and Attribute_2 = high and Attribute_3 = 4 and Attribute_4 = 4 and Attribute_5 = med and Attribute_6 = med THEN Class = acc ---> Coverage = 0.0827% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_3 = 3 and Attribute_4 = more and Attribute_5 = small and Attribute_6 = high THEN Class = good ---> Coverage = 0.0827% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_3 = 3 and Attribute_4 = more and Attribute_5 = small and Attribute_6 = med THEN Class = acc ---> Coverage = 0.0827% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_3 = 4 and Attribute_4 = more and Attribute_5 = small and Attribute_6 = med THEN Class = acc ---> Coverage = 0.0827% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_3 = 2 and Attribute_4 = 4 and Attribute_5 = med and Attribute_6 = med THEN Class = acc ---> Coverage = 0.0827% 
+IF Attribute_1 = low and Attribute_2 = high and Attribute_3 = 3 and Attribute_4 = 4 and Attribute_5 = med and Attribute_6 = high THEN Class = acc ---> Coverage = 0.0827% 
+IF Attribute_1 = med and Attribute_2 = low and Attribute_3 = 4 and Attribute_4 = 4 and Attribute_5 = med and Attribute_6 = high THEN Class = vgood ---> Coverage = 0.0827% 
+IF Attribute_1 = low and Attribute_2 = med and Attribute_3 = 2 and Attribute_4 = more and Attribute_5 = med and Attribute_6 = high THEN Class = good ---> Coverage = 0.0827% 
+IF Attribute_1 = low and Attribute_2 = low and Attribute_3 = 5more and Attribute_4 = more and Attribute_5 = small and Attribute_6 = med THEN Class = acc ---> Coverage = 0.0827% 
+IF Attribute_1 = low and Attribute_2 = vhigh and Attribute_3 = 3 and Attribute_4 = more and Attribute_5 = med and Attribute_6 = med THEN Class = acc ---> Coverage = 0.0827% 
+IF Attribute_1 = vhigh and Attribute_2 = low and Attribute_3 = 5more and Attribute_4 = 4 and Attribute_5 = med and Attribute_6 = med THEN Class = acc ---> Coverage = 0.0827% 
+IF Attribute_1 = low and Attribute_2 = high and Attribute_3 = 4 and Attribute_4 = 4 and Attribute_5 = med and Attribute_6 = high THEN Class = vgood ---> Coverage = 0.0827% 
+
+All instances in the train set are correctly classified with 396 rules of 100% precision. 
+Training time = 10.25968933 seconds.
+
+Classifying car test data we obtained accuracy = 87.2832% and a total of 1 unclassified instances.

@@ -1,12 +1,13 @@
 import pandas as pd
 import numpy as np
+import time
 import itertools
 from utils.utils_train import is_unique, create_rslt_df, update_unclassified_df, check_redundant, create_rule
 
 
 def train_RULES(df, data_name):
     """
-    :param df: dataframe from which the system infer the rules of the rule-based system RULES
+    :param df: dataframe from which we will infer the rules of the rule-based system RULES
     :param data_name: name of the data we are training the model on, to create an external files with
                       the rules displayed in an interpretable way
     :return: a list of the rules inferred from df
@@ -14,6 +15,16 @@ def train_RULES(df, data_name):
     # Create the .txt file where the rules will be
     with open("results/RULES_{0}.txt".format(data_name), "w") as output:
         output.write("File of rules corresponding to the {0} dataset \n \n".format(data_name))
+
+        # Initial time
+        t_0 = time.time()
+
+        # Check how many attributes the data has
+        num_attributes = df.shape[1] - 1
+        col_names = list(df.columns)
+
+        # Check how many rows the train data has
+        n_rows = df.shape[0]
 
         # Create an empty list of rules
         rules = []
@@ -26,16 +37,13 @@ def train_RULES(df, data_name):
                 valid_rule, valid_class = is_unique(rslt_df["Class"])
                 # Create the rule of length 1
                 if valid_rule:
-                    # Adding the valid rule to the list of rules
+                    # Adding the valid rule to the list of rules, write its coverage
                     rules.append([tuple([column, value]), tuple(["Class", valid_class])])
-                    output.write("IF {0} = {1} THEN Class = {2} \n".format(column, value, valid_class))
+                    output.write("IF {0} = {1} THEN Class = {2} ---> Coverage {3:.4f}% \n"
+                                 .format(column, value, valid_class, rslt_df.shape[0] * 100 / n_rows))
 
         # Update the dataframe with only the non-classified instances
         unclassified = update_unclassified_df(df, rules)
-
-        # Check how many attributes the data has
-        num_attributes = df.shape[1] - 1
-        col_names = list(df.columns)
 
         # Create rules with more than 1 selector and less than the number of attributes
         for i in range(2, num_attributes):
@@ -58,28 +66,31 @@ def train_RULES(df, data_name):
                 all_combinations.append(combination)
 
             # For each combination of values we check if it is a candidate rule and it is not irrelevant against all
-            # previous rules, in that case add it to the list 'rules'
+            # previous rules, in that case add it to the list 'rules' and compute its coverage
             for idx, columns in enumerate(indexes):
                 for combination in all_combinations[idx]:
                     rslt_df = create_rslt_df(df, col_names, columns, combination)
                     if not rslt_df.empty:
                         valid_rule, valid_class = is_unique(rslt_df["Class"])
                         if valid_rule:
-                            aux_rule, write_rule = create_rule(col_names, columns, combination, valid_class)
+                            aux_rule = create_rule(col_names, columns, combination, valid_class)
                             is_redundant = check_redundant(rules, aux_rule)
                             if not is_redundant:
-                                output.write(write_rule)
+                                wr_rule = [str(aux_rule[i][0]) + " = " + str(aux_rule[i][1]) for i in range(len(aux_rule))]
+                                output.write("IF {0} THEN Class = {1} ---> Coverage {2:.4f}% \n"
+                                             .format(" and ".join(wr_rule[:-1]), valid_class, rslt_df.shape[0] * 100 / n_rows))
                                 rules.append(aux_rule)
                                 new_rules.append(aux_rule)
             unclassified = update_unclassified_df(unclassified, new_rules)
 
             # We stop looking for rules if we have already classified all the instances in the dataset
             if unclassified.empty:
-                print("All instances in the train set are correctly classified with {0} rules of 100% 'precision', "
-                      "STOP.".format(len(rules)))
+                # Final training time
+                t_1 = time.time()
+                print("All instances in the train set are correctly classified with {0} rules of 100% precision."
+                      .format(len(rules)))
                 output.write("\nAll instances in the train set are correctly classified with {0} rules of 100% "
-                             "'precision', STOP."
-                             .format(len(rules)))
+                             "precision. \nTraining time = {1:.8f} seconds.".format(len(rules), t_1 - t_0))
                 break
 
         # Create rules from the unclassified examples with the maximum selectors possible = number of attributes
@@ -87,13 +98,15 @@ def train_RULES(df, data_name):
             for index, instance in unclassified.iterrows():
                 aux_rule = list(zip(unclassified.columns, instance))
                 rule = [str(aux_rule[i][0]) + " = " + str(aux_rule[i][1]) for i in range(len(aux_rule))]
-                output.write("IF {0} THEN {1} \n".format(" and ".join(rule[:-1]), rule[-1]))
+                output.write("IF {0} THEN {1} ---> Coverage = {2:.4f}% \n"
+                             .format(" and ".join(rule[:-1]), rule[-1], 1 * 100 / n_rows))
                 rules.append(aux_rule)
 
+            # Final training time
+            t_1 = time.time()
             print("All instances in the train set are correctly classified with {0} rules of 100% 'precision', "
                   "STOP.".format(len(rules)))
             output.write("\nAll instances in the train set are correctly classified with {0} rules of 100% "
-                         "'precision', STOP."
-                         .format(len(rules)))
+                         "precision. \nTraining time = {1:.8f} seconds.".format(len(rules), t_1 - t_0))
 
     return rules

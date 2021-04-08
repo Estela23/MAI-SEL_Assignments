@@ -50,14 +50,11 @@ def check_redundant(rules, aux_rule):
     :param aux_rule: current rule, which we aim to find if it is redundant (unnecessary)
     :return: boolean variable, True if current rule is redundant
     """
-    redundant = False
     for rule in rules:
         result = all(elem in aux_rule for elem in rule)
         if result:
-            redundant = True
-            break
-
-    return redundant
+            return True
+    return False
 
 
 def create_rule(col_names, columns, combination, valid_class):
@@ -66,12 +63,10 @@ def create_rule(col_names, columns, combination, valid_class):
     :param columns: columns that this candidate rule makes reference to
     :param combination: values of the relevant attributes in the current candidate rule
     :param valid_class: class of the instances that follow this rule
-    :return: two different representations of the candidate rule, one to store and the other to print
+    :return: candidate rule to store
     """
     attributes = [col_names[columns[i]] for i in range(len(columns))]
     aux_rule = list(zip(attributes, combination))
-    rule = [str(aux_rule[i][0]) + " = " + str(aux_rule[i][1]) for i in range(len(aux_rule))]
-    write_rule = "IF {0} THEN Class = {1} \n".format(" and ".join(rule), valid_class)
     aux_rule.append(tuple(["Class", valid_class]))
 
-    return aux_rule, write_rule
+    return aux_rule
