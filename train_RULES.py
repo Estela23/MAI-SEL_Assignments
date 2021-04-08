@@ -29,7 +29,7 @@ def train_RULES(df, data_name):
         # Create an empty list of rules
         rules = []
 
-        # Create rules with 1 selector
+        # Create rules with 1 selector exploring all the attributes and all their possible values
         for column in df.columns[:-1]:
             for value in df[column].unique():
                 # Generate the rslt_df of all the instances that takes 'value' in 'column', check if Class is the same
@@ -37,20 +37,22 @@ def train_RULES(df, data_name):
                 valid_rule, valid_class = is_unique(rslt_df["Class"])
                 # Create the rule of length 1
                 if valid_rule:
-                    # Adding the valid rule to the list of rules, write its coverage
+                    # Add the valid rule to the list of rules, write its coverage
                     rules.append([tuple([column, value]), tuple(["Class", valid_class])])
                     output.write("IF {0} = {1} THEN Class = {2} ---> Coverage {3:.4f}% \n"
                                  .format(column, value, valid_class, rslt_df.shape[0] * 100 / n_rows))
 
-        # Update the dataframe with only the non-classified instances
+        # Generate unclassified dataframe consisting of only the non-classified instances
         unclassified = update_unclassified_df(df, rules)
 
         # Create rules with more than 1 selector and less than the number of attributes
         for i in range(2, num_attributes):
             # new_rules: list of rules of length i, to later update the dataframe of unclassified instances
             new_rules = []
+
             # all_combinations: list of possible combinations of values with length i
             all_combinations = []
+
             # We update the array of possible values of the attributes according to the remaining unclassified examples
             values = []
             for attrib in range(num_attributes):
@@ -81,15 +83,18 @@ def train_RULES(df, data_name):
                                              .format(" and ".join(wr_rule[:-1]), valid_class, rslt_df.shape[0] * 100 / n_rows))
                                 rules.append(aux_rule)
                                 new_rules.append(aux_rule)
+
+            # After creating all valid rules of length i, we update the dataframe of unclassified instances with respect
+            # to the rules obtained in this iteration, since it is not necessary to compare against previous rules
             unclassified = update_unclassified_df(unclassified, new_rules)
 
             # We stop looking for rules if we have already classified all the instances in the dataset
             if unclassified.empty:
                 # Final training time
                 t_1 = time.time()
-                print("All instances in the train set are correctly classified with {0} rules of 100% precision."
+                print("All the instances in the train set are correctly classified with {0} rules of 100% precision."
                       .format(len(rules)))
-                output.write("\nAll instances in the train set are correctly classified with {0} rules of 100% "
+                output.write("\nAll the instances in the train set are correctly classified with {0} rules of 100% "
                              "precision. \nTraining time = {1:.8f} seconds.".format(len(rules), t_1 - t_0))
                 break
 

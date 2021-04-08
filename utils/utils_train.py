@@ -19,7 +19,7 @@ def create_rslt_df(df, col_names, columns, combination):
     :param combination: values of the relevant attributes in the current candidate rule
     :return: resultant dataframe with only the instances that take the values of combination
     """
-    # Recursively create rslt_df
+    # Recursively create rslt_df with the instances that satisfy all the conditions
     rslt_df = df.copy()
     for i in range(len(combination)):
         rslt_df = rslt_df[rslt_df[col_names[columns[i]]] == combination[i]]
@@ -33,6 +33,8 @@ def update_unclassified_df(df, rules):
     :param rules: rules with respect to which we want to update the dataframe of unclassified instances
     :return: updated dataframe with only unclassified instances wrt. rules
     """
+    # For each rule, which has already been properly filtered and chosen,
+    # we delete from the dataframe df all the instances that satisfy it
     for rule in rules:
         aux_df = df.copy()
         for j in range(len(rule) - 1):
@@ -47,9 +49,11 @@ def update_unclassified_df(df, rules):
 def check_redundant(rules, aux_rule):
     """
     :param rules: complete list of the already chosen rules
-    :param aux_rule: current rule, which we aim to find if it is redundant (unnecessary)
-    :return: boolean variable, True if current rule is redundant
+    :param aux_rule: candidate rule, which we aim to find if it is redundant (unnecessary)
+    :return: boolean variable, True if candidate rule is redundant and False otherwise
     """
+    # For each of the already created rules we check whether the candidate rule is subsumed by it, in that case
+    # the candidate rule is redundant and hence will not be added to the list of rules (check_redundant returns True)
     for rule in rules:
         result = all(elem in aux_rule for elem in rule)
         if result:
@@ -63,7 +67,7 @@ def create_rule(col_names, columns, combination, valid_class):
     :param columns: columns that this candidate rule makes reference to
     :param combination: values of the relevant attributes in the current candidate rule
     :param valid_class: class of the instances that follow this rule
-    :return: candidate rule to store
+    :return: candidate rule to store as a list of tuples (attribute, value) and (Class, class value)
     """
     attributes = [col_names[columns[i]] for i in range(len(columns))]
     aux_rule = list(zip(attributes, combination))

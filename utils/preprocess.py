@@ -11,7 +11,8 @@ def read_file_generate_dfs(data_file, arff=None, id_column=None, class_column=No
     :param id_column: number of the column if the data contains a column of type "id_number", None in other case
     :param class_column: number of the column corresponding to the class, None if it is the last one (default)
     :param discretize_integers: list of the indexes of integer attributes of the data that we want to discretize
-           (like age, number of children, percentage of some medical measure, etc.), False in other case
+           (like age, number of children, percentage of some medical measure, etc.) Some categorical attributes are
+           writen as type integer, with this hand-made list we avoid discretizing categorical features of type int64
     :return: train (70%) and test (30%) preprocessed dataframes, with no column corresponding to id
              neither missing values and all columns of type categorical
     """
@@ -26,11 +27,7 @@ def read_file_generate_dfs(data_file, arff=None, id_column=None, class_column=No
     # With 'preprocess_df' we remove missing values, the column of id number and set the Class column at last position
     df = preprocess_df(df, id_column=id_column, class_column=class_column)
 
-    # For large datasets we select a subset, stratified with respect to the class to preserve the proportion of classes
-    if df.shape[0] > 10000:
-        df, discarded = train_test_split(df, test_size=0.8, random_state=0, shuffle=True, stratify=df.iloc[:, -1:])
-
-    # Search for numerical columns and discretize them
+    # Search for numerical attributes and discretize them
     for column in df.columns[:-1]:
         column_type = df[column].dtypes
         if column_type == "float64":
@@ -38,13 +35,13 @@ def read_file_generate_dfs(data_file, arff=None, id_column=None, class_column=No
         elif column_type == "int64" and column in discretize_integers:
             df[column] = discretize_values(df, column)
 
-    # Generate the dataframe with names of the columns
+    # Generate the dataframe with generic names of the columns
     num_attributes = df.shape[1] - 1
     col_names = ["Attribute_{0}".format(i + 1) for i in range(num_attributes)]
     col_names.extend(["Class"])
     df = df.set_axis(col_names, axis=1)
 
-    # Drop duplicate instances from the dataset
+    # Drop duplicate instances that may appear when discretizing the dataset
     df = df.drop_duplicates()
 
     # Generate train and test dataframes preserving proportions of each class
@@ -86,7 +83,8 @@ def discretize_values(df, column):
     quartiles = df[column].quantile([0.25, 0.5, 0.75])
     bins = [min(df[column]), *quartiles, max(df[column])]
     labels = ["Quartile_1", "Quartile_2", "Quartile_3", "Quartile_4"]
-    # If we have 'logarithmic' data and quartiles do not work we discretize the data in 4 equally sized bins
+    # If we have data where one value is much more common than other we may fail when declaring valid bins based on
+    # quartiles, in that case we discretize the data into 4 equally sized bins
     if len(bins) != len(set(bins)):
         bins = np.linspace(min(df[column]), max(df[column]), 5)
         labels = ["Bin_1", "Bin_2", "Bin_3", "Bin_4"]

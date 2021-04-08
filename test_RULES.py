@@ -12,11 +12,14 @@ def test_RULES(df, inferred_rules):
     # Apply the function classifier to each row and create a new column 'Predicted_Class'
     # which is None in the case that the classifier is not able to classify an instance
     df["Predicted_Class"] = [classifier(row, inferred_rules) for index, row in df.iterrows()]
+
     # Compute the accuracy by counting the number of instances with Class = Predicted_Class
     matches = sum(np.where(df["Class"] == df["Predicted_Class"], True, False))
     accuracy = matches * 100 / df.shape[0]
+
     # Compute the number of unclassified instances
     n_unclassified = df["Predicted_Class"].isna().sum()
+
     return df, accuracy, n_unclassified
 
 
@@ -26,14 +29,12 @@ def classifier(row, inferred_rules):
     :param inferred_rules: list of rules generated based on the training set
     :return: predicted class of the current instance if possible, if we can not classify the instance return None
     """
-    predicted_class = None
-
     for idx, rule in enumerate(inferred_rules):
         # Check all the conditions except for the "Class" (which we are trying to predict): if the values in the current
         # row and in the rule match for all the selectors (len(check_list) == len(rule) - 1) then we classify the row
         check_list = [True for i in range(len(rule) - 1) if row[rule[i][0]] == rule[i][1]]
         if len(check_list) == len(rule) - 1:
-            predicted_class = rule[-1][1]
-            break   # This way if we classify an instance we keep going with the others, don't need to try other rules
+            # With this return if we classify an instance we don't try other rules, recall: order of rules is important
+            return rule[-1][1]
 
-    return predicted_class
+    return None

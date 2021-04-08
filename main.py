@@ -4,11 +4,12 @@ from test_RULES import test_RULES
 
 # We considered 3 datasets, one small, one medium and one large, with different types of attributes
 # (categorical, float or integer). For each of them we properly preprocess and split the data into train and test data,
-# then train a RULES classifier system to infer rules. Once we got these rules we classify the instances in the test
-# data and save the classification to an external file, this was done to easily review the results.
+# then train a RULES classifier system to infer rules. Once we generate these rules, we classify the instances in the
+# test data and save the predicted classification to an external .csv file, this was done to easily review the results.
 # Finally, we evaluate the algorithm by measuring the coverage of each rule and the accuracy over the test data.
 
-sizes = ["large"]   # , "small", "medium"]
+sizes = ["small", "medium", "large"]
+
 for size in sizes:
     if size == "small":
         data_file = "data/new-thyroid.data"
