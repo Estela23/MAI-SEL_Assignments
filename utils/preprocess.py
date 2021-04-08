@@ -15,7 +15,6 @@ def read_file_generate_dfs(data_file, arff=None, id_column=None, class_column=No
     :return: train (70%) and test (30%) preprocessed dataframes, with no column corresponding to id
              neither missing values and all columns of type categorical
     """
-
     # Load data from external file
     if arff:
         data = loadarff(data_file)
@@ -78,10 +77,12 @@ def discretize_values(df, column):
     """
     :param df: dataframe of which we want to discretize its columns
     :param column: column of type "float64" that will be discretized
-    :return: a discretized version of that column, with 4 possible values corresponding to the four equally-sized bins
+    :return: a discretized version of that column, with 4 possible values corresponding to the four quartiles
     """
-    bins = np.linspace(min(df[column]), max(df[column]), num=5)
-    labels = ["Bin_1", "Bin_2", "Bin_3", "Bin_4"]
+    quartiles = df[column].quantile([0.25, 0.5, 0.75])
+    aux_bins = [min(df[column]), *quartiles, max(df[column])]
+    bins = [int(i) for i in aux_bins]
+    labels = ["Quartile_1", "Quartile_2", "Quartile_3", "Quartile_4"]
     discretized_column = pd.cut(df[column], bins=bins, labels=labels, include_lowest=True)
 
     return discretized_column

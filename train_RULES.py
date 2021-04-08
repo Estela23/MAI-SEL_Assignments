@@ -5,16 +5,23 @@ from utils.utils_train import is_unique, create_rslt_df, update_unclassified_df,
 
 
 def train_RULES(df, data_name):
+    """
+    :param df: dataframe from which the system infer the rules of the rule-based system RULES
+    :param data_name: name of the data we are training the model on, to create an external files with
+                      the rules displayed in an interpretable way
+    :return: a list of the rules inferred from df
+    """
     # Create the .txt file where the rules will be
-    with open("obtained_rules/RULES_{0}.txt".format(data_name), "w") as output:
+    with open("results/RULES_{0}.txt".format(data_name), "w") as output:
         output.write("File of rules corresponding to the {0} dataset \n \n".format(data_name))
 
-        # Create an empty list of rules, each rule will have the form: [("Attribute_2", DIP), ("Class", T)]
+        # Create an empty list of rules
         rules = []
 
         # Create rules with 1 selector
         for column in df.columns[:-1]:
             for value in df[column].unique():
+                # Generate the rslt_df of all the instances that takes 'value' in 'column', check if Class is the same
                 rslt_df = df[df[column] == value]
                 valid_rule, valid_class = is_unique(rslt_df["Class"])
                 # Create the rule of length 1
@@ -26,13 +33,16 @@ def train_RULES(df, data_name):
         # Update the dataframe with only the non-classified instances
         unclassified = update_unclassified_df(df, rules)
 
-        # Check how many attributes it has
+        # Check how many attributes the data has
         num_attributes = df.shape[1] - 1
         col_names = list(df.columns)
 
         # Create rules with more than 1 selector and less than the number of attributes
-        all_combinations = []
         for i in range(2, num_attributes):
+            # new_rules: list of rules of length i, to later update the dataframe of unclassified instances
+            new_rules = []
+            # all_combinations: list of possible combinations of values with length i
+            all_combinations = []
             # We update the array of possible values of the attributes according to the remaining unclassified examples
             values = []
             for attrib in range(num_attributes):
@@ -54,16 +64,16 @@ def train_RULES(df, data_name):
                     rslt_df = create_rslt_df(df, col_names, columns, combination)
                     if not rslt_df.empty:
                         valid_rule, valid_class = is_unique(rslt_df["Class"])
-                        # Create the rule of length i
                         if valid_rule:
                             aux_rule, write_rule = create_rule(col_names, columns, combination, valid_class)
                             is_redundant = check_redundant(rules, aux_rule)
                             if not is_redundant:
                                 output.write(write_rule)
                                 rules.append(aux_rule)
-            unclassified = update_unclassified_df(unclassified, rules)
+                                new_rules.append(aux_rule)
+            unclassified = update_unclassified_df(unclassified, new_rules)
 
-            # We stop if we have already classified all the instances in the dataset
+            # We stop looking for rules if we have already classified all the instances in the dataset
             if unclassified.empty:
                 print("All instances in the train set are correctly classified with {0} rules of 100% 'precision', "
                       "STOP.".format(len(rules)))

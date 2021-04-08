@@ -1,7 +1,0 @@
-File of rules corresponding to the yellow-small dataset 
- 
-IF Attribute_1 = PURPLE THEN Class = F 
-IF Attribute_2 = LARGE THEN Class = F 
-IF Attribute_1 = YELLOW and Attribute_2 = SMALL THEN Class = T 
-
-All instances are correctly classified with 3 rules of 100% 'precision', STOP.
