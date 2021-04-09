@@ -430,6 +430,6 @@ IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_1 and Attribute_3 = Quart
 IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_2 and Attribute_4 = Quartile_4 and Attribute_5 = Quartile_4 THEN Class = 1 ---> Coverage = 0.2132% 
 
 All instances in the train set are correctly classified with 428 rules of 100% precision. 
-Training time = 7.20976686 seconds.
+Training time = 9.60032272 seconds.
 
 Classifying phoneme test data we obtained accuracy = 50.0000% and a total of 4 unclassified instances.

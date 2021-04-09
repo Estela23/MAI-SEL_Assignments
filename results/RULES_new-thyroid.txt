@@ -108,6 +108,6 @@ IF Attribute_1 = Quartile_4 and Attribute_2 = Quartile_1 and Attribute_3 = Quart
 IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_1 and Attribute_3 = Quartile_1 and Attribute_4 = Quartile_3 and Attribute_5 = Quartile_2 THEN Class = 1 ---> Coverage = 0.9091% 
 
 All instances in the train set are correctly classified with 106 rules of 100% precision. 
-Training time = 1389.69410038 seconds.
+Training time = 2.59018421 seconds.
 
 Classifying new-thyroid test data we obtained accuracy = 79.1667% and a total of 0 unclassified instances.
