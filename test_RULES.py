@@ -1,7 +1,11 @@
 import numpy as np
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
+import matplotlib.pyplot as plt
+import seaborn as sn
+import matplotlib.pyplot as plt
 
 
-def test_RULES(df, inferred_rules):
+def test_RULES(df, inferred_rules, data_name):
     """
     :param df: dataframe to which apply the rule-based system RULES to classify its instances
     :param inferred_rules: list of rules used to classify new instances, inferred from the train data
@@ -20,6 +24,17 @@ def test_RULES(df, inferred_rules):
     # Compute the number of unclassified instances
     n_unclassified = df["Predicted_Class"].isna().sum()
 
+    # We create a version of the resulting dataframe without taking into account the non-classified instances in order
+    # to be able to create a confusion matrix of the results of the classified instances
+    reduced_df = df.copy()
+    reduced_df.dropna(how="any", inplace=True)
+
+    cm = confusion_matrix(reduced_df["Class"], reduced_df["Predicted_Class"])
+    plt.figure(figsize=(10, 7))
+    sn.heatmap(cm, annot=True)
+    plt.title("Confusion Matrix of {0} dataset".format(data_name))
+    plt.savefig("results/cms/cm_{0}".format(data_name))
+
     return df, accuracy, n_unclassified
 
 
@@ -37,4 +52,4 @@ def classifier(row, inferred_rules):
             # With this return if we classify an instance we don't try other rules, recall: order of rules is important
             return rule[-1][1]
 
-    return None
+    return np.nan

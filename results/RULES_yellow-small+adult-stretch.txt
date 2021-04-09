@@ -13,6 +13,6 @@ IF Attribute_3 = DIP and Attribute_4 = ADULT THEN Class = F ---> Coverage 27.272
 IF Attribute_3 = STRETCH and Attribute_4 = ADULT THEN Class = T ---> Coverage 27.2727% 
 
 All the instances in the train set are correctly classified with 11 rules of 100% precision. 
-Training time = 0.08561587 seconds.
+Training time = 0.11222577 seconds.
 
 Classifying yellow-small+adult-stretch test data we obtained accuracy = 60.0000% and a total of 0 unclassified instances.

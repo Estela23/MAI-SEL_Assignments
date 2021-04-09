@@ -398,6 +398,6 @@ IF Attribute_1 = vhigh and Attribute_2 = low and Attribute_3 = 5more and Attribu
 IF Attribute_1 = low and Attribute_2 = high and Attribute_3 = 4 and Attribute_4 = 4 and Attribute_5 = med and Attribute_6 = high THEN Class = vgood ---> Coverage = 0.0827% 
 
 All instances in the train set are correctly classified with 396 rules of 100% precision. 
-Training time = 10.25968933 seconds.
+Training time = 11.55414438 seconds.
 
 Classifying car test data we obtained accuracy = 87.2832% and a total of 1 unclassified instances.

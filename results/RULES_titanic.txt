@@ -17,6 +17,6 @@ IF Attribute_1 = Bin_3 and Attribute_2 = Bin_1 and Attribute_3 = Bin_4 THEN Clas
 IF Attribute_1 = Bin_3 and Attribute_2 = Bin_1 and Attribute_3 = Bin_4 THEN Class = 1.0 ---> Coverage = 6.2500% 
 
 All instances in the train set are correctly classified with 15 rules of 100% precision. 
-Training time = 0.50536156 seconds.
+Training time = 0.10716176 seconds.
 
 Classifying titanic test data we obtained accuracy = 25.0000% and a total of 0 unclassified instances.

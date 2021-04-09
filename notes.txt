@@ -31,3 +31,11 @@ Decirle que el TITANIC no se clasifica nada bien porque los attributos que tenem
 Note that we started to understand the algorithm with BALLONS datasets. For example, for the adult+stretch data we obtain 4 well classified instances out of 5. The wrong classified one was classified by the third rule, while the fifth rule would classify it correctly. All instances in the test set are classified after examining the third rule, the last three ones are not used but are inferred from the train data in order to be more general just in case many new instances arrive to the classifier. Some examples with 100% accuracy, some with 60%, depending on the split but we have very low number of instances to generalize.
 
 Hablar un poco de la coverage de las reglas, hay reglas que generalizan bien en el train (que igual tienen un coverage de más del 10% o así), pero en general es bajito.
+
+
+DECIR QUE HICE PRUEBAS CON KR-VS-KP Y CON MAGIC04 PERO ERA IMPOSIBLE (:
+
+Hablarle del Random state que lo fijé a 0 siempre pero que cambiándolo y probando distintos podríamos obtener resultados distintos, porque el algoritmo en sí una vez hecho el split es determinista.
+
+Intento hacer la confusion matrix pero hay instancias sin classificar, eliminamos las instancias no clasificadas para hacer la confusion matrix sobre las que sí clasifica!!
+
