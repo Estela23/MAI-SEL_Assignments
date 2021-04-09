@@ -1,0 +1,69 @@
+File of rules corresponding to the data_banknote_authentication dataset 
+ 
+IF Attribute_1 = Quartile_4 THEN Class = 0 ---> Coverage 19.3182% 
+IF Attribute_1 = Quartile_1 and Attribute_2 = Quartile_3 THEN Class = 1 ---> Coverage 6.8182% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_4 THEN Class = 0 ---> Coverage 5.6818% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_4 THEN Class = 0 ---> Coverage 6.8182% 
+IF Attribute_1 = Quartile_2 and Attribute_3 = Quartile_1 THEN Class = 1 ---> Coverage 4.5455% 
+IF Attribute_1 = Quartile_3 and Attribute_3 = Quartile_4 THEN Class = 0 ---> Coverage 6.8182% 
+IF Attribute_1 = Quartile_1 and Attribute_4 = Quartile_4 THEN Class = 1 ---> Coverage 1.1364% 
+IF Attribute_1 = Quartile_3 and Attribute_4 = Quartile_2 THEN Class = 0 ---> Coverage 9.0909% 
+IF Attribute_2 = Quartile_1 and Attribute_3 = Quartile_2 THEN Class = 1 ---> Coverage 2.2727% 
+IF Attribute_2 = Quartile_2 and Attribute_3 = Quartile_1 THEN Class = 1 ---> Coverage 3.4091% 
+IF Attribute_2 = Quartile_3 and Attribute_3 = Quartile_4 THEN Class = 0 ---> Coverage 2.2727% 
+IF Attribute_2 = Quartile_4 and Attribute_3 = Quartile_1 THEN Class = 0 ---> Coverage 5.6818% 
+IF Attribute_2 = Quartile_1 and Attribute_4 = Quartile_1 THEN Class = 0 ---> Coverage 2.2727% 
+IF Attribute_2 = Quartile_1 and Attribute_4 = Quartile_4 THEN Class = 1 ---> Coverage 4.5455% 
+IF Attribute_2 = Quartile_2 and Attribute_4 = Quartile_1 THEN Class = 1 ---> Coverage 1.1364% 
+IF Attribute_2 = Quartile_3 and Attribute_4 = Quartile_1 THEN Class = 1 ---> Coverage 4.5455% 
+IF Attribute_2 = Quartile_3 and Attribute_4 = Quartile_4 THEN Class = 0 ---> Coverage 4.5455% 
+IF Attribute_2 = Quartile_4 and Attribute_4 = Quartile_2 THEN Class = 0 ---> Coverage 9.0909% 
+IF Attribute_2 = Quartile_4 and Attribute_4 = Quartile_3 THEN Class = 0 ---> Coverage 4.5455% 
+IF Attribute_2 = Quartile_4 and Attribute_4 = Quartile_4 THEN Class = 0 ---> Coverage 1.1364% 
+IF Attribute_3 = Quartile_4 and Attribute_4 = Quartile_1 THEN Class = 0 ---> Coverage 2.2727% 
+IF Attribute_3 = Quartile_4 and Attribute_4 = Quartile_3 THEN Class = 0 ---> Coverage 6.8182% 
+IF Attribute_1 = Quartile_1 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_2 THEN Class = 1 ---> Coverage 3.4091% 
+IF Attribute_1 = Quartile_1 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_3 THEN Class = 1 ---> Coverage 1.1364% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_1 and Attribute_3 = Quartile_3 THEN Class = 1 ---> Coverage 1.1364% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_2 THEN Class = 1 ---> Coverage 3.4091% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_4 THEN Class = 0 ---> Coverage 2.2727% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_3 and Attribute_3 = Quartile_3 THEN Class = 0 ---> Coverage 1.1364% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_2 THEN Class = 1 ---> Coverage 2.2727% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_3 THEN Class = 0 ---> Coverage 1.1364% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_3 and Attribute_3 = Quartile_2 THEN Class = 0 ---> Coverage 2.2727% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_3 and Attribute_3 = Quartile_3 THEN Class = 0 ---> Coverage 3.4091% 
+IF Attribute_1 = Quartile_1 and Attribute_2 = Quartile_2 and Attribute_4 = Quartile_2 THEN Class = 1 ---> Coverage 1.1364% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_3 and Attribute_4 = Quartile_3 THEN Class = 0 ---> Coverage 1.1364% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_1 and Attribute_4 = Quartile_3 THEN Class = 0 ---> Coverage 1.1364% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_2 and Attribute_4 = Quartile_4 THEN Class = 1 ---> Coverage 1.1364% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_3 and Attribute_4 = Quartile_3 THEN Class = 0 ---> Coverage 3.4091% 
+IF Attribute_1 = Quartile_1 and Attribute_3 = Quartile_2 and Attribute_4 = Quartile_2 THEN Class = 1 ---> Coverage 2.2727% 
+IF Attribute_1 = Quartile_1 and Attribute_3 = Quartile_2 and Attribute_4 = Quartile_3 THEN Class = 1 ---> Coverage 2.2727% 
+IF Attribute_1 = Quartile_1 and Attribute_3 = Quartile_3 and Attribute_4 = Quartile_1 THEN Class = 1 ---> Coverage 2.2727% 
+IF Attribute_1 = Quartile_1 and Attribute_3 = Quartile_3 and Attribute_4 = Quartile_3 THEN Class = 1 ---> Coverage 2.2727% 
+IF Attribute_1 = Quartile_2 and Attribute_3 = Quartile_2 and Attribute_4 = Quartile_1 THEN Class = 0 ---> Coverage 1.1364% 
+IF Attribute_1 = Quartile_2 and Attribute_3 = Quartile_2 and Attribute_4 = Quartile_4 THEN Class = 1 ---> Coverage 2.2727% 
+IF Attribute_1 = Quartile_2 and Attribute_3 = Quartile_3 and Attribute_4 = Quartile_1 THEN Class = 0 ---> Coverage 1.1364% 
+IF Attribute_1 = Quartile_2 and Attribute_3 = Quartile_3 and Attribute_4 = Quartile_2 THEN Class = 0 ---> Coverage 2.2727% 
+IF Attribute_1 = Quartile_2 and Attribute_3 = Quartile_3 and Attribute_4 = Quartile_3 THEN Class = 0 ---> Coverage 2.2727% 
+IF Attribute_1 = Quartile_2 and Attribute_3 = Quartile_3 and Attribute_4 = Quartile_4 THEN Class = 1 ---> Coverage 2.2727% 
+IF Attribute_1 = Quartile_3 and Attribute_3 = Quartile_2 and Attribute_4 = Quartile_1 THEN Class = 0 ---> Coverage 1.1364% 
+IF Attribute_1 = Quartile_3 and Attribute_3 = Quartile_2 and Attribute_4 = Quartile_4 THEN Class = 1 ---> Coverage 1.1364% 
+IF Attribute_1 = Quartile_3 and Attribute_3 = Quartile_3 and Attribute_4 = Quartile_1 THEN Class = 0 ---> Coverage 1.1364% 
+IF Attribute_1 = Quartile_3 and Attribute_3 = Quartile_3 and Attribute_4 = Quartile_3 THEN Class = 0 ---> Coverage 3.4091% 
+IF Attribute_2 = Quartile_1 and Attribute_3 = Quartile_3 and Attribute_4 = Quartile_2 THEN Class = 0 ---> Coverage 2.2727% 
+IF Attribute_2 = Quartile_1 and Attribute_3 = Quartile_3 and Attribute_4 = Quartile_3 THEN Class = 0 ---> Coverage 2.2727% 
+IF Attribute_2 = Quartile_2 and Attribute_3 = Quartile_2 and Attribute_4 = Quartile_2 THEN Class = 1 ---> Coverage 2.2727% 
+IF Attribute_2 = Quartile_2 and Attribute_3 = Quartile_2 and Attribute_4 = Quartile_3 THEN Class = 1 ---> Coverage 3.4091% 
+IF Attribute_2 = Quartile_2 and Attribute_3 = Quartile_4 and Attribute_4 = Quartile_2 THEN Class = 0 ---> Coverage 2.2727% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_1 and Attribute_3 = Quartile_4 and Attribute_4 = Quartile_2 THEN Class = 1 ---> Coverage = 1.1364% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_3 and Attribute_3 = Quartile_2 and Attribute_4 = Quartile_2 THEN Class = 1 ---> Coverage = 1.1364% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_3 and Attribute_3 = Quartile_2 and Attribute_4 = Quartile_2 THEN Class = 0 ---> Coverage = 1.1364% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_1 and Attribute_3 = Quartile_4 and Attribute_4 = Quartile_2 THEN Class = 0 ---> Coverage = 1.1364% 
+IF Attribute_1 = Quartile_1 and Attribute_2 = Quartile_4 and Attribute_3 = Quartile_2 and Attribute_4 = Quartile_1 THEN Class = 0 ---> Coverage = 1.1364% 
+IF Attribute_1 = Quartile_1 and Attribute_2 = Quartile_4 and Attribute_3 = Quartile_2 and Attribute_4 = Quartile_1 THEN Class = 1 ---> Coverage = 1.1364% 
+
+All instances in the train set are correctly classified with 62 rules of 100% precision. 
+Training time = 0.91219020 seconds.
+
+Classifying data_banknote_authentication test data we obtained accuracy = 76.3158% and a total of 1 unclassified instances.

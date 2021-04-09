@@ -1,0 +1,9 @@
+Attribute_1,Attribute_2,Attribute_3,Class,Predicted_Class
+Bin_3,Bin_1,Bin_1,1.0,-1.0
+Bin_2,Bin_1,Bin_4,-1.0,1.0
+Bin_4,Bin_1,Bin_1,1.0,-1.0
+Bin_1,Bin_1,Bin_4,1.0,1.0
+Bin_1,Bin_1,Bin_4,-1.0,1.0
+Bin_3,Bin_1,Bin_1,-1.0,-1.0
+Bin_3,Bin_4,Bin_4,1.0,-1.0
+Bin_3,Bin_4,Bin_1,1.0,-1.0

@@ -1,0 +1,728 @@
+File of rules corresponding to the breast-cancer dataset 
+ 
+IF Attribute_1 = 70-79 THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 20-29 THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = lt40 THEN Class = no-recurrence-events ---> Coverage 2.7174% 
+IF Attribute_3 = 5-9 THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_3 = 10-14 THEN Class = no-recurrence-events ---> Coverage 10.3261% 
+IF Attribute_4 = 12-14 THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_4 = 24-26 THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 30-39 and Attribute_3 = 0-4 THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 30-39 and Attribute_3 = 35-39 THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 30-39 and Attribute_3 = 40-44 THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_3 = 0-4 THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 40-49 and Attribute_3 = 40-44 THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 40-49 and Attribute_3 = 45-49 THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_3 = 0-4 THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 50-59 and Attribute_3 = 35-39 THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 50-59 and Attribute_3 = 50-54 THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 60-69 and Attribute_3 = 15-19 THEN Class = no-recurrence-events ---> Coverage 2.7174% 
+IF Attribute_1 = 60-69 and Attribute_3 = 40-44 THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 30-39 and Attribute_4 = 9-11 THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_4 = 9-11 THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 50-59 and Attribute_4 = 6-8 THEN Class = recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 50-59 and Attribute_4 = 9-11 THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_4 = 6-8 THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 50-59 and Attribute_6 = 1 THEN Class = no-recurrence-events ---> Coverage 7.6087% 
+IF Attribute_1 = 30-39 and Attribute_8 = right_low THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 30-39 and Attribute_8 = right_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_8 = central THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 60-69 and Attribute_8 = right_low THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = ge40 and Attribute_3 = 0-4 THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_2 = ge40 and Attribute_3 = 15-19 THEN Class = no-recurrence-events ---> Coverage 3.8043% 
+IF Attribute_2 = ge40 and Attribute_3 = 35-39 THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = premeno and Attribute_3 = 40-44 THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_2 = premeno and Attribute_3 = 45-49 THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = ge40 and Attribute_4 = 15-17 THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = ge40 and Attribute_4 = 9-11 THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = premeno and Attribute_4 = 15-17 THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_2 = premeno and Attribute_8 = right_low THEN Class = no-recurrence-events ---> Coverage 4.8913% 
+IF Attribute_3 = 15-19 and Attribute_4 = 15-17 THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 15-19 and Attribute_4 = 6-8 THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 20-24 and Attribute_4 = 6-8 THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 25-29 and Attribute_4 = 3-5 THEN Class = recurrence-events ---> Coverage 1.6304% 
+IF Attribute_3 = 25-29 and Attribute_4 = 6-8 THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 30-34 and Attribute_4 = 15-17 THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 30-34 and Attribute_4 = 9-11 THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 40-44 and Attribute_4 = 0-2 THEN Class = no-recurrence-events ---> Coverage 3.2609% 
+IF Attribute_3 = 40-44 and Attribute_4 = 15-17 THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 40-44 and Attribute_4 = 3-5 THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 40-44 and Attribute_4 = 6-8 THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 45-49 and Attribute_4 = 6-8 THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 40-44 and Attribute_5 = no THEN Class = no-recurrence-events ---> Coverage 3.8043% 
+IF Attribute_3 = 45-49 and Attribute_5 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 50-54 and Attribute_5 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 0-4 and Attribute_6 = 1 THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_3 = 0-4 and Attribute_6 = 3 THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 25-29 and Attribute_6 = 1 THEN Class = no-recurrence-events ---> Coverage 3.8043% 
+IF Attribute_3 = 35-39 and Attribute_6 = 2 THEN Class = no-recurrence-events ---> Coverage 2.7174% 
+IF Attribute_3 = 40-44 and Attribute_6 = 1 THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 40-44 and Attribute_6 = 2 THEN Class = no-recurrence-events ---> Coverage 3.2609% 
+IF Attribute_3 = 45-49 and Attribute_6 = 1 THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 45-49 and Attribute_6 = 2 THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 45-49 and Attribute_6 = 3 THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 50-54 and Attribute_6 = 1 THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 50-54 and Attribute_6 = 3 THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 0-4 and Attribute_7 = left THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_3 = 40-44 and Attribute_7 = right THEN Class = no-recurrence-events ---> Coverage 2.7174% 
+IF Attribute_3 = 45-49 and Attribute_7 = left THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 45-49 and Attribute_7 = right THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 50-54 and Attribute_7 = left THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 0-4 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 0-4 and Attribute_8 = right_low THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 15-19 and Attribute_8 = central THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 15-19 and Attribute_8 = right_low THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 15-19 and Attribute_8 = right_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 20-24 and Attribute_8 = right_low THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 20-24 and Attribute_8 = right_up THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 25-29 and Attribute_8 = central THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 30-34 and Attribute_8 = central THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 35-39 and Attribute_8 = right_up THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_3 = 40-44 and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_3 = 40-44 and Attribute_8 = right_up THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 45-49 and Attribute_8 = central THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 45-49 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 45-49 and Attribute_8 = right_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 50-54 and Attribute_8 = right_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 35-39 and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_3 = 40-44 and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 2.7174% 
+IF Attribute_3 = 45-49 and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_4 = 6-8 and Attribute_5 = no THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_4 = 15-17 and Attribute_6 = 2 THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_4 = 15-17 and Attribute_6 = 3 THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_4 = 3-5 and Attribute_6 = 1 THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_4 = 9-11 and Attribute_6 = 2 THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_4 = 9-11 and Attribute_6 = 3 THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_4 = 15-17 and Attribute_7 = left THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_4 = 15-17 and Attribute_7 = right THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_4 = 9-11 and Attribute_7 = left THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_4 = 9-11 and Attribute_7 = right THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_4 = 0-2 and Attribute_8 = right_low THEN Class = no-recurrence-events ---> Coverage 6.5217% 
+IF Attribute_4 = 15-17 and Attribute_8 = left_low THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_4 = 15-17 and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_4 = 3-5 and Attribute_8 = central THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_4 = 3-5 and Attribute_8 = right_up THEN Class = recurrence-events ---> Coverage 2.1739% 
+IF Attribute_4 = 6-8 and Attribute_8 = central THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_4 = 6-8 and Attribute_8 = right_low THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_4 = 6-8 and Attribute_8 = right_up THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_4 = 9-11 and Attribute_8 = left_low THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_4 = 9-11 and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_4 = 9-11 and Attribute_8 = right_low THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_4 = 9-11 and Attribute_8 = right_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_4 = 15-17 and Attribute_9 = no THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_4 = 15-17 and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_4 = 9-11 and Attribute_9 = no THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_5 = no and Attribute_8 = right_low THEN Class = no-recurrence-events ---> Coverage 6.5217% 
+IF Attribute_5 = yes and Attribute_8 = right_low THEN Class = recurrence-events ---> Coverage 2.1739% 
+IF Attribute_6 = 1 and Attribute_8 = central THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_6 = 1 and Attribute_8 = right_low THEN Class = no-recurrence-events ---> Coverage 2.7174% 
+IF Attribute_6 = 3 and Attribute_8 = right_low THEN Class = recurrence-events ---> Coverage 1.6304% 
+IF Attribute_7 = right and Attribute_8 = right_low THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_8 = right_low and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 40-49 and Attribute_2 = ge40 and Attribute_3 = 30-34 THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_2 = ge40 and Attribute_3 = 25-29 THEN Class = no-recurrence-events ---> Coverage 2.7174% 
+IF Attribute_1 = 40-49 and Attribute_2 = ge40 and Attribute_4 = 3-5 THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 50-59 and Attribute_2 = premeno and Attribute_6 = 3 THEN Class = recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 50-59 and Attribute_2 = premeno and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 3.2609% 
+IF Attribute_1 = 50-59 and Attribute_2 = premeno and Attribute_8 = right_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 30-39 and Attribute_3 = 20-24 and Attribute_4 = 3-5 THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 30-39 and Attribute_3 = 25-29 and Attribute_4 = 0-2 THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 30-39 and Attribute_3 = 30-34 and Attribute_4 = 3-5 THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 30-39 and Attribute_3 = 30-34 and Attribute_4 = 6-8 THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 30-39 and Attribute_3 = 15-19 and Attribute_5 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 30-39 and Attribute_3 = 20-24 and Attribute_5 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 30-39 and Attribute_3 = 25-29 and Attribute_5 = no THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 30-39 and Attribute_3 = 30-34 and Attribute_5 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_3 = 15-19 and Attribute_5 = yes THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 40-49 and Attribute_3 = 20-24 and Attribute_5 = yes THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 40-49 and Attribute_3 = 25-29 and Attribute_5 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_3 = 35-39 and Attribute_5 = yes THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_1 = 50-59 and Attribute_3 = 15-19 and Attribute_5 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_3 = 25-29 and Attribute_5 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_3 = 20-24 and Attribute_5 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 30-39 and Attribute_3 = 20-24 and Attribute_6 = 2 THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 30-39 and Attribute_3 = 25-29 and Attribute_6 = 2 THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 30-39 and Attribute_3 = 25-29 and Attribute_6 = 3 THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 30-39 and Attribute_3 = 30-34 and Attribute_6 = 1 THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_3 = 15-19 and Attribute_6 = 3 THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 40-49 and Attribute_3 = 20-24 and Attribute_6 = 1 THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_3 = 25-29 and Attribute_6 = 2 THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_1 = 40-49 and Attribute_3 = 25-29 and Attribute_6 = 3 THEN Class = recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 40-49 and Attribute_3 = 35-39 and Attribute_6 = 3 THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 50-59 and Attribute_3 = 25-29 and Attribute_6 = 2 THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_1 = 60-69 and Attribute_3 = 20-24 and Attribute_6 = 2 THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 60-69 and Attribute_3 = 20-24 and Attribute_6 = 3 THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 60-69 and Attribute_3 = 30-34 and Attribute_6 = 1 THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_3 = 50-54 and Attribute_6 = 2 THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 30-39 and Attribute_3 = 20-24 and Attribute_7 = right THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 30-39 and Attribute_3 = 25-29 and Attribute_7 = right THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_3 = 15-19 and Attribute_7 = right THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_3 = 25-29 and Attribute_7 = right THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 40-49 and Attribute_3 = 35-39 and Attribute_7 = left THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_3 = 50-54 and Attribute_7 = right THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_3 = 15-19 and Attribute_7 = right THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 50-59 and Attribute_3 = 30-34 and Attribute_7 = right THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 30-39 and Attribute_3 = 15-19 and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 30-39 and Attribute_3 = 20-24 and Attribute_8 = central THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 30-39 and Attribute_3 = 25-29 and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 30-39 and Attribute_3 = 30-34 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 30-39 and Attribute_3 = 30-34 and Attribute_8 = left_up THEN Class = recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 40-49 and Attribute_3 = 15-19 and Attribute_8 = left_up THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 40-49 and Attribute_3 = 25-29 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 40-49 and Attribute_3 = 25-29 and Attribute_8 = right_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_3 = 35-39 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 50-59 and Attribute_3 = 20-24 and Attribute_8 = central THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_3 = 25-29 and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 50-59 and Attribute_3 = 25-29 and Attribute_8 = right_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_3 = 30-34 and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 60-69 and Attribute_3 = 25-29 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 60-69 and Attribute_3 = 25-29 and Attribute_8 = right_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_3 = 30-34 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_1 = 60-69 and Attribute_3 = 50-54 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 30-39 and Attribute_3 = 15-19 and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 30-39 and Attribute_3 = 20-24 and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 30-39 and Attribute_3 = 25-29 and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 30-39 and Attribute_3 = 30-34 and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_3 = 50-54 and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_3 = 50-54 and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_3 = 15-19 and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_3 = 25-29 and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 4.8913% 
+IF Attribute_1 = 50-59 and Attribute_3 = 25-29 and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 60-69 and Attribute_3 = 20-24 and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_3 = 50-54 and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 30-39 and Attribute_4 = 3-5 and Attribute_5 = no THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_4 = 6-8 and Attribute_5 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_4 = 0-2 and Attribute_5 = yes THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 60-69 and Attribute_4 = 0-2 and Attribute_5 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 30-39 and Attribute_4 = 3-5 and Attribute_6 = 2 THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 30-39 and Attribute_4 = 3-5 and Attribute_6 = 3 THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 30-39 and Attribute_4 = 6-8 and Attribute_6 = 2 THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 30-39 and Attribute_4 = 6-8 and Attribute_6 = 3 THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_4 = 6-8 and Attribute_6 = 2 THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 40-49 and Attribute_4 = 6-8 and Attribute_6 = 3 THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_4 = 3-5 and Attribute_6 = 2 THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 50-59 and Attribute_4 = 3-5 and Attribute_6 = 3 THEN Class = recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 60-69 and Attribute_4 = 3-5 and Attribute_6 = 3 THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 30-39 and Attribute_4 = 3-5 and Attribute_7 = left THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 30-39 and Attribute_4 = 6-8 and Attribute_7 = left THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 30-39 and Attribute_4 = 6-8 and Attribute_7 = right THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 40-49 and Attribute_4 = 3-5 and Attribute_7 = left THEN Class = recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 40-49 and Attribute_4 = 6-8 and Attribute_7 = left THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 30-39 and Attribute_4 = 3-5 and Attribute_8 = left_low THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 30-39 and Attribute_4 = 6-8 and Attribute_8 = left_low THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 30-39 and Attribute_4 = 6-8 and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_4 = 3-5 and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 40-49 and Attribute_4 = 6-8 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_4 = 3-5 and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 60-69 and Attribute_4 = 3-5 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_4 = 3-5 and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 30-39 and Attribute_4 = 6-8 and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_4 = 6-8 and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 30-39 and Attribute_5 = yes and Attribute_6 = 2 THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 30-39 and Attribute_5 = yes and Attribute_6 = 3 THEN Class = recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 50-59 and Attribute_5 = yes and Attribute_6 = 3 THEN Class = recurrence-events ---> Coverage 2.7174% 
+IF Attribute_1 = 30-39 and Attribute_5 = yes and Attribute_7 = left THEN Class = recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 30-39 and Attribute_5 = yes and Attribute_7 = right THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 40-49 and Attribute_5 = yes and Attribute_7 = left THEN Class = recurrence-events ---> Coverage 3.2609% 
+IF Attribute_1 = 30-39 and Attribute_5 = yes and Attribute_8 = left_low THEN Class = recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 30-39 and Attribute_5 = yes and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 50-59 and Attribute_5 = yes and Attribute_8 = central THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_5 = yes and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 50-59 and Attribute_5 = yes and Attribute_8 = right_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_5 = no and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_5 = yes and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 60-69 and Attribute_5 = yes and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 30-39 and Attribute_6 = 1 and Attribute_7 = left THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 60-69 and Attribute_6 = 1 and Attribute_7 = left THEN Class = no-recurrence-events ---> Coverage 3.2609% 
+IF Attribute_1 = 30-39 and Attribute_6 = 1 and Attribute_8 = left_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 30-39 and Attribute_6 = 2 and Attribute_8 = central THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 30-39 and Attribute_6 = 2 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 30-39 and Attribute_6 = 3 and Attribute_8 = central THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_6 = 1 and Attribute_8 = right_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_6 = 2 and Attribute_8 = right_up THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 50-59 and Attribute_6 = 3 and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_1 = 60-69 and Attribute_6 = 1 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_1 = 60-69 and Attribute_6 = 1 and Attribute_8 = left_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_6 = 2 and Attribute_8 = central THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_6 = 2 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 3.2609% 
+IF Attribute_1 = 60-69 and Attribute_6 = 2 and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 3.8043% 
+IF Attribute_1 = 30-39 and Attribute_6 = 2 and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 30-39 and Attribute_6 = 3 and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 2.1739% 
+IF Attribute_1 = 50-59 and Attribute_6 = 3 and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 2.1739% 
+IF Attribute_1 = 60-69 and Attribute_6 = 1 and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 30-39 and Attribute_7 = left and Attribute_8 = central THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 30-39 and Attribute_7 = left and Attribute_8 = left_up THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 30-39 and Attribute_7 = right and Attribute_8 = central THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_7 = left and Attribute_8 = central THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_7 = right and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 5.9783% 
+IF Attribute_1 = 60-69 and Attribute_7 = left and Attribute_8 = right_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_7 = right and Attribute_8 = central THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_8 = central and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_8 = left_up and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_8 = central and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_8 = right_up and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_2 = ge40 and Attribute_3 = 25-29 and Attribute_5 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = premeno and Attribute_3 = 15-19 and Attribute_5 = yes THEN Class = recurrence-events ---> Coverage 1.6304% 
+IF Attribute_2 = ge40 and Attribute_3 = 30-34 and Attribute_6 = 1 THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_2 = ge40 and Attribute_3 = 50-54 and Attribute_6 = 2 THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_2 = premeno and Attribute_3 = 15-19 and Attribute_6 = 3 THEN Class = recurrence-events ---> Coverage 1.6304% 
+IF Attribute_2 = premeno and Attribute_3 = 20-24 and Attribute_6 = 1 THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = premeno and Attribute_3 = 25-29 and Attribute_6 = 2 THEN Class = no-recurrence-events ---> Coverage 3.8043% 
+IF Attribute_2 = premeno and Attribute_3 = 25-29 and Attribute_6 = 3 THEN Class = recurrence-events ---> Coverage 2.7174% 
+IF Attribute_2 = ge40 and Attribute_3 = 20-24 and Attribute_8 = central THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = ge40 and Attribute_3 = 25-29 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 3.2609% 
+IF Attribute_2 = ge40 and Attribute_3 = 50-54 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = premeno and Attribute_3 = 15-19 and Attribute_8 = left_up THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_2 = premeno and Attribute_3 = 20-24 and Attribute_8 = central THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_2 = premeno and Attribute_3 = 25-29 and Attribute_8 = right_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = premeno and Attribute_3 = 50-54 and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = ge40 and Attribute_3 = 20-24 and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_2 = ge40 and Attribute_3 = 25-29 and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = ge40 and Attribute_3 = 50-54 and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = premeno and Attribute_3 = 15-19 and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = premeno and Attribute_3 = 50-54 and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = premeno and Attribute_4 = 6-8 and Attribute_6 = 2 THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_2 = premeno and Attribute_4 = 6-8 and Attribute_6 = 3 THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_2 = ge40 and Attribute_4 = 6-8 and Attribute_7 = right THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = ge40 and Attribute_4 = 3-5 and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_2 = ge40 and Attribute_4 = 6-8 and Attribute_8 = left_low THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = ge40 and Attribute_4 = 6-8 and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_2 = ge40 and Attribute_5 = yes and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_2 = ge40 and Attribute_6 = 1 and Attribute_7 = left THEN Class = no-recurrence-events ---> Coverage 5.9783% 
+IF Attribute_2 = ge40 and Attribute_6 = 1 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 3.2609% 
+IF Attribute_2 = ge40 and Attribute_6 = 2 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 5.9783% 
+IF Attribute_2 = premeno and Attribute_6 = 1 and Attribute_8 = right_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = premeno and Attribute_6 = 3 and Attribute_8 = central THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_2 = ge40 and Attribute_6 = 1 and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = ge40 and Attribute_7 = left and Attribute_8 = right_up THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_2 = premeno and Attribute_7 = left and Attribute_8 = central THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_2 = premeno and Attribute_7 = right and Attribute_8 = central THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = ge40 and Attribute_8 = right_up and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 20-24 and Attribute_4 = 0-2 and Attribute_5 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 30-34 and Attribute_4 = 0-2 and Attribute_5 = yes THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 30-34 and Attribute_4 = 3-5 and Attribute_5 = no THEN Class = recurrence-events ---> Coverage 1.6304% 
+IF Attribute_3 = 35-39 and Attribute_4 = 0-2 and Attribute_5 = yes THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 20-24 and Attribute_4 = 3-5 and Attribute_6 = 3 THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 25-29 and Attribute_4 = 0-2 and Attribute_6 = 2 THEN Class = no-recurrence-events ---> Coverage 5.9783% 
+IF Attribute_3 = 30-34 and Attribute_4 = 6-8 and Attribute_6 = 3 THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 20-24 and Attribute_4 = 3-5 and Attribute_7 = left THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 20-24 and Attribute_4 = 3-5 and Attribute_8 = left_low THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 20-24 and Attribute_4 = 3-5 and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_3 = 30-34 and Attribute_4 = 3-5 and Attribute_8 = left_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 15-19 and Attribute_4 = 0-2 and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 30-34 and Attribute_4 = 6-8 and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 15-19 and Attribute_5 = no and Attribute_6 = 3 THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 15-19 and Attribute_5 = yes and Attribute_6 = 2 THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 15-19 and Attribute_5 = yes and Attribute_6 = 3 THEN Class = recurrence-events ---> Coverage 1.6304% 
+IF Attribute_3 = 20-24 and Attribute_5 = yes and Attribute_6 = 3 THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 25-29 and Attribute_5 = yes and Attribute_6 = 2 THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 25-29 and Attribute_5 = yes and Attribute_6 = 3 THEN Class = recurrence-events ---> Coverage 1.6304% 
+IF Attribute_3 = 15-19 and Attribute_5 = yes and Attribute_7 = right THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 20-24 and Attribute_5 = yes and Attribute_7 = left THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 25-29 and Attribute_5 = yes and Attribute_7 = left THEN Class = recurrence-events ---> Coverage 1.6304% 
+IF Attribute_3 = 25-29 and Attribute_5 = yes and Attribute_7 = right THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 35-39 and Attribute_5 = yes and Attribute_7 = left THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 35-39 and Attribute_5 = yes and Attribute_7 = right THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_3 = 15-19 and Attribute_5 = yes and Attribute_8 = left_low THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 15-19 and Attribute_5 = yes and Attribute_8 = left_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 20-24 and Attribute_5 = yes and Attribute_8 = left_low THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 20-24 and Attribute_5 = yes and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_3 = 25-29 and Attribute_5 = yes and Attribute_8 = left_low THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 25-29 and Attribute_5 = yes and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 30-34 and Attribute_5 = yes and Attribute_8 = left_up THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 35-39 and Attribute_5 = yes and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 15-19 and Attribute_5 = no and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 15-19 and Attribute_5 = yes and Attribute_9 = no THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 35-39 and Attribute_5 = yes and Attribute_9 = no THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 15-19 and Attribute_6 = 1 and Attribute_7 = left THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_3 = 15-19 and Attribute_6 = 1 and Attribute_7 = right THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 15-19 and Attribute_6 = 2 and Attribute_7 = right THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_3 = 15-19 and Attribute_6 = 3 and Attribute_7 = left THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 20-24 and Attribute_6 = 1 and Attribute_7 = left THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 25-29 and Attribute_6 = 2 and Attribute_7 = left THEN Class = no-recurrence-events ---> Coverage 3.8043% 
+IF Attribute_3 = 35-39 and Attribute_6 = 1 and Attribute_7 = left THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 35-39 and Attribute_6 = 1 and Attribute_7 = right THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 35-39 and Attribute_6 = 3 and Attribute_7 = right THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 15-19 and Attribute_6 = 3 and Attribute_8 = left_low THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 20-24 and Attribute_6 = 1 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 20-24 and Attribute_6 = 1 and Attribute_8 = left_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 20-24 and Attribute_6 = 3 and Attribute_8 = central THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 25-29 and Attribute_6 = 2 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 3.8043% 
+IF Attribute_3 = 25-29 and Attribute_6 = 2 and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_3 = 25-29 and Attribute_6 = 2 and Attribute_8 = right_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 30-34 and Attribute_6 = 1 and Attribute_8 = right_up THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 30-34 and Attribute_6 = 2 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_3 = 35-39 and Attribute_6 = 1 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 35-39 and Attribute_6 = 1 and Attribute_8 = left_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 35-39 and Attribute_6 = 3 and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 50-54 and Attribute_6 = 2 and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 15-19 and Attribute_6 = 2 and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 25-29 and Attribute_6 = 2 and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 25-29 and Attribute_6 = 3 and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 2.1739% 
+IF Attribute_3 = 30-34 and Attribute_6 = 1 and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 30-34 and Attribute_6 = 3 and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 2.1739% 
+IF Attribute_3 = 50-54 and Attribute_6 = 2 and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 15-19 and Attribute_7 = left and Attribute_8 = left_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 20-24 and Attribute_7 = left and Attribute_8 = central THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 20-24 and Attribute_7 = right and Attribute_8 = central THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 25-29 and Attribute_7 = right and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_3 = 25-29 and Attribute_7 = right and Attribute_8 = right_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 30-34 and Attribute_7 = right and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 35-39 and Attribute_7 = left and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 35-39 and Attribute_7 = right and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 50-54 and Attribute_7 = right and Attribute_8 = left_low THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 15-19 and Attribute_7 = right and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 20-24 and Attribute_7 = left and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 1.6304% 
+IF Attribute_3 = 15-19 and Attribute_8 = left_low and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 15-19 and Attribute_8 = left_up and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 25-29 and Attribute_8 = left_low and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 5.4348% 
+IF Attribute_3 = 25-29 and Attribute_8 = left_up and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 30-34 and Attribute_8 = left_up and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 1.6304% 
+IF Attribute_3 = 50-54 and Attribute_8 = left_low and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 50-54 and Attribute_8 = left_low and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 50-54 and Attribute_8 = left_up and Attribute_9 = no THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 50-54 and Attribute_8 = left_up and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_4 = 3-5 and Attribute_5 = no and Attribute_6 = 3 THEN Class = recurrence-events ---> Coverage 2.1739% 
+IF Attribute_4 = 0-2 and Attribute_5 = yes and Attribute_7 = left THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_4 = 3-5 and Attribute_5 = no and Attribute_7 = left THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_4 = 0-2 and Attribute_5 = yes and Attribute_8 = central THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_4 = 0-2 and Attribute_5 = yes and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_4 = 0-2 and Attribute_5 = yes and Attribute_8 = right_up THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_4 = 3-5 and Attribute_5 = no and Attribute_8 = left_low THEN Class = recurrence-events ---> Coverage 1.6304% 
+IF Attribute_4 = 3-5 and Attribute_5 = yes and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_4 = 6-8 and Attribute_5 = yes and Attribute_8 = left_low THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_4 = 6-8 and Attribute_6 = 2 and Attribute_7 = right THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_4 = 6-8 and Attribute_6 = 3 and Attribute_7 = right THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_4 = 3-5 and Attribute_6 = 2 and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_4 = 6-8 and Attribute_6 = 2 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_4 = 6-8 and Attribute_6 = 2 and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_4 = 6-8 and Attribute_6 = 3 and Attribute_8 = left_low THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_4 = 6-8 and Attribute_6 = 3 and Attribute_8 = left_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_4 = 6-8 and Attribute_6 = 2 and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_4 = 6-8 and Attribute_6 = 3 and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_4 = 0-2 and Attribute_7 = left and Attribute_8 = central THEN Class = no-recurrence-events ---> Coverage 3.2609% 
+IF Attribute_4 = 6-8 and Attribute_7 = left and Attribute_8 = left_low THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_4 = 6-8 and Attribute_7 = left and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_4 = 6-8 and Attribute_7 = right and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_4 = 6-8 and Attribute_7 = left and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 1.6304% 
+IF Attribute_4 = 6-8 and Attribute_7 = right and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_4 = 0-2 and Attribute_8 = central and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_4 = 3-5 and Attribute_8 = left_up and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_4 = 6-8 and Attribute_8 = left_up and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_5 = yes and Attribute_6 = 2 and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 3.8043% 
+IF Attribute_5 = yes and Attribute_6 = 3 and Attribute_8 = central THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_5 = yes and Attribute_6 = 3 and Attribute_8 = right_up THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_5 = no and Attribute_7 = left and Attribute_8 = central THEN Class = no-recurrence-events ---> Coverage 2.7174% 
+IF Attribute_5 = yes and Attribute_7 = left and Attribute_8 = left_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_5 = yes and Attribute_7 = left and Attribute_8 = right_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_5 = yes and Attribute_7 = right and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_5 = yes and Attribute_8 = central and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_6 = 1 and Attribute_7 = left and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_6 = 1 and Attribute_7 = left and Attribute_8 = right_up THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_6 = 2 and Attribute_7 = left and Attribute_8 = right_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_6 = 2 and Attribute_7 = right and Attribute_8 = central THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_6 = 3 and Attribute_7 = left and Attribute_8 = central THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_6 = 3 and Attribute_7 = right and Attribute_8 = central THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_6 = 1 and Attribute_7 = left and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 11.4130% 
+IF Attribute_6 = 3 and Attribute_7 = left and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 4.8913% 
+IF Attribute_6 = 1 and Attribute_8 = right_up and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 2.7174% 
+IF Attribute_6 = 1 and Attribute_8 = right_up and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_6 = 2 and Attribute_8 = left_up and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 4.8913% 
+IF Attribute_7 = left and Attribute_8 = central and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 3.2609% 
+IF Attribute_1 = 40-49 and Attribute_2 = ge40 and Attribute_3 = 25-29 and Attribute_4 = 0-2 THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_2 = ge40 and Attribute_3 = 30-34 and Attribute_4 = 0-2 THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 50-59 and Attribute_2 = premeno and Attribute_3 = 30-34 and Attribute_4 = 0-2 THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_2 = ge40 and Attribute_3 = 25-29 and Attribute_5 = no THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_2 = premeno and Attribute_3 = 30-34 and Attribute_5 = no THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_2 = ge40 and Attribute_3 = 20-24 and Attribute_6 = 2 THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_2 = premeno and Attribute_3 = 20-24 and Attribute_6 = 3 THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_2 = ge40 and Attribute_3 = 30-34 and Attribute_6 = 2 THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_2 = premeno and Attribute_3 = 30-34 and Attribute_6 = 2 THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_2 = ge40 and Attribute_3 = 20-24 and Attribute_7 = left THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 40-49 and Attribute_2 = ge40 and Attribute_3 = 20-24 and Attribute_7 = right THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 40-49 and Attribute_2 = premeno and Attribute_3 = 20-24 and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_2 = ge40 and Attribute_3 = 30-34 and Attribute_8 = right_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_2 = premeno and Attribute_3 = 30-34 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_2 = ge40 and Attribute_3 = 25-29 and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_2 = premeno and Attribute_3 = 25-29 and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 50-59 and Attribute_2 = ge40 and Attribute_3 = 30-34 and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 50-59 and Attribute_2 = premeno and Attribute_3 = 30-34 and Attribute_9 = no THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_2 = premeno and Attribute_3 = 30-34 and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_2 = ge40 and Attribute_4 = 0-2 and Attribute_6 = 3 THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 50-59 and Attribute_2 = ge40 and Attribute_4 = 0-2 and Attribute_6 = 3 THEN Class = no-recurrence-events ---> Coverage 3.2609% 
+IF Attribute_1 = 40-49 and Attribute_2 = ge40 and Attribute_4 = 0-2 and Attribute_7 = left THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 40-49 and Attribute_2 = ge40 and Attribute_4 = 0-2 and Attribute_7 = right THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_2 = ge40 and Attribute_4 = 0-2 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 50-59 and Attribute_2 = ge40 and Attribute_4 = 0-2 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 4.3478% 
+IF Attribute_1 = 50-59 and Attribute_2 = ge40 and Attribute_4 = 0-2 and Attribute_8 = right_up THEN Class = no-recurrence-events ---> Coverage 3.2609% 
+IF Attribute_1 = 60-69 and Attribute_2 = ge40 and Attribute_4 = 0-2 and Attribute_8 = right_up THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 50-59 and Attribute_2 = ge40 and Attribute_4 = 0-2 and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_2 = ge40 and Attribute_5 = no and Attribute_7 = right THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 50-59 and Attribute_2 = ge40 and Attribute_5 = no and Attribute_8 = right_up THEN Class = no-recurrence-events ---> Coverage 3.2609% 
+IF Attribute_1 = 60-69 and Attribute_2 = ge40 and Attribute_5 = no and Attribute_8 = right_up THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 40-49 and Attribute_2 = ge40 and Attribute_5 = no and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_2 = ge40 and Attribute_6 = 2 and Attribute_7 = left THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_2 = ge40 and Attribute_6 = 3 and Attribute_7 = right THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_2 = premeno and Attribute_6 = 2 and Attribute_7 = right THEN Class = no-recurrence-events ---> Coverage 2.7174% 
+IF Attribute_1 = 40-49 and Attribute_2 = ge40 and Attribute_6 = 3 and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_2 = ge40 and Attribute_6 = 1 and Attribute_8 = right_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_2 = ge40 and Attribute_6 = 2 and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_2 = ge40 and Attribute_6 = 3 and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 50-59 and Attribute_2 = premeno and Attribute_6 = 2 and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 40-49 and Attribute_2 = ge40 and Attribute_7 = left and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_2 = ge40 and Attribute_7 = right and Attribute_8 = left_low THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_2 = ge40 and Attribute_7 = right and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 40-49 and Attribute_2 = ge40 and Attribute_7 = left and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_2 = ge40 and Attribute_7 = right and Attribute_9 = no THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_2 = premeno and Attribute_7 = right and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 3.2609% 
+IF Attribute_1 = 40-49 and Attribute_2 = ge40 and Attribute_8 = left_low and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_2 = ge40 and Attribute_8 = left_up and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_2 = ge40 and Attribute_8 = left_low and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_3 = 20-24 and Attribute_4 = 0-2 and Attribute_6 = 3 THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 40-49 and Attribute_3 = 30-34 and Attribute_4 = 0-2 and Attribute_6 = 2 THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 50-59 and Attribute_3 = 20-24 and Attribute_4 = 0-2 and Attribute_6 = 3 THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 50-59 and Attribute_3 = 25-29 and Attribute_4 = 0-2 and Attribute_7 = left THEN Class = no-recurrence-events ---> Coverage 3.2609% 
+IF Attribute_1 = 60-69 and Attribute_3 = 20-24 and Attribute_4 = 0-2 and Attribute_7 = left THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 60-69 and Attribute_3 = 25-29 and Attribute_4 = 0-2 and Attribute_7 = right THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 60-69 and Attribute_3 = 30-34 and Attribute_4 = 0-2 and Attribute_7 = left THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_1 = 60-69 and Attribute_3 = 30-34 and Attribute_4 = 0-2 and Attribute_7 = right THEN Class = recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 40-49 and Attribute_3 = 15-19 and Attribute_4 = 0-2 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_3 = 30-34 and Attribute_4 = 0-2 and Attribute_8 = left_low THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_3 = 30-34 and Attribute_4 = 0-2 and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 50-59 and Attribute_3 = 30-34 and Attribute_4 = 0-2 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_3 = 30-34 and Attribute_4 = 0-2 and Attribute_8 = right_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_3 = 20-24 and Attribute_4 = 0-2 and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_3 = 25-29 and Attribute_4 = 0-2 and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 40-49 and Attribute_3 = 30-34 and Attribute_5 = no and Attribute_6 = 2 THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_1 = 50-59 and Attribute_3 = 20-24 and Attribute_5 = no and Attribute_6 = 3 THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 60-69 and Attribute_3 = 30-34 and Attribute_5 = no and Attribute_6 = 2 THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 50-59 and Attribute_3 = 25-29 and Attribute_5 = no and Attribute_7 = left THEN Class = no-recurrence-events ---> Coverage 3.2609% 
+IF Attribute_1 = 60-69 and Attribute_3 = 20-24 and Attribute_5 = no and Attribute_7 = left THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 60-69 and Attribute_3 = 30-34 and Attribute_5 = no and Attribute_7 = left THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_1 = 60-69 and Attribute_3 = 30-34 and Attribute_5 = no and Attribute_7 = right THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 40-49 and Attribute_3 = 15-19 and Attribute_5 = no and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_3 = 30-34 and Attribute_5 = no and Attribute_8 = left_low THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 40-49 and Attribute_3 = 30-34 and Attribute_5 = no and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 40-49 and Attribute_3 = 25-29 and Attribute_5 = no and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 40-49 and Attribute_3 = 20-24 and Attribute_6 = 3 and Attribute_7 = left THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 40-49 and Attribute_3 = 30-34 and Attribute_6 = 1 and Attribute_7 = right THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_3 = 30-34 and Attribute_6 = 2 and Attribute_7 = right THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 50-59 and Attribute_3 = 20-24 and Attribute_6 = 2 and Attribute_7 = left THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_3 = 20-24 and Attribute_6 = 3 and Attribute_7 = left THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_3 = 25-29 and Attribute_6 = 3 and Attribute_7 = right THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_3 = 30-34 and Attribute_6 = 3 and Attribute_7 = left THEN Class = recurrence-events ---> Coverage 2.1739% 
+IF Attribute_1 = 60-69 and Attribute_3 = 20-24 and Attribute_6 = 1 and Attribute_7 = right THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_3 = 25-29 and Attribute_6 = 3 and Attribute_7 = left THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_3 = 25-29 and Attribute_6 = 3 and Attribute_7 = right THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 60-69 and Attribute_3 = 30-34 and Attribute_6 = 3 and Attribute_7 = left THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 60-69 and Attribute_3 = 30-34 and Attribute_6 = 3 and Attribute_7 = right THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 40-49 and Attribute_3 = 15-19 and Attribute_6 = 2 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_3 = 20-24 and Attribute_6 = 3 and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_3 = 30-34 and Attribute_6 = 1 and Attribute_8 = left_low THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_3 = 30-34 and Attribute_6 = 1 and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_3 = 30-34 and Attribute_6 = 2 and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_3 = 30-34 and Attribute_6 = 3 and Attribute_8 = left_low THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 50-59 and Attribute_3 = 25-29 and Attribute_6 = 3 and Attribute_8 = left_low THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 50-59 and Attribute_3 = 30-34 and Attribute_6 = 3 and Attribute_8 = right_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_3 = 30-34 and Attribute_6 = 3 and Attribute_8 = left_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_3 = 20-24 and Attribute_6 = 3 and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 40-49 and Attribute_3 = 30-34 and Attribute_6 = 1 and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 40-49 and Attribute_3 = 30-34 and Attribute_6 = 2 and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_3 = 30-34 and Attribute_6 = 2 and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 40-49 and Attribute_3 = 20-24 and Attribute_7 = left and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_3 = 30-34 and Attribute_7 = left and Attribute_8 = left_low THEN Class = recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 50-59 and Attribute_3 = 25-29 and Attribute_7 = right and Attribute_8 = left_low THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_3 = 30-34 and Attribute_7 = left and Attribute_8 = right_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_3 = 20-24 and Attribute_7 = left and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_3 = 20-24 and Attribute_7 = right and Attribute_8 = left_low THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_3 = 25-29 and Attribute_7 = left and Attribute_8 = left_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_3 = 30-34 and Attribute_7 = left and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_3 = 30-34 and Attribute_7 = right and Attribute_8 = left_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_3 = 30-34 and Attribute_7 = left and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 40-49 and Attribute_3 = 30-34 and Attribute_7 = right and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_3 = 20-24 and Attribute_7 = left and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 60-69 and Attribute_3 = 30-34 and Attribute_7 = left and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_1 = 60-69 and Attribute_3 = 30-34 and Attribute_7 = right and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 40-49 and Attribute_3 = 30-34 and Attribute_8 = left_low and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_3 = 30-34 and Attribute_8 = right_up and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_3 = 30-34 and Attribute_8 = left_low and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_3 = 30-34 and Attribute_8 = left_up and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_3 = 30-34 and Attribute_8 = right_up and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_4 = 0-2 and Attribute_5 = no and Attribute_6 = 2 THEN Class = no-recurrence-events ---> Coverage 6.5217% 
+IF Attribute_1 = 60-69 and Attribute_4 = 0-2 and Attribute_6 = 2 and Attribute_7 = left THEN Class = no-recurrence-events ---> Coverage 3.2609% 
+IF Attribute_1 = 40-49 and Attribute_4 = 0-2 and Attribute_6 = 2 and Attribute_8 = right_up THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 40-49 and Attribute_4 = 0-2 and Attribute_6 = 3 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 60-69 and Attribute_4 = 0-2 and Attribute_6 = 2 and Attribute_8 = right_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_4 = 0-2 and Attribute_6 = 3 and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 50-59 and Attribute_4 = 0-2 and Attribute_6 = 2 and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 60-69 and Attribute_4 = 0-2 and Attribute_6 = 2 and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 4.8913% 
+IF Attribute_1 = 50-59 and Attribute_4 = 0-2 and Attribute_7 = right and Attribute_8 = right_up THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_1 = 60-69 and Attribute_4 = 0-2 and Attribute_7 = left and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 4.3478% 
+IF Attribute_1 = 60-69 and Attribute_4 = 0-2 and Attribute_7 = right and Attribute_8 = right_up THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 50-59 and Attribute_4 = 0-2 and Attribute_7 = left and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_4 = 0-2 and Attribute_7 = left and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_4 = 0-2 and Attribute_8 = left_up and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 40-49 and Attribute_4 = 0-2 and Attribute_8 = right_up and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_4 = 0-2 and Attribute_8 = left_low and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_4 = 0-2 and Attribute_8 = left_low and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_4 = 0-2 and Attribute_8 = right_up and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_5 = no and Attribute_6 = 2 and Attribute_7 = left THEN Class = no-recurrence-events ---> Coverage 3.2609% 
+IF Attribute_1 = 40-49 and Attribute_5 = no and Attribute_6 = 2 and Attribute_8 = right_up THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 60-69 and Attribute_5 = no and Attribute_6 = 2 and Attribute_8 = right_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_5 = no and Attribute_6 = 2 and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_1 = 50-59 and Attribute_5 = no and Attribute_7 = right and Attribute_8 = right_up THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_1 = 60-69 and Attribute_5 = no and Attribute_7 = left and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 4.3478% 
+IF Attribute_1 = 60-69 and Attribute_5 = no and Attribute_7 = right and Attribute_8 = right_up THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 60-69 and Attribute_5 = no and Attribute_7 = left and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_5 = no and Attribute_8 = left_up and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_5 = no and Attribute_8 = right_up and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_5 = no and Attribute_8 = left_low and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_6 = 1 and Attribute_7 = right and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 40-49 and Attribute_6 = 3 and Attribute_7 = left and Attribute_8 = right_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_6 = 2 and Attribute_7 = right and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 50-59 and Attribute_6 = 3 and Attribute_7 = left and Attribute_8 = left_low THEN Class = recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 50-59 and Attribute_6 = 3 and Attribute_7 = right and Attribute_8 = right_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_6 = 1 and Attribute_7 = right and Attribute_8 = right_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_6 = 3 and Attribute_7 = left and Attribute_8 = left_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_6 = 1 and Attribute_7 = right and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_6 = 2 and Attribute_7 = right and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_6 = 2 and Attribute_7 = left and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 2.7174% 
+IF Attribute_1 = 40-49 and Attribute_6 = 1 and Attribute_8 = left_low and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 50-59 and Attribute_6 = 2 and Attribute_8 = left_low and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_6 = 3 and Attribute_8 = left_low and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_7 = right and Attribute_8 = left_low and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 2.7174% 
+IF Attribute_1 = 40-49 and Attribute_7 = right and Attribute_8 = left_up and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_1 = 50-59 and Attribute_7 = right and Attribute_8 = left_low and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 50-59 and Attribute_7 = right and Attribute_8 = left_low and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 60-69 and Attribute_7 = left and Attribute_8 = left_low and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 4.3478% 
+IF Attribute_2 = ge40 and Attribute_3 = 25-29 and Attribute_4 = 0-2 and Attribute_7 = right THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_2 = ge40 and Attribute_3 = 30-34 and Attribute_4 = 0-2 and Attribute_7 = left THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_2 = premeno and Attribute_3 = 20-24 and Attribute_4 = 0-2 and Attribute_7 = right THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_2 = ge40 and Attribute_3 = 25-29 and Attribute_4 = 0-2 and Attribute_8 = right_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = ge40 and Attribute_3 = 30-34 and Attribute_4 = 0-2 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_2 = premeno and Attribute_3 = 20-24 and Attribute_4 = 0-2 and Attribute_8 = left_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = ge40 and Attribute_3 = 30-34 and Attribute_5 = no and Attribute_6 = 2 THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_2 = premeno and Attribute_3 = 20-24 and Attribute_5 = no and Attribute_7 = right THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_2 = ge40 and Attribute_3 = 30-34 and Attribute_5 = no and Attribute_8 = right_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = ge40 and Attribute_3 = 20-24 and Attribute_6 = 1 and Attribute_7 = right THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = ge40 and Attribute_3 = 25-29 and Attribute_6 = 3 and Attribute_7 = right THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_2 = premeno and Attribute_3 = 20-24 and Attribute_6 = 3 and Attribute_7 = right THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = premeno and Attribute_3 = 30-34 and Attribute_6 = 2 and Attribute_7 = right THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_2 = ge40 and Attribute_3 = 20-24 and Attribute_6 = 3 and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_2 = ge40 and Attribute_3 = 25-29 and Attribute_6 = 3 and Attribute_8 = right_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = ge40 and Attribute_3 = 30-34 and Attribute_6 = 2 and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = ge40 and Attribute_3 = 30-34 and Attribute_6 = 3 and Attribute_8 = left_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = premeno and Attribute_3 = 20-24 and Attribute_6 = 2 and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_2 = premeno and Attribute_3 = 20-24 and Attribute_6 = 3 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = premeno and Attribute_3 = 20-24 and Attribute_6 = 3 and Attribute_8 = left_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = premeno and Attribute_3 = 30-34 and Attribute_6 = 1 and Attribute_8 = left_low THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = ge40 and Attribute_3 = 30-34 and Attribute_6 = 2 and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_2 = premeno and Attribute_3 = 20-24 and Attribute_6 = 3 and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = premeno and Attribute_3 = 30-34 and Attribute_6 = 2 and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_2 = ge40 and Attribute_3 = 20-24 and Attribute_7 = right and Attribute_8 = left_low THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_2 = ge40 and Attribute_3 = 25-29 and Attribute_7 = left and Attribute_8 = left_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = ge40 and Attribute_3 = 30-34 and Attribute_7 = left and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_2 = ge40 and Attribute_3 = 30-34 and Attribute_7 = right and Attribute_8 = left_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = premeno and Attribute_3 = 20-24 and Attribute_7 = left and Attribute_8 = left_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = premeno and Attribute_3 = 20-24 and Attribute_7 = right and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_2 = premeno and Attribute_3 = 20-24 and Attribute_7 = right and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_2 = ge40 and Attribute_3 = 30-34 and Attribute_7 = right and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_2 = premeno and Attribute_3 = 20-24 and Attribute_7 = right and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_2 = premeno and Attribute_3 = 25-29 and Attribute_7 = right and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_2 = ge40 and Attribute_3 = 30-34 and Attribute_8 = left_low and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = ge40 and Attribute_3 = 30-34 and Attribute_8 = left_up and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_2 = ge40 and Attribute_3 = 30-34 and Attribute_8 = right_up and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_2 = premeno and Attribute_3 = 20-24 and Attribute_8 = left_up and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = premeno and Attribute_3 = 30-34 and Attribute_8 = right_up and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = ge40 and Attribute_4 = 0-2 and Attribute_6 = 3 and Attribute_8 = right_up THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_2 = premeno and Attribute_4 = 0-2 and Attribute_6 = 2 and Attribute_8 = right_up THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_2 = ge40 and Attribute_4 = 0-2 and Attribute_7 = left and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 8.1522% 
+IF Attribute_2 = ge40 and Attribute_4 = 0-2 and Attribute_7 = left and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_2 = ge40 and Attribute_4 = 0-2 and Attribute_8 = left_low and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = ge40 and Attribute_4 = 0-2 and Attribute_8 = right_up and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 3.8043% 
+IF Attribute_2 = premeno and Attribute_4 = 0-2 and Attribute_8 = right_up and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = ge40 and Attribute_5 = no and Attribute_6 = 3 and Attribute_8 = right_up THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_2 = premeno and Attribute_5 = no and Attribute_6 = 2 and Attribute_8 = right_up THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_2 = ge40 and Attribute_5 = no and Attribute_6 = 2 and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_2 = ge40 and Attribute_5 = no and Attribute_7 = left and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = premeno and Attribute_5 = no and Attribute_8 = right_up and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = ge40 and Attribute_6 = 1 and Attribute_7 = right and Attribute_8 = left_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = ge40 and Attribute_6 = 3 and Attribute_7 = right and Attribute_8 = right_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = premeno and Attribute_6 = 2 and Attribute_7 = right and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 4.3478% 
+IF Attribute_2 = premeno and Attribute_6 = 3 and Attribute_7 = left and Attribute_8 = right_up THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_2 = premeno and Attribute_6 = 1 and Attribute_7 = right and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = ge40 and Attribute_6 = 3 and Attribute_8 = left_low and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 1.6304% 
+IF Attribute_2 = ge40 and Attribute_7 = right and Attribute_8 = left_low and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 30-34 and Attribute_4 = 0-2 and Attribute_6 = 3 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_3 = 25-29 and Attribute_4 = 0-2 and Attribute_7 = left and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 3.8043% 
+IF Attribute_3 = 20-24 and Attribute_4 = 0-2 and Attribute_7 = right and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 25-29 and Attribute_4 = 0-2 and Attribute_7 = left and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 25-29 and Attribute_4 = 0-2 and Attribute_7 = right and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 3.8043% 
+IF Attribute_3 = 20-24 and Attribute_4 = 0-2 and Attribute_8 = left_low and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 20-24 and Attribute_4 = 0-2 and Attribute_8 = left_up and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 30-34 and Attribute_4 = 0-2 and Attribute_8 = left_low and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_3 = 30-34 and Attribute_5 = no and Attribute_6 = 2 and Attribute_7 = right THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 30-34 and Attribute_5 = no and Attribute_6 = 2 and Attribute_8 = right_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 20-24 and Attribute_5 = no and Attribute_6 = 2 and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 30-34 and Attribute_5 = no and Attribute_6 = 2 and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 15-19 and Attribute_5 = no and Attribute_7 = right and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_3 = 25-29 and Attribute_5 = no and Attribute_7 = left and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 3.8043% 
+IF Attribute_3 = 25-29 and Attribute_5 = no and Attribute_7 = left and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 20-24 and Attribute_5 = no and Attribute_8 = left_up and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 30-34 and Attribute_5 = no and Attribute_8 = right_up and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 20-24 and Attribute_6 = 2 and Attribute_7 = right and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 20-24 and Attribute_6 = 3 and Attribute_7 = right and Attribute_8 = left_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 25-29 and Attribute_6 = 3 and Attribute_7 = left and Attribute_8 = left_low THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 25-29 and Attribute_6 = 3 and Attribute_7 = left and Attribute_8 = left_up THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 30-34 and Attribute_6 = 3 and Attribute_7 = left and Attribute_8 = right_up THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 20-24 and Attribute_6 = 3 and Attribute_7 = left and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 2.7174% 
+IF Attribute_3 = 25-29 and Attribute_6 = 3 and Attribute_7 = right and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_3 = 30-34 and Attribute_6 = 2 and Attribute_7 = right and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_3 = 20-24 and Attribute_6 = 3 and Attribute_8 = left_up and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_3 = 20-24 and Attribute_6 = 3 and Attribute_8 = left_up and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 30-34 and Attribute_6 = 1 and Attribute_8 = left_low and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 20-24 and Attribute_7 = right and Attribute_8 = left_up and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 25-29 and Attribute_7 = left and Attribute_8 = left_low and Attribute_9 = yes THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_4 = 0-2 and Attribute_5 = no and Attribute_6 = 2 and Attribute_8 = right_up THEN Class = no-recurrence-events ---> Coverage 2.7174% 
+IF Attribute_4 = 0-2 and Attribute_6 = 2 and Attribute_7 = left and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 3.2609% 
+IF Attribute_4 = 0-2 and Attribute_6 = 2 and Attribute_8 = right_up and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_5 = no and Attribute_6 = 2 and Attribute_7 = left and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 2.7174% 
+IF Attribute_5 = no and Attribute_6 = 2 and Attribute_8 = right_up and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_6 = 1 and Attribute_7 = right and Attribute_8 = left_low and Attribute_9 = yes THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_6 = 2 and Attribute_7 = right and Attribute_8 = left_low and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 4.3478% 
+IF Attribute_1 = 50-59 and Attribute_2 = premeno and Attribute_3 = 15-19 and Attribute_6 = 2 and Attribute_7 = left THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_2 = premeno and Attribute_5 = no and Attribute_6 = 3 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_2 = premeno and Attribute_6 = 3 and Attribute_7 = left and Attribute_8 = left_low THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 40-49 and Attribute_2 = premeno and Attribute_6 = 3 and Attribute_7 = right and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 40-49 and Attribute_2 = premeno and Attribute_6 = 2 and Attribute_7 = right and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 4.8913% 
+IF Attribute_1 = 40-49 and Attribute_2 = premeno and Attribute_6 = 3 and Attribute_8 = left_low and Attribute_9 = no THEN Class = recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 40-49 and Attribute_3 = 20-24 and Attribute_4 = 0-2 and Attribute_6 = 2 and Attribute_7 = right THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_3 = 30-34 and Attribute_4 = 0-2 and Attribute_6 = 3 and Attribute_7 = left THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_3 = 20-24 and Attribute_4 = 0-2 and Attribute_7 = right and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 1.0870% 
+IF Attribute_1 = 40-49 and Attribute_3 = 30-34 and Attribute_4 = 0-2 and Attribute_7 = left and Attribute_8 = right_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_3 = 30-34 and Attribute_4 = 0-2 and Attribute_7 = left and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 40-49 and Attribute_3 = 30-34 and Attribute_5 = no and Attribute_7 = left and Attribute_8 = right_up THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_3 = 30-34 and Attribute_5 = no and Attribute_7 = left and Attribute_8 = left_low THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_3 = 30-34 and Attribute_6 = 2 and Attribute_8 = right_up and Attribute_9 = no THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_3 = 30-34 and Attribute_7 = left and Attribute_8 = left_low and Attribute_9 = no THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_4 = 0-2 and Attribute_6 = 3 and Attribute_7 = right and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 50-59 and Attribute_4 = 0-2 and Attribute_6 = 3 and Attribute_8 = left_low and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 50-59 and Attribute_5 = no and Attribute_6 = 3 and Attribute_7 = right and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_1 = 40-49 and Attribute_6 = 2 and Attribute_7 = right and Attribute_8 = right_up and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = premeno and Attribute_3 = 30-34 and Attribute_5 = no and Attribute_6 = 3 and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = premeno and Attribute_3 = 30-34 and Attribute_5 = no and Attribute_8 = left_low and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_2 = premeno and Attribute_6 = 2 and Attribute_7 = right and Attribute_8 = right_up and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 1.6304% 
+IF Attribute_3 = 20-24 and Attribute_4 = 0-2 and Attribute_6 = 3 and Attribute_7 = left and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 20-24 and Attribute_5 = no and Attribute_6 = 3 and Attribute_7 = left and Attribute_8 = left_low THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_3 = 20-24 and Attribute_6 = 3 and Attribute_7 = right and Attribute_8 = left_low and Attribute_9 = no THEN Class = recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_2 = premeno and Attribute_3 = 30-34 and Attribute_5 = no and Attribute_6 = 3 and Attribute_7 = left THEN Class = no-recurrence-events ---> Coverage 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_2 = premeno and Attribute_3 = 30-34 and Attribute_5 = no and Attribute_7 = left and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage 2.1739% 
+IF Attribute_1 = 40-49 and Attribute_2 = premeno and Attribute_3 = 20-24 and Attribute_4 = 0-2 and Attribute_5 = no and Attribute_6 = 2 and Attribute_7 = left and Attribute_8 = left_low and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage = 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_2 = premeno and Attribute_3 = 30-34 and Attribute_4 = 0-2 and Attribute_5 = no and Attribute_6 = 3 and Attribute_7 = right and Attribute_8 = right_up and Attribute_9 = no THEN Class = no-recurrence-events ---> Coverage = 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_2 = premeno and Attribute_3 = 30-34 and Attribute_4 = 0-2 and Attribute_5 = no and Attribute_6 = 3 and Attribute_7 = right and Attribute_8 = right_up and Attribute_9 = no THEN Class = recurrence-events ---> Coverage = 0.5435% 
+IF Attribute_1 = 40-49 and Attribute_2 = premeno and Attribute_3 = 20-24 and Attribute_4 = 0-2 and Attribute_5 = no and Attribute_6 = 2 and Attribute_7 = left and Attribute_8 = left_low and Attribute_9 = no THEN Class = recurrence-events ---> Coverage = 0.5435% 
+
+All instances in the train set are correctly classified with 721 rules of 100% precision. 
+Training time = 23.99824786 seconds.
+
+Classifying breast-cancer test data we obtained accuracy = 58.2278% and a total of 0 unclassified instances.
