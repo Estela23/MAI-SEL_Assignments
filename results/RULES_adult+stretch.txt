@@ -1,0 +1,13 @@
+File of rules corresponding to the adult+stretch dataset 
+ 
+IF Attribute_3 = DIP THEN Class = F ---> Coverage 63.6364% 
+IF Attribute_4 = CHILD THEN Class = F ---> Coverage 36.3636% 
+IF Attribute_1 = YELLOW and Attribute_2 = SMALL THEN Class = F ---> Coverage 18.1818% 
+IF Attribute_1 = YELLOW and Attribute_3 = STRETCH THEN Class = T ---> Coverage 9.0909% 
+IF Attribute_2 = LARGE and Attribute_3 = STRETCH THEN Class = T ---> Coverage 18.1818% 
+IF Attribute_3 = STRETCH and Attribute_4 = ADULT THEN Class = T ---> Coverage 27.2727% 
+
+All the instances in the train set are correctly classified with 6 rules of 100% precision. 
+Training time = 0.05019736 seconds.
+
+Classifying adult+stretch test data we obtained accuracy = 80.0000% and a total of 0 unclassified instances.

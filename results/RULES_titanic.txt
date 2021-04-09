@@ -1,0 +1,22 @@
+File of rules corresponding to the titanic dataset 
+ 
+IF Attribute_1 = Bin_1 and Attribute_2 = Bin_4 THEN Class = 1.0 ---> Coverage 12.5000% 
+IF Attribute_1 = Bin_2 and Attribute_2 = Bin_4 THEN Class = 1.0 ---> Coverage 12.5000% 
+IF Attribute_1 = Bin_3 and Attribute_2 = Bin_4 THEN Class = -1.0 ---> Coverage 12.5000% 
+IF Attribute_1 = Bin_1 and Attribute_3 = Bin_4 THEN Class = 1.0 ---> Coverage 6.2500% 
+IF Attribute_1 = Bin_2 and Attribute_3 = Bin_4 THEN Class = 1.0 ---> Coverage 12.5000% 
+IF Attribute_1 = Bin_3 and Attribute_3 = Bin_1 THEN Class = -1.0 ---> Coverage 6.2500% 
+IF Attribute_1 = Bin_4 and Attribute_3 = Bin_1 THEN Class = -1.0 ---> Coverage 6.2500% 
+IF Attribute_1 = Bin_1 and Attribute_2 = Bin_1 and Attribute_3 = Bin_1 THEN Class = 1.0 ---> Coverage = 6.2500% 
+IF Attribute_1 = Bin_2 and Attribute_2 = Bin_1 and Attribute_3 = Bin_1 THEN Class = -1.0 ---> Coverage = 6.2500% 
+IF Attribute_1 = Bin_1 and Attribute_2 = Bin_1 and Attribute_3 = Bin_1 THEN Class = -1.0 ---> Coverage = 6.2500% 
+IF Attribute_1 = Bin_4 and Attribute_2 = Bin_1 and Attribute_3 = Bin_4 THEN Class = 1.0 ---> Coverage = 6.2500% 
+IF Attribute_1 = Bin_2 and Attribute_2 = Bin_1 and Attribute_3 = Bin_1 THEN Class = 1.0 ---> Coverage = 6.2500% 
+IF Attribute_1 = Bin_4 and Attribute_2 = Bin_1 and Attribute_3 = Bin_4 THEN Class = -1.0 ---> Coverage = 6.2500% 
+IF Attribute_1 = Bin_3 and Attribute_2 = Bin_1 and Attribute_3 = Bin_4 THEN Class = -1.0 ---> Coverage = 6.2500% 
+IF Attribute_1 = Bin_3 and Attribute_2 = Bin_1 and Attribute_3 = Bin_4 THEN Class = 1.0 ---> Coverage = 6.2500% 
+
+All instances in the train set are correctly classified with 15 rules of 100% precision. 
+Training time = 0.50536156 seconds.
+
+Classifying titanic test data we obtained accuracy = 25.0000% and a total of 0 unclassified instances.
