@@ -1,0 +1,205 @@
+File of rules corresponding to the phoneme dataset 
+ 
+IF Attribute_1 = Quartile_1 and Attribute_2 = Quartile_4 THEN Class = 0 ---> Coverage 2.3454% 
+IF Attribute_1 = Quartile_2 and Attribute_4 = Quartile_2 THEN Class = 0 ---> Coverage 2.1322% 
+IF Attribute_2 = Quartile_1 and Attribute_5 = Quartile_2 THEN Class = 0 ---> Coverage 2.1322% 
+IF Attribute_3 = Quartile_2 and Attribute_4 = Quartile_2 THEN Class = 0 ---> Coverage 5.5437% 
+IF Attribute_3 = Quartile_4 and Attribute_4 = Quartile_2 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_4 = Quartile_2 and Attribute_5 = Quartile_4 THEN Class = 0 ---> Coverage 2.7719% 
+IF Attribute_4 = Quartile_4 and Attribute_5 = Quartile_2 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_1 and Attribute_2 = Quartile_3 and Attribute_3 = Quartile_1 THEN Class = 0 ---> Coverage 1.7058% 
+IF Attribute_1 = Quartile_1 and Attribute_2 = Quartile_3 and Attribute_3 = Quartile_4 THEN Class = 0 ---> Coverage 0.6397% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_4 and Attribute_3 = Quartile_1 THEN Class = 0 ---> Coverage 1.9190% 
+IF Attribute_1 = Quartile_4 and Attribute_2 = Quartile_1 and Attribute_3 = Quartile_1 THEN Class = 0 ---> Coverage 0.6397% 
+IF Attribute_1 = Quartile_4 and Attribute_2 = Quartile_1 and Attribute_3 = Quartile_2 THEN Class = 0 ---> Coverage 1.2793% 
+IF Attribute_1 = Quartile_4 and Attribute_2 = Quartile_1 and Attribute_3 = Quartile_4 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_4 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_1 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_4 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_2 THEN Class = 0 ---> Coverage 1.7058% 
+IF Attribute_1 = Quartile_4 and Attribute_2 = Quartile_3 and Attribute_3 = Quartile_2 THEN Class = 0 ---> Coverage 1.4925% 
+IF Attribute_1 = Quartile_4 and Attribute_2 = Quartile_3 and Attribute_3 = Quartile_4 THEN Class = 1 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_4 and Attribute_2 = Quartile_4 and Attribute_3 = Quartile_4 THEN Class = 1 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_1 and Attribute_2 = Quartile_3 and Attribute_4 = Quartile_1 THEN Class = 0 ---> Coverage 1.4925% 
+IF Attribute_1 = Quartile_1 and Attribute_2 = Quartile_3 and Attribute_4 = Quartile_2 THEN Class = 0 ---> Coverage 0.6397% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_1 and Attribute_4 = Quartile_2 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_1 and Attribute_4 = Quartile_3 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_2 and Attribute_4 = Quartile_2 THEN Class = 0 ---> Coverage 0.6397% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_3 and Attribute_4 = Quartile_4 THEN Class = 1 ---> Coverage 1.2793% 
+IF Attribute_1 = Quartile_4 and Attribute_2 = Quartile_1 and Attribute_4 = Quartile_1 THEN Class = 0 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_4 and Attribute_2 = Quartile_1 and Attribute_4 = Quartile_2 THEN Class = 0 ---> Coverage 1.2793% 
+IF Attribute_1 = Quartile_4 and Attribute_2 = Quartile_1 and Attribute_4 = Quartile_3 THEN Class = 0 ---> Coverage 1.0661% 
+IF Attribute_1 = Quartile_4 and Attribute_2 = Quartile_2 and Attribute_4 = Quartile_2 THEN Class = 0 ---> Coverage 0.8529% 
+IF Attribute_1 = Quartile_4 and Attribute_2 = Quartile_3 and Attribute_4 = Quartile_2 THEN Class = 0 ---> Coverage 1.2793% 
+IF Attribute_1 = Quartile_4 and Attribute_2 = Quartile_4 and Attribute_4 = Quartile_4 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_1 and Attribute_2 = Quartile_3 and Attribute_5 = Quartile_1 THEN Class = 0 ---> Coverage 1.0661% 
+IF Attribute_1 = Quartile_1 and Attribute_2 = Quartile_3 and Attribute_5 = Quartile_2 THEN Class = 0 ---> Coverage 1.0661% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_2 and Attribute_5 = Quartile_2 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_3 and Attribute_5 = Quartile_2 THEN Class = 0 ---> Coverage 1.7058% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_4 and Attribute_5 = Quartile_3 THEN Class = 0 ---> Coverage 1.2793% 
+IF Attribute_1 = Quartile_4 and Attribute_2 = Quartile_1 and Attribute_5 = Quartile_1 THEN Class = 0 ---> Coverage 0.6397% 
+IF Attribute_1 = Quartile_4 and Attribute_2 = Quartile_1 and Attribute_5 = Quartile_3 THEN Class = 0 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_4 and Attribute_2 = Quartile_2 and Attribute_5 = Quartile_2 THEN Class = 0 ---> Coverage 0.8529% 
+IF Attribute_1 = Quartile_4 and Attribute_2 = Quartile_2 and Attribute_5 = Quartile_3 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_4 and Attribute_2 = Quartile_3 and Attribute_5 = Quartile_3 THEN Class = 0 ---> Coverage 1.2793% 
+IF Attribute_1 = Quartile_1 and Attribute_3 = Quartile_1 and Attribute_4 = Quartile_2 THEN Class = 0 ---> Coverage 0.8529% 
+IF Attribute_1 = Quartile_2 and Attribute_3 = Quartile_1 and Attribute_4 = Quartile_3 THEN Class = 0 ---> Coverage 0.8529% 
+IF Attribute_1 = Quartile_3 and Attribute_3 = Quartile_2 and Attribute_4 = Quartile_1 THEN Class = 0 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_3 and Attribute_3 = Quartile_3 and Attribute_4 = Quartile_2 THEN Class = 0 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_4 and Attribute_3 = Quartile_1 and Attribute_4 = Quartile_1 THEN Class = 0 ---> Coverage 1.0661% 
+IF Attribute_1 = Quartile_4 and Attribute_3 = Quartile_2 and Attribute_4 = Quartile_1 THEN Class = 0 ---> Coverage 0.6397% 
+IF Attribute_1 = Quartile_4 and Attribute_3 = Quartile_2 and Attribute_4 = Quartile_4 THEN Class = 0 ---> Coverage 0.6397% 
+IF Attribute_1 = Quartile_4 and Attribute_3 = Quartile_4 and Attribute_4 = Quartile_3 THEN Class = 1 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_4 and Attribute_3 = Quartile_4 and Attribute_4 = Quartile_4 THEN Class = 1 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_1 and Attribute_3 = Quartile_1 and Attribute_5 = Quartile_2 THEN Class = 0 ---> Coverage 1.7058% 
+IF Attribute_1 = Quartile_1 and Attribute_3 = Quartile_2 and Attribute_5 = Quartile_2 THEN Class = 0 ---> Coverage 0.6397% 
+IF Attribute_1 = Quartile_2 and Attribute_3 = Quartile_1 and Attribute_5 = Quartile_2 THEN Class = 0 ---> Coverage 0.8529% 
+IF Attribute_1 = Quartile_2 and Attribute_3 = Quartile_1 and Attribute_5 = Quartile_3 THEN Class = 0 ---> Coverage 0.6397% 
+IF Attribute_1 = Quartile_2 and Attribute_3 = Quartile_2 and Attribute_5 = Quartile_2 THEN Class = 0 ---> Coverage 0.8529% 
+IF Attribute_1 = Quartile_3 and Attribute_3 = Quartile_1 and Attribute_5 = Quartile_3 THEN Class = 0 ---> Coverage 0.8529% 
+IF Attribute_1 = Quartile_3 and Attribute_3 = Quartile_3 and Attribute_5 = Quartile_3 THEN Class = 0 ---> Coverage 0.8529% 
+IF Attribute_1 = Quartile_4 and Attribute_3 = Quartile_1 and Attribute_5 = Quartile_1 THEN Class = 0 ---> Coverage 1.0661% 
+IF Attribute_1 = Quartile_4 and Attribute_3 = Quartile_1 and Attribute_5 = Quartile_3 THEN Class = 0 ---> Coverage 0.8529% 
+IF Attribute_1 = Quartile_4 and Attribute_3 = Quartile_2 and Attribute_5 = Quartile_2 THEN Class = 0 ---> Coverage 1.4925% 
+IF Attribute_1 = Quartile_4 and Attribute_3 = Quartile_2 and Attribute_5 = Quartile_3 THEN Class = 0 ---> Coverage 1.2793% 
+IF Attribute_1 = Quartile_4 and Attribute_3 = Quartile_2 and Attribute_5 = Quartile_4 THEN Class = 0 ---> Coverage 1.4925% 
+IF Attribute_1 = Quartile_1 and Attribute_4 = Quartile_1 and Attribute_5 = Quartile_2 THEN Class = 0 ---> Coverage 0.8529% 
+IF Attribute_1 = Quartile_1 and Attribute_4 = Quartile_2 and Attribute_5 = Quartile_1 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_1 and Attribute_4 = Quartile_2 and Attribute_5 = Quartile_2 THEN Class = 0 ---> Coverage 1.0661% 
+IF Attribute_1 = Quartile_3 and Attribute_4 = Quartile_2 and Attribute_5 = Quartile_3 THEN Class = 0 ---> Coverage 0.8529% 
+IF Attribute_1 = Quartile_3 and Attribute_4 = Quartile_4 and Attribute_5 = Quartile_3 THEN Class = 1 ---> Coverage 0.6397% 
+IF Attribute_1 = Quartile_4 and Attribute_4 = Quartile_1 and Attribute_5 = Quartile_3 THEN Class = 0 ---> Coverage 0.6397% 
+IF Attribute_1 = Quartile_4 and Attribute_4 = Quartile_2 and Attribute_5 = Quartile_1 THEN Class = 0 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_4 and Attribute_4 = Quartile_2 and Attribute_5 = Quartile_3 THEN Class = 0 ---> Coverage 1.4925% 
+IF Attribute_2 = Quartile_1 and Attribute_3 = Quartile_1 and Attribute_4 = Quartile_2 THEN Class = 0 ---> Coverage 0.6397% 
+IF Attribute_2 = Quartile_2 and Attribute_3 = Quartile_1 and Attribute_4 = Quartile_2 THEN Class = 0 ---> Coverage 0.8529% 
+IF Attribute_2 = Quartile_2 and Attribute_3 = Quartile_3 and Attribute_4 = Quartile_2 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_2 = Quartile_3 and Attribute_3 = Quartile_1 and Attribute_4 = Quartile_4 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_2 = Quartile_3 and Attribute_3 = Quartile_3 and Attribute_4 = Quartile_2 THEN Class = 0 ---> Coverage 0.4264% 
+IF Attribute_2 = Quartile_4 and Attribute_3 = Quartile_1 and Attribute_4 = Quartile_4 THEN Class = 0 ---> Coverage 0.4264% 
+IF Attribute_2 = Quartile_4 and Attribute_3 = Quartile_2 and Attribute_4 = Quartile_1 THEN Class = 0 ---> Coverage 0.8529% 
+IF Attribute_2 = Quartile_4 and Attribute_3 = Quartile_4 and Attribute_4 = Quartile_4 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_2 = Quartile_2 and Attribute_3 = Quartile_1 and Attribute_5 = Quartile_2 THEN Class = 0 ---> Coverage 0.6397% 
+IF Attribute_2 = Quartile_2 and Attribute_3 = Quartile_2 and Attribute_5 = Quartile_2 THEN Class = 0 ---> Coverage 0.4264% 
+IF Attribute_2 = Quartile_3 and Attribute_3 = Quartile_1 and Attribute_5 = Quartile_3 THEN Class = 0 ---> Coverage 1.7058% 
+IF Attribute_2 = Quartile_3 and Attribute_3 = Quartile_2 and Attribute_5 = Quartile_1 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_2 = Quartile_4 and Attribute_3 = Quartile_1 and Attribute_5 = Quartile_1 THEN Class = 0 ---> Coverage 2.1322% 
+IF Attribute_2 = Quartile_4 and Attribute_3 = Quartile_1 and Attribute_5 = Quartile_3 THEN Class = 0 ---> Coverage 1.4925% 
+IF Attribute_2 = Quartile_4 and Attribute_3 = Quartile_2 and Attribute_5 = Quartile_2 THEN Class = 0 ---> Coverage 0.8529% 
+IF Attribute_2 = Quartile_4 and Attribute_3 = Quartile_2 and Attribute_5 = Quartile_3 THEN Class = 0 ---> Coverage 1.0661% 
+IF Attribute_2 = Quartile_4 and Attribute_3 = Quartile_4 and Attribute_5 = Quartile_1 THEN Class = 0 ---> Coverage 0.8529% 
+IF Attribute_2 = Quartile_4 and Attribute_3 = Quartile_4 and Attribute_5 = Quartile_3 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_2 = Quartile_1 and Attribute_4 = Quartile_2 and Attribute_5 = Quartile_1 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_2 = Quartile_2 and Attribute_4 = Quartile_2 and Attribute_5 = Quartile_1 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_2 = Quartile_2 and Attribute_4 = Quartile_2 and Attribute_5 = Quartile_2 THEN Class = 0 ---> Coverage 0.6397% 
+IF Attribute_2 = Quartile_3 and Attribute_4 = Quartile_2 and Attribute_5 = Quartile_3 THEN Class = 0 ---> Coverage 1.7058% 
+IF Attribute_2 = Quartile_3 and Attribute_4 = Quartile_4 and Attribute_5 = Quartile_4 THEN Class = 1 ---> Coverage 1.2793% 
+IF Attribute_2 = Quartile_4 and Attribute_4 = Quartile_1 and Attribute_5 = Quartile_3 THEN Class = 0 ---> Coverage 1.4925% 
+IF Attribute_2 = Quartile_4 and Attribute_4 = Quartile_2 and Attribute_5 = Quartile_1 THEN Class = 0 ---> Coverage 0.8529% 
+IF Attribute_2 = Quartile_4 and Attribute_4 = Quartile_2 and Attribute_5 = Quartile_3 THEN Class = 0 ---> Coverage 1.2793% 
+IF Attribute_3 = Quartile_1 and Attribute_4 = Quartile_2 and Attribute_5 = Quartile_3 THEN Class = 0 ---> Coverage 1.2793% 
+IF Attribute_3 = Quartile_1 and Attribute_4 = Quartile_3 and Attribute_5 = Quartile_2 THEN Class = 0 ---> Coverage 1.4925% 
+IF Attribute_3 = Quartile_1 and Attribute_4 = Quartile_3 and Attribute_5 = Quartile_3 THEN Class = 0 ---> Coverage 1.0661% 
+IF Attribute_3 = Quartile_2 and Attribute_4 = Quartile_1 and Attribute_5 = Quartile_2 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_3 = Quartile_4 and Attribute_4 = Quartile_3 and Attribute_5 = Quartile_2 THEN Class = 1 ---> Coverage 0.6397% 
+IF Attribute_1 = Quartile_1 and Attribute_2 = Quartile_1 and Attribute_3 = Quartile_1 and Attribute_4 = Quartile_3 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_1 and Attribute_2 = Quartile_1 and Attribute_3 = Quartile_3 and Attribute_4 = Quartile_1 THEN Class = 1 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_1 and Attribute_2 = Quartile_1 and Attribute_3 = Quartile_4 and Attribute_4 = Quartile_3 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_1 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_1 and Attribute_4 = Quartile_3 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_1 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_2 and Attribute_4 = Quartile_1 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_1 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_3 and Attribute_4 = Quartile_1 THEN Class = 1 ---> Coverage 0.6397% 
+IF Attribute_1 = Quartile_1 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_3 and Attribute_4 = Quartile_3 THEN Class = 1 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_1 and Attribute_3 = Quartile_4 and Attribute_4 = Quartile_3 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_1 and Attribute_4 = Quartile_4 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_3 and Attribute_4 = Quartile_3 THEN Class = 1 ---> Coverage 0.6397% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_4 and Attribute_4 = Quartile_4 THEN Class = 0 ---> Coverage 0.6397% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_3 and Attribute_3 = Quartile_2 and Attribute_4 = Quartile_3 THEN Class = 0 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_3 and Attribute_3 = Quartile_3 and Attribute_4 = Quartile_4 THEN Class = 1 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_4 and Attribute_3 = Quartile_3 and Attribute_4 = Quartile_1 THEN Class = 0 ---> Coverage 0.6397% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_4 and Attribute_3 = Quartile_4 and Attribute_4 = Quartile_3 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_1 and Attribute_3 = Quartile_1 and Attribute_4 = Quartile_1 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_1 and Attribute_3 = Quartile_1 and Attribute_4 = Quartile_4 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_1 and Attribute_3 = Quartile_2 and Attribute_4 = Quartile_4 THEN Class = 1 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_1 and Attribute_3 = Quartile_3 and Attribute_4 = Quartile_1 THEN Class = 0 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_1 and Attribute_4 = Quartile_1 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_1 and Attribute_4 = Quartile_3 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_2 and Attribute_4 = Quartile_3 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_2 and Attribute_4 = Quartile_4 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_3 and Attribute_4 = Quartile_4 THEN Class = 1 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_3 and Attribute_3 = Quartile_1 and Attribute_4 = Quartile_3 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_3 and Attribute_3 = Quartile_2 and Attribute_4 = Quartile_3 THEN Class = 1 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_4 and Attribute_3 = Quartile_2 and Attribute_4 = Quartile_4 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_4 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_3 and Attribute_4 = Quartile_4 THEN Class = 0 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_4 and Attribute_2 = Quartile_4 and Attribute_3 = Quartile_1 and Attribute_4 = Quartile_3 THEN Class = 0 ---> Coverage 0.6397% 
+IF Attribute_1 = Quartile_1 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_3 and Attribute_5 = Quartile_2 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_1 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_3 and Attribute_5 = Quartile_3 THEN Class = 1 ---> Coverage 0.6397% 
+IF Attribute_1 = Quartile_1 and Attribute_2 = Quartile_3 and Attribute_3 = Quartile_2 and Attribute_5 = Quartile_3 THEN Class = 0 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_1 and Attribute_2 = Quartile_3 and Attribute_3 = Quartile_2 and Attribute_5 = Quartile_4 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_1 and Attribute_3 = Quartile_4 and Attribute_5 = Quartile_4 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_2 and Attribute_5 = Quartile_1 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_2 and Attribute_5 = Quartile_3 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_3 and Attribute_5 = Quartile_1 THEN Class = 1 ---> Coverage 0.6397% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_4 and Attribute_5 = Quartile_3 THEN Class = 0 ---> Coverage 0.6397% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_3 and Attribute_3 = Quartile_1 and Attribute_5 = Quartile_1 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_4 and Attribute_3 = Quartile_3 and Attribute_5 = Quartile_2 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_4 and Attribute_3 = Quartile_4 and Attribute_5 = Quartile_2 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_4 and Attribute_3 = Quartile_4 and Attribute_5 = Quartile_4 THEN Class = 0 ---> Coverage 0.6397% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_1 and Attribute_3 = Quartile_1 and Attribute_5 = Quartile_1 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_1 and Attribute_3 = Quartile_1 and Attribute_5 = Quartile_4 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_1 and Attribute_3 = Quartile_2 and Attribute_5 = Quartile_1 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_1 and Attribute_3 = Quartile_2 and Attribute_5 = Quartile_3 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_1 and Attribute_3 = Quartile_2 and Attribute_5 = Quartile_4 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_1 and Attribute_3 = Quartile_3 and Attribute_5 = Quartile_4 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_1 and Attribute_3 = Quartile_4 and Attribute_5 = Quartile_3 THEN Class = 1 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_1 and Attribute_3 = Quartile_4 and Attribute_5 = Quartile_4 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_1 and Attribute_5 = Quartile_1 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_1 and Attribute_5 = Quartile_4 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_2 and Attribute_5 = Quartile_1 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_2 and Attribute_5 = Quartile_3 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_2 and Attribute_5 = Quartile_4 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_3 and Attribute_5 = Quartile_1 THEN Class = 1 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_2 and Attribute_3 = Quartile_4 and Attribute_5 = Quartile_2 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_3 and Attribute_3 = Quartile_1 and Attribute_5 = Quartile_4 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_3 and Attribute_3 = Quartile_2 and Attribute_5 = Quartile_3 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_3 and Attribute_3 = Quartile_4 and Attribute_5 = Quartile_3 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_3 and Attribute_3 = Quartile_4 and Attribute_5 = Quartile_4 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_4 and Attribute_3 = Quartile_2 and Attribute_5 = Quartile_4 THEN Class = 0 ---> Coverage 0.6397% 
+IF Attribute_1 = Quartile_4 and Attribute_2 = Quartile_1 and Attribute_3 = Quartile_3 and Attribute_5 = Quartile_4 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_4 and Attribute_2 = Quartile_4 and Attribute_3 = Quartile_2 and Attribute_5 = Quartile_1 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_4 and Attribute_2 = Quartile_4 and Attribute_3 = Quartile_3 and Attribute_5 = Quartile_4 THEN Class = 1 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_1 and Attribute_2 = Quartile_2 and Attribute_4 = Quartile_1 and Attribute_5 = Quartile_4 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_1 and Attribute_4 = Quartile_3 and Attribute_5 = Quartile_1 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_1 and Attribute_4 = Quartile_3 and Attribute_5 = Quartile_3 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_2 and Attribute_4 = Quartile_1 and Attribute_5 = Quartile_3 THEN Class = 0 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_2 and Attribute_4 = Quartile_1 and Attribute_5 = Quartile_4 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_2 and Attribute_4 = Quartile_4 and Attribute_5 = Quartile_3 THEN Class = 0 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_3 and Attribute_4 = Quartile_3 and Attribute_5 = Quartile_3 THEN Class = 0 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_3 and Attribute_4 = Quartile_4 and Attribute_5 = Quartile_1 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_4 and Attribute_4 = Quartile_1 and Attribute_5 = Quartile_1 THEN Class = 0 ---> Coverage 0.6397% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_4 and Attribute_4 = Quartile_1 and Attribute_5 = Quartile_4 THEN Class = 0 ---> Coverage 0.8529% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_4 and Attribute_4 = Quartile_3 and Attribute_5 = Quartile_1 THEN Class = 0 ---> Coverage 0.6397% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_4 and Attribute_4 = Quartile_3 and Attribute_5 = Quartile_3 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_2 and Attribute_2 = Quartile_4 and Attribute_4 = Quartile_4 and Attribute_5 = Quartile_4 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_2 and Attribute_4 = Quartile_1 and Attribute_5 = Quartile_1 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_2 and Attribute_4 = Quartile_3 and Attribute_5 = Quartile_2 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_2 and Attribute_4 = Quartile_4 and Attribute_5 = Quartile_4 THEN Class = 1 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_3 and Attribute_4 = Quartile_1 and Attribute_5 = Quartile_3 THEN Class = 0 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_3 and Attribute_4 = Quartile_3 and Attribute_5 = Quartile_1 THEN Class = 0 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_4 and Attribute_4 = Quartile_1 and Attribute_5 = Quartile_4 THEN Class = 0 ---> Coverage 0.6397% 
+IF Attribute_1 = Quartile_3 and Attribute_2 = Quartile_4 and Attribute_4 = Quartile_4 and Attribute_5 = Quartile_1 THEN Class = 0 ---> Coverage 0.6397% 
+IF Attribute_1 = Quartile_4 and Attribute_2 = Quartile_1 and Attribute_4 = Quartile_4 and Attribute_5 = Quartile_4 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_4 and Attribute_2 = Quartile_2 and Attribute_4 = Quartile_1 and Attribute_5 = Quartile_4 THEN Class = 0 ---> Coverage 0.6397% 
+IF Attribute_1 = Quartile_4 and Attribute_2 = Quartile_2 and Attribute_4 = Quartile_3 and Attribute_5 = Quartile_1 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_4 and Attribute_2 = Quartile_3 and Attribute_4 = Quartile_1 and Attribute_5 = Quartile_1 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_4 and Attribute_2 = Quartile_3 and Attribute_4 = Quartile_3 and Attribute_5 = Quartile_1 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_4 and Attribute_2 = Quartile_4 and Attribute_4 = Quartile_1 and Attribute_5 = Quartile_1 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_1 and Attribute_3 = Quartile_2 and Attribute_4 = Quartile_1 and Attribute_5 = Quartile_3 THEN Class = 1 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_1 and Attribute_3 = Quartile_2 and Attribute_4 = Quartile_4 and Attribute_5 = Quartile_1 THEN Class = 0 ---> Coverage 0.6397% 
+IF Attribute_1 = Quartile_1 and Attribute_3 = Quartile_2 and Attribute_4 = Quartile_4 and Attribute_5 = Quartile_3 THEN Class = 0 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_1 and Attribute_3 = Quartile_2 and Attribute_4 = Quartile_4 and Attribute_5 = Quartile_4 THEN Class = 1 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_1 and Attribute_3 = Quartile_3 and Attribute_4 = Quartile_1 and Attribute_5 = Quartile_4 THEN Class = 1 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_1 and Attribute_3 = Quartile_3 and Attribute_4 = Quartile_3 and Attribute_5 = Quartile_1 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_1 and Attribute_3 = Quartile_4 and Attribute_4 = Quartile_1 and Attribute_5 = Quartile_4 THEN Class = 0 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_1 and Attribute_3 = Quartile_4 and Attribute_4 = Quartile_3 and Attribute_5 = Quartile_1 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_2 and Attribute_3 = Quartile_2 and Attribute_4 = Quartile_3 and Attribute_5 = Quartile_1 THEN Class = 0 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_2 and Attribute_3 = Quartile_2 and Attribute_4 = Quartile_3 and Attribute_5 = Quartile_3 THEN Class = 1 ---> Coverage 0.2132% 
+IF Attribute_1 = Quartile_2 and Attribute_3 = Quartile_3 and Attribute_4 = Quartile_1 and Attribute_5 = Quartile_2 THEN Class = 0 ---> Coverage 0.4264% 
+IF Attribute_1 = Quartile_2 and Attribute_3 = Quartile_3 and Attribute_4 = Quartile_1 and Attribute_5 = Quartile_3 THEN Class = 0 ---> Coverage 0.6397% 

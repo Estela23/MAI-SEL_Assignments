@@ -723,6 +723,6 @@ IF Attribute_1 = 40-49 and Attribute_2 = premeno and Attribute_3 = 30-34 and Att
 IF Attribute_1 = 40-49 and Attribute_2 = premeno and Attribute_3 = 20-24 and Attribute_4 = 0-2 and Attribute_5 = no and Attribute_6 = 2 and Attribute_7 = left and Attribute_8 = left_low and Attribute_9 = no THEN Class = recurrence-events ---> Coverage = 0.5435% 
 
 All instances in the train set are correctly classified with 721 rules of 100% precision. 
-Training time = 25.94441986 seconds.
+Training time = 25.41754079 seconds.
 
 Classifying breast-cancer test data we obtained accuracy = 58.2278% and a total of 0 unclassified instances.

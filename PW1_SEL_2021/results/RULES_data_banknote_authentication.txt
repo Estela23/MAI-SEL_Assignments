@@ -64,6 +64,6 @@ IF Attribute_1 = Quartile_1 and Attribute_2 = Quartile_4 and Attribute_3 = Quart
 IF Attribute_1 = Quartile_1 and Attribute_2 = Quartile_4 and Attribute_3 = Quartile_2 and Attribute_4 = Quartile_1 THEN Class = 1 ---> Coverage = 1.1364% 
 
 All instances in the train set are correctly classified with 62 rules of 100% precision. 
-Training time = 1.27448320 seconds.
+Training time = 1.14028668 seconds.
 
 Classifying data_banknote_authentication test data we obtained accuracy = 76.3158% and a total of 1 unclassified instances.
