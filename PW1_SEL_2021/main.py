@@ -1,6 +1,6 @@
-from utils.preprocess import read_file_generate_dfs
-from train_RULES import train_RULES
-from test_RULES import test_RULES
+from PW1_SEL_2021.utils.preprocess import read_file_generate_dfs
+from PW1_SEL_2021.train_RULES import train_RULES
+from PW1_SEL_2021.test_RULES import test_RULES
 
 # Running this Python file we train and test a rule-based in 6 different datasets
 
