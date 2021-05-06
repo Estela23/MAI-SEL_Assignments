@@ -1,21 +1,17 @@
-import math
 import random
+from PW1_SEL_2021.utils.preprocess import read_file_generate_dfs, preprocess_df
 
 
-def runif(M):
-    n = random.randint(1, M)
-    print(n)
+data_file = "data/breast-cancer.data"
+data_name = "breast-cancer"
+arff = False
+id_column = None
+class_column = 0
+discretize_integers = []
 
+train_df, test_df = read_file_generate_dfs(data_file, arff=arff, id_column=id_column, class_column=class_column,
+                                           discretize_integers=discretize_integers)
 
-NT = [1, 10, 25, 50, 75, 100]   # Number of trees desired
-
-n_feat = 17    # Number of features
-
-# Number of random features used in the splitting of the nodes (RF)
-F = {1, 3, int(math.log(n_feat + 1, 2)), math.floor(math.sqrt(n_feat))}
-
-# Number of random features used in the splitting of the nodes (DF)
-F = {int(n_feat/4), int(n_feat/2), int(3*n_feat/4), runif(n_feat)}
 
 
 

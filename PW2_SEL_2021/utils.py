@@ -1,3 +1,11 @@
+import random
+
+
+def run_if(max_n):
+    n = random.randint(1, max_n)
+    print(n)
+
+
 def gini_index(groups, classes):
     """
     Calculate the Gini index for a split dataset
