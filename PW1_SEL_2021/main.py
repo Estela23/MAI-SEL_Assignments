@@ -55,7 +55,7 @@ for size in sizes:
                 arff = False
                 id_column = None
                 class_column = None
-                discretize_integers = None
+                discretize_integers = []
             elif choice == 2:
                 data_file = "data/titanic.dat"
                 data_name = "titanic"
