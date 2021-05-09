@@ -52,6 +52,8 @@ def generate_random_forest(train_data, number_trees, number_random_features, min
     # Initialize feature importances to 0
     feat_count = np.zeros(len(train_data[0]) - 1)
 
+    # TODO: For each tree the bootstraped is different! Hence the train and classifying tienen que ser seguidos digamos
+
     for tree in range(number_trees):
         # For each tree we pick a combination of random attributes to generate it and add the class attribute
         features_chosen = sorted(random.sample(range(len(train_data[0]) - 1), number_random_features))

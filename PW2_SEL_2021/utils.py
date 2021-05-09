@@ -109,6 +109,7 @@ def create_split(dataset):
                     best_attribute_index = attribute
                     best_partition = partition
         # TODO: como spliteamos para atributos categóricos!!
+        # TODO: Dani dice que se hace encoding y listo, no estoy segura
 
     return {"attribute_index": best_attribute_index, "splitting_value": best_splitting_value, "partition": best_partition}
 
