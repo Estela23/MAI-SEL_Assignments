@@ -21,6 +21,11 @@ def gini_index(groups, classes):
     gini_idx = 0.0
     for group in groups:
         size_group = float(len(group))
+
+        # If a partition has only one set return the best gini index possible
+        if size_group == 0:
+            return 0
+
         score = 0.0
         # Score of each group based on the score of each class
         for this_class in classes:
@@ -85,12 +90,15 @@ def create_split(dataset):
     possible_classes = list(set(instance[-1] for instance in dataset))
     # Initialize gini index, in each iteration we will try to improve (decrease) it
     best_gini_index = 2
-    # TODO: aquí inicializar los bests de abajo? que no creo que haga falta :)
     for attribute in range(len(dataset[0]) - 1):
         if isinstance(dataset[0][attribute], int) or isinstance(dataset[0][attribute], float):
-            # For a numeric attribute we sort all its values and find the middle points as splitting values
+            # For a numeric attribute we sort all its values as splitting values
             values = sorted(set([dataset[i][attribute] for i in range(len(dataset))]))
             splitting_values = [(values[i] + values[i+1]) / 2 for i in range(len(values)-1)]
+
+            if not splitting_values:
+                splitting_values = [dataset[0][attribute]]
+
             # Do the split and compute its gini index
             for splitting_value in splitting_values:
                 partition = test_split_continuous(index_attribute=attribute, splitting_value=splitting_value, dataset=dataset)
@@ -101,6 +109,7 @@ def create_split(dataset):
                     best_attribute_index = attribute
                     best_partition = partition
         # TODO: como spliteamos para atributos categóricos!!
+
     return {"attribute_index": best_attribute_index, "splitting_value": best_splitting_value, "partition": best_partition}
 
 
@@ -122,6 +131,10 @@ def split(node, min_size, feature_count):
     """
     X_1, X_2 = node["partition"]
     del(node["partition"])
+    # check if some of the sets of the partition is empty
+    if not X_1 or not X_2:
+        node["X_1"] = node["X_2"] = to_terminal(X_1 + X_2)
+        return
     # split left child with two conditions: X_1 smaller than the minimum size or all the instances are of the same class
     if len(X_1) <= min_size or all(X_1[i][-1] == X_1[0][-1] for i in range(len(X_1))):
         node["X_1"] = to_terminal(X_1)

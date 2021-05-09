@@ -12,14 +12,14 @@ def decision_forests(train_data, test_data):
     NT = [1, 10, 25, 50, 75, 100]
 
     # Initialize numpy array to save the accuracies, 4 is the maximum value of different F's
-    accuracies = np.zeros((len(NT), 4))
+    accuracies = [[[] for j in range(4)] for i in range(len(NT))]
     # Initialize an empy dictionary to save the feature importances
     feat_importances = {}
 
     for idx_nt, n_trees in enumerate(NT):
         print("Number of trees in the Decision Forest: ", n_trees)
         # Number of random features used in the splitting of the nodes (DF)
-        F = list(sorted({int(n_feat / 4), int(n_feat / 2), int(3 * n_feat / 4), run_if(n_feat)}))
+        F = list(sorted({int(n_feat / 4), int(n_feat / 2), int(3 * n_feat / 4)})) + ["run_if"]
         for idx_f, n_random_features in enumerate(F):
             print("Number of possible features considered in each split: ", n_random_features)
             # Generate a decision forest, which is a list (forest) of dictionaries (decision trees)
@@ -38,7 +38,8 @@ def decision_forests(train_data, test_data):
 
             accuracies[idx_nt][idx_f] = accuracy
 
-    df_accuracies = pd.DataFrame(accuracies, columns=[str(F[i]) for i in range(len(F))])
+    names_columns_accuracies = [str(F[i]) for i in range(3)] + ["Run_if"]
+    df_accuracies = pd.DataFrame(accuracies, columns=names_columns_accuracies)
     df_accuracies.index = [str(NT[i]) for i in range(len(NT))]
 
     df_feat_importances = pd.DataFrame(feat_importances)
@@ -49,14 +50,19 @@ def generate_decision_forest(train_data, number_trees, number_random_features):
     decision_forest = []
     # Initialize feature importances to 0
     feat_count = np.zeros(len(train_data[0]) - 1)
+
     for tree in range(number_trees):
+        # If the parameter F is run_if we generate a different number of possible features for each tree
+        if number_random_features == "run_if":
+            number_random_features = run_if(len(train_data[0]) - 1)
+
         # For each tree we pick a combination of random attributes to generate it and add the class attribute
         features_chosen = sorted(random.sample(range(len(train_data[0])-1), number_random_features))
         features_chosen.append(-1)
         filtered_train_data = [[element[i] for i in features_chosen] for element in train_data]
         # With this filtered version of the data (with only F features and the class) we generate the tree
         # If a node has less than the 5% of the data we will make it a terminal node
-        this_tree, this_feature_count = CART_decision_forest(filtered_train_data, min_size=len(train_data)/20)
+        this_tree, this_feature_count = CART_decision_forest(filtered_train_data, min_size=3)   # TODO: check si va guay :)
         this_tree["features_chosen"] = features_chosen[:-1]
 
         # Add the new tree to the decision forest
