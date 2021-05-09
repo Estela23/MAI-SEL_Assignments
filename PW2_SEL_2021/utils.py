@@ -162,3 +162,7 @@ def CART_decision_forest(dataset, min_size):
     return root, feature_count
 
 
+def CART_random_forest(dataset, min_size):
+    return 0
+
+

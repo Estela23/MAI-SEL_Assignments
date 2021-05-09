@@ -5,15 +5,15 @@ import random
 from utils import CART_decision_forest
 
 
-def decision_forests(train_data, test_data):
+def decision_forests(train_data, test_data, min_size_node):
     # Number of features in the data
     n_feat = len(train_data[0]) - 1
     # Number of trees desired
     NT = [1, 10, 25, 50, 75, 100]
 
     # Initialize numpy array to save the accuracies, 4 is the maximum value of different F's
-    accuracies = [[[] for j in range(4)] for i in range(len(NT))]
-    # Initialize an empy dictionary to save the feature importances
+    accuracies = [[[] for _ in range(4)] for _ in range(len(NT))]
+    # Initialize an empty dictionary to save the feature importances
     feat_importances = {}
 
     for idx_nt, n_trees in enumerate(NT):
@@ -24,7 +24,7 @@ def decision_forests(train_data, test_data):
             print("Number of possible features considered in each split: ", n_random_features)
             # Generate a decision forest, which is a list (forest) of dictionaries (decision trees)
             # feature_importances is a dictionary of the importance corresponding to each feature in the forest
-            decision_forest, feature_importances = generate_decision_forest(train_data, n_trees, n_random_features)
+            decision_forest, feature_importances = generate_decision_forest(train_data, n_trees, n_random_features, min_size_node)
             feat_importances["NT = {} and F = {}".format(n_trees, n_random_features)] = feature_importances
 
             # Prediction over the test data
@@ -46,7 +46,7 @@ def decision_forests(train_data, test_data):
     return df_accuracies, df_feat_importances
 
 
-def generate_decision_forest(train_data, number_trees, number_random_features):
+def generate_decision_forest(train_data, number_trees, number_random_features, min_size):
     decision_forest = []
     # Initialize feature importances to 0
     feat_count = np.zeros(len(train_data[0]) - 1)
@@ -62,11 +62,12 @@ def generate_decision_forest(train_data, number_trees, number_random_features):
         filtered_train_data = [[element[i] for i in features_chosen] for element in train_data]
         # With this filtered version of the data (with only F features and the class) we generate the tree
         # If a node has less than the 5% of the data we will make it a terminal node
-        this_tree, this_feature_count = CART_decision_forest(filtered_train_data, min_size=3)   # TODO: check si va guay :)
+        this_tree, this_feature_count = CART_decision_forest(filtered_train_data, min_size=min_size)
         this_tree["features_chosen"] = features_chosen[:-1]
 
         # Add the new tree to the decision forest
         decision_forest.append(this_tree)
+
         # Add the feature importances of this tree
         for idx, feature in enumerate(features_chosen[:-1]):
             feat_count[feature] += this_feature_count[idx]
