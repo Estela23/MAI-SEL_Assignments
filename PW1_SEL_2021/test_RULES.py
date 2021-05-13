@@ -1,6 +1,5 @@
 import numpy as np
-from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
-import matplotlib.pyplot as plt
+from sklearn.metrics import confusion_matrix
 import seaborn as sn
 import matplotlib.pyplot as plt
 
