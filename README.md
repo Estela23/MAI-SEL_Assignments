@@ -1,4 +1,4 @@
-MAI-SEL_Assignments
+## MAI-SEL_Assignments
 
 This is a repository for the individual assignments of the subject Supervised and Experimental Learning from the Master in Artificial Intelligence
 
