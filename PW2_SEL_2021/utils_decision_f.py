@@ -1,3 +1,6 @@
+#########################
+#### Decision Forest ####
+#########################
 import random
 import numpy as np
 import itertools
@@ -141,14 +144,14 @@ def split(node, min_size, feature_count):
         node["X_1"] = to_terminal(X_1)
     else:
         node["X_1"] = create_split(X_1)
-        feature_count[node["attribute_index"]] += 1
+        feature_count[node["X_1"]["attribute_index"]] += 1
         split(node["X_1"], min_size, feature_count)
     # split right child
     if len(X_2) <= min_size or all(X_2[i][-1] == X_2[0][-1] for i in range(len(X_2))):
         node["X_2"] = to_terminal(X_2)
     else:
         node["X_2"] = create_split(X_2)
-        feature_count[node["attribute_index"]] += 1
+        feature_count[node["X_2"]["attribute_index"]] += 1
         split(node["X_2"], min_size, feature_count)
 
 
@@ -163,7 +166,6 @@ def CART_decision_forest(dataset, min_size):
     return root, feature_count
 
 
-def CART_random_forest(dataset, min_size):
-    return 0
+
 
 

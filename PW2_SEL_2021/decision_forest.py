@@ -1,8 +1,9 @@
-from utils import run_if
+from utils_decision_f import run_if
 import numpy as np
 import pandas as pd
 import random
-from utils import CART_decision_forest
+import time
+from utils_decision_f import CART_decision_forest
 
 
 def decision_forests(train_data, test_data, min_size_node):
@@ -11,8 +12,10 @@ def decision_forests(train_data, test_data, min_size_node):
     # Number of trees desired
     NT = [1, 10, 25, 50, 75, 100]
 
-    # Initialize numpy array to save the accuracies, 4 is the maximum value of different F's
+    # Initialize lists to save the accuracies and times, 4 is the maximum value of different F's
     accuracies = [[[] for _ in range(4)] for _ in range(len(NT))]
+    times = [[[] for _ in range(4)] for _ in range(len(NT))]
+
     # Initialize an empty dictionary to save the feature importances
     feat_importances = {}
 
@@ -22,6 +25,8 @@ def decision_forests(train_data, test_data, min_size_node):
         F = list(sorted({int(n_feat / 4), int(n_feat / 2), int(3 * n_feat / 4)})) + ["run_if"]
         for idx_f, n_random_features in enumerate(F):
             print("Number of possible features considered in each split: ", n_random_features)
+            # Initial time
+            t0 = time.time()
             # Generate a decision forest, which is a list (forest) of dictionaries (decision trees)
             # feature_importances is a dictionary of the importance corresponding to each feature in the forest
             decision_forest, feature_importances = generate_decision_forest(train_data, n_trees, n_random_features, min_size_node)
@@ -32,18 +37,29 @@ def decision_forests(train_data, test_data, min_size_node):
                 prediction = classify_decision_forest(decision_forest, test_data[test_instance])
                 test_data[test_instance].append(prediction)
 
+            # Final time, after training and testing the current forest
+            t1 = time.time()
+
             # Compute the accuracy by counting the number of instances with Class = Predicted_Class
             matches = len([True for idx in range(len(test_data)) if test_data[idx][-2] == test_data[idx][-1]])
             accuracy = matches * 100 / len(test_data)
 
             accuracies[idx_nt][idx_f] = accuracy
+            times[idx_nt][idx_f] = t1 - t0
 
-    names_columns_accuracies = [str(F[i]) for i in range(3)] + ["Run_if"]
-    df_accuracies = pd.DataFrame(accuracies, columns=names_columns_accuracies)
-    df_accuracies.index = [str(NT[i]) for i in range(len(NT))]
+    # Finally, create the dataframes for the accuracies, times and feature importance of each decision forest created
+    names_columns = [str(F[i]) for i in range(3)] + ["Run_if"]
+    names_rows = [str(NT[i]) for i in range(len(NT))]
+
+    df_accuracies = pd.DataFrame(accuracies, columns=names_columns)
+    df_accuracies.index = names_rows
+
+    df_times = pd.DataFrame(times, columns=names_columns)
+    df_times.index = names_rows
 
     df_feat_importances = pd.DataFrame(feat_importances)
-    return df_accuracies, df_feat_importances
+
+    return df_accuracies, df_times, df_feat_importances
 
 
 def generate_decision_forest(train_data, number_trees, number_random_features, min_size):
@@ -86,12 +102,12 @@ def classify_decision_forest(decision_forest, test_instance):
     for tree in decision_forest:
         features_chosen = tree["features_chosen"]
         filtered_test_instance = [test_instance[i] for i in features_chosen]
-        prediction = predict(tree, filtered_test_instance)
+        prediction = predict_decision_forest(tree, filtered_test_instance)
         predictions.append(prediction)
     return max(set(predictions), key=predictions.count)
 
 
-def predict(node, instance):
+def predict_decision_forest(node, instance):
     """
     :param node: node at where we are making the prediction
     :param instance: test instance we are trying to classify
@@ -99,11 +115,11 @@ def predict(node, instance):
     """
     if instance[node['attribute_index']] < node['splitting_value']:
         if isinstance(node['X_1'], dict):
-            return predict(node['X_1'], instance)
+            return predict_decision_forest(node['X_1'], instance)
         else:
             return node['X_1']
     else:
         if isinstance(node['X_2'], dict):
-            return predict(node['X_2'], instance)
+            return predict_decision_forest(node['X_2'], instance)
         else:
             return node['X_2']
