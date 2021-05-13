@@ -33,5 +33,5 @@ for size in ["small", "medium", "large"]:
     # Train and test random forests
     df_accuracies_rf, df_times_rf, df_feat_importances_rf = random_forests(train_list, test_list, min_size_node=3)
     df_accuracies_rf.to_csv("results/{}_accuracies__random_forests.csv".format(data_name))
-    df_times_df.to_csv("results/{}_times__random_forests.csv".format(data_name))
+    df_times_rf.to_csv("results/{}_times__random_forests.csv".format(data_name))
     df_feat_importances_rf.to_csv("results/{}_feature_importances__random_forests.csv".format(data_name))
