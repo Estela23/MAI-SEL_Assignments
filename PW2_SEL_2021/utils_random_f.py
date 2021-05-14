@@ -91,8 +91,9 @@ def create_split_rf(dataset, n_features):
                     best_splitting_value = splitting_value
                     best_attribute_index = attribute
                     best_partition = partition
-        # TODO: como spliteamos para atributos categóricos!!
-        # TODO: Dani dice que se hace encoding y listo, no estoy segura
+        else:
+            print("Future work: implement the split for categorical features using itertools.combinations")
+            break
 
     return {"attribute_index": best_attribute_index, "splitting_value": best_splitting_value, "partition": best_partition}
 

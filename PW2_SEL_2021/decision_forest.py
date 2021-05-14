@@ -110,7 +110,7 @@ def classify_decision_forest(decision_forest, test_instance):
 def predict_decision_forest(node, instance):
     """
     :param node: node at where we are making the prediction
-    :param instance: test instance we are trying to classify
+    :param instance: filtered test instance we are trying to classify
     :return: predicted class of the test instance
     """
     if instance[node['attribute_index']] < node['splitting_value']:

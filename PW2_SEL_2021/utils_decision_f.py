@@ -3,7 +3,6 @@
 #########################
 import random
 import numpy as np
-import itertools
 
 
 def run_if(max_n):
@@ -57,34 +56,6 @@ def test_split_continuous(index_attribute, splitting_value, dataset):
     return X_1, X_2
 
 
-"""def power_set(iterable):
-    ""
-    From an iterable (list of attributes) returns the power set of the list, for categorical attributes
-    :param iterable: list of attributes to take into account for splitting the data #TODO: WHAAAAAAAAAAAT
-    :return: all possible combinations of splits
-    ""
-    s = list(iterable)
-    return itertools.chain.from_iterable(itertools.combinations(s, r) for r in range(1, int(len(s)/2)+1))
-
-
-def test_split_discrete(index_attribute, splitting_subsets, dataset):
-    ""
-    Split a dataset based on a categorical attribute and the splitting subsets
-    :param index_attribute: index of the attribute with respect to which we are splitting the data
-    :param splitting_subsets: possible values for the splitting attribute divided into two subsets
-    :param dataset: original dataset before the split
-    :return: two lists of the divided data
-    ""
-    X_1 = []
-    X_2 = []
-    for row in dataset:
-        if row[index_attribute] < splitting_subsets:
-            X_1.append(row)
-        else:
-            X_2.append(row)
-    return X_1, X_2"""
-
-
 def create_split(dataset):
     """
     :param dataset: dataset over which we want to make a split
@@ -111,9 +82,9 @@ def create_split(dataset):
                     best_splitting_value = splitting_value
                     best_attribute_index = attribute
                     best_partition = partition
-        # TODO: como spliteamos para atributos categóricos!!
-        # TODO: Dani dice que se hace encoding y listo, no estoy segura
-
+        else:
+            print("Future work: implement the split for categorical features using itertools.combinations")
+            break
     return {"attribute_index": best_attribute_index, "splitting_value": best_splitting_value, "partition": best_partition}
 
 
